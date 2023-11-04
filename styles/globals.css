@@ -56,7 +56,7 @@ button:hover {
     font-family: Raleway;
     font-size: .85em;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1em; /* 114.286% */
     text-transform: uppercase;
     padding: .5em 2em;
@@ -71,7 +71,8 @@ button:hover {
 
 .navPill-pinkBg {
     z-index: 1;
-    background-color: #FCE5E5;
+    background-color: rgb(255, 255, 255, .1);
+    backdrop-filter: blur(8px);
     border: 3px solid #D90F03;
     font-weight: 700;
     transition: all 120ms ease-in-out;
