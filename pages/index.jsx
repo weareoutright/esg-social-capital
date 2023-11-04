@@ -4,6 +4,7 @@ import { PostGrid } from '../components/grid';
 import Layout from '../components/layout';
 import { getFooterMenu } from '../lib/Menus';
 import { getLatestPosts } from '../lib/Posts';
+import Head from 'next/head';
 
 import styles from './index.module.css';
 
@@ -17,6 +18,13 @@ export default function Home({ menuItems, posts }) {
 	);
 
 	return (
+		<>
+		<Head>
+			<link rel="preconnect" href="https://fonts.googleapis.com" />
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+			<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet" />
+		</Head>
+
 		<Layout footerMenu={menuItems}>
 			<NextSeo
 				title="ESG Social Capital"
@@ -27,6 +35,7 @@ export default function Home({ menuItems, posts }) {
 				<PostGrid contentType="posts" data={posts} />
 			</section>
 		</Layout>
+		</>
 	);
 }
 
