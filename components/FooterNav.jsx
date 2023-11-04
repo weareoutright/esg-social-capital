@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import { document, window } from 'browser-monads-ts'
-import { elementsOverlap } from '../helperFuncs/elementsOverlay'
+import Image from 'next/image'
+import HOME_BTN from "../constants/home_btn.svg"
+import Link from 'next/link'
 
 const FooterNav = () => {
     const [navProgress, setNavProgress] = useState(0)
@@ -82,7 +84,7 @@ const FooterNav = () => {
   return (
     <div className="FooterNav">
         <progress value={navProgress} max="100"></progress>
-        <button className={`pill ${navPillHome}`}>home</button>
+        <Link href="/" className={`pill ${navPillHome}`}><Image src={HOME_BTN} alt="Home"/></Link>
         <button className={`pill ${navPillLayFoundation}`}>lay the foundation</button>
         <button className={`pill ${navPillDesign}`}>design the supports</button>
         <button className={`pill ${navPillExecEval}`}>execute & evaluate</button>

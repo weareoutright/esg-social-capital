@@ -4,25 +4,15 @@
 
 body {
     height: 200vh;
-}
-
-.FooterNav {
-    position: fixed;
-    bottom: 0;
-    box-shadow: 0px -5px 10px 10px rgba(72, 79, 88, 0.10);
-    width: 100%;
-    height: 8em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+    padding-bottom: 20em;
+    font-family: 'Merriweather', serif;
 }
 
 progress {
     width: 100%;
     position: absolute;
     top: 50%;
-    z-index: 0;
+    z-index: 2;
 }
 
 progress::-webkit-progress-bar {
@@ -35,7 +25,7 @@ progress::-webkit-progress-value {
     box-shadow: 0px -.5px 0px 1px #D90F03
 }
 
-button {
+a, button {
     border-radius: 24px;
     border: 2px solid #D90F03;
     background: #FFF;
@@ -43,37 +33,153 @@ button {
     align-items: center;
 }
 
-button:hover {
-    z-index: 1;
+a:hover, button:hover {
     background-color: #FCE5E5;
-    border: 3px solid #D90F03;
     font-weight: 700;
     transition: all 120ms ease-in-out;
 }
 
 .pill {
-    color: var(--Red, #D90F03);
-    font-family: Raleway;
+    color: #D90F03;
+    font-family: 'Raleway', sans-serif;
     font-size: .85em;
     font-style: normal;
     font-weight: 600;
     line-height: 1em; /* 114.286% */
     text-transform: uppercase;
     padding: .5em 2em;
+    transition: all 120ms ease-in-out;
 }
 
 .navPill-whiteBg {
-    z-index: 1;
+    z-index: 3;
     background-color: #FFF;
     transition: all 120ms ease-in-out;
 }
 
 
 .navPill-pinkBg {
-    z-index: 1;
+    z-index: 3;
     background-color: rgb(255, 255, 255, .1);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
     border: 3px solid #D90F03;
     font-weight: 700;
     transition: all 120ms ease-in-out;
 }
+
+.HeaderCustom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em 5em 0em 5em;
+}
+
+.HeaderCustom .logo button {
+    border: none;
+    margin: .5em;
+}
+
+.HeaderCustom .pill button {
+    padding: .5em 1em;
+    border: 1px solid #D90F03;
+    text-transform: uppercase;
+    margin: .5em .5em .5em .5em;
+    transition: all 120ms ease-in-out;
+}
+
+.HeaderCustom .pill button:hover {
+    background-color: #FCE5E5;
+    font-weight: 700;
+    transition: all 120ms ease-in-out;
+}
+
+.Hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: .5em;
+    background-image: url("../constants/hero_bubbles.svg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+
+.Hero h1 {
+    font-size: 1em;
+    line-height: 1.15em;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: .5em;
+}
+
+.Hero h2 {
+    font-size: .35em;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1em; /* 127.273% */
+    text-transform: capitalize;
+    line-height: 1.25em;
+}
+
+.Hero h1, .Hero h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #002555;
+}
+
+.Hero .hero-content {
+    font-family: Merriweather, serif;
+    font-size: .28em;
+    font-weight: 400;
+    margin: 2em 0em 1.5em 0em;
+    width: 50%;
+    text-overflow: balance;
+    text-align: center;
+}
+
+.Hero .get-started button {
+    border-radius: 24px;
+    border: 2px solid #D90F03;
+    background: #FFF;
+    display: inline-flex;
+    align-items: center;
+    font-size: .25em;
+    margin-top: 1em;
+}
+
+.Hero .get-started button:hover {
+    background-color: #FCE5E5;
+    font-weight: 700;
+    transition: all 120ms ease-in-out;
+}
+
+.Hero .get-started {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Hero .get-started .hero-vert-line {
+    margin-top: .5em;
+}
+
+.Hero .hero-bubbles {
+    padding: 0;
+    margin: 0;
+    width: 100% !important;
+    z-index: 0;
+}
+
+.FooterNav {
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0px -5px 10px 10px rgba(72, 79, 88, 0.10);
+    width: 100%;
+    height: 6em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+    background-color: #FFF;
+}
+
