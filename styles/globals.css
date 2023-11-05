@@ -144,6 +144,7 @@ a:hover, button:hover {
     align-items: center;
     font-size: .25em;
     margin-top: 1em;
+    margin-bottom: 1.5em;
 }
 
 .Hero .get-started button:hover {

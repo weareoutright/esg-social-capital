@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { document, window } from 'browser-monads-ts'
 import Image from 'next/image'
 import HOME_BTN from "../constants/home_btn.svg"
+import SHARE_BTN from "../constants/share_btn.svg"
 import Link from 'next/link'
 
 const FooterNav = () => {
@@ -88,7 +89,7 @@ const FooterNav = () => {
         <button className={`pill ${navPillLayFoundation}`}>lay the foundation</button>
         <button className={`pill ${navPillDesign}`}>design the supports</button>
         <button className={`pill ${navPillExecEval}`}>execute & evaluate</button>
-        <button className={`pill ${navPillShare}`}>share</button>
+        <Link href="/" className={`pill ${navPillShare}`}><Image src={SHARE_BTN} alt="Share"/></Link>
     </div>
   )
 }
