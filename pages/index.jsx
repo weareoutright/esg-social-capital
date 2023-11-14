@@ -1,18 +1,24 @@
-import { setOutgoingHeaders } from '@pantheon-systems/wordpress-kit';
+// import { setOutgoingHeaders } from '@pantheon-systems/wordpress-kit';
 import { NextSeo } from 'next-seo';
-import { PostGrid } from '../components/grid';
+// import { PostGrid } from '../components/grid';
 import Layout from '../components/layout';
-import { getFooterMenu } from '../lib/Menus';
-import { getLatestPosts } from '../lib/Posts';
+// import { getFooterMenu } from '../lib/Menus';
+// import { getLatestPosts } from '../lib/Posts';
 import Head from 'next/head';
 
 import styles from './index.module.css';
 import Hero from '../components/Hero';
+import WhySCMatters from '../components/WhySCMatters';
+import LeadersInTheField from '../components/LeadersInTheField';
+import MapArea from '../components/MapArea';
 
 export default function Home({ menuItems, posts }) {
 	const HomepageHeader = () => (
 		<div className={`${styles.header} font-extrabold text-center w-fit`}>
 			<Hero />
+			<WhySCMatters />
+			<LeadersInTheField />
+			<MapArea />
 		</div>
 	);
 
@@ -20,7 +26,7 @@ export default function Home({ menuItems, posts }) {
 		<>
 		<Head>
 			<link rel="preconnect" href="https://fonts.googleapis.com" />
-			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
 			<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
 		</Head>
 
@@ -38,17 +44,17 @@ export default function Home({ menuItems, posts }) {
 	);
 }
 
-export async function getServerSideProps({ res }) {
-	const { menuItems, menuItemHeaders } = await getFooterMenu();
-	const { posts, headers: postHeaders } = await getLatestPosts(12);
+// export async function getServerSideProps({ res }) {
+// 	const { menuItems, menuItemHeaders } = await getFooterMenu();
+// 	const { posts, headers: postHeaders } = await getLatestPosts(12);
 
-	const headers = [menuItemHeaders, postHeaders];
-	setOutgoingHeaders({ headers, res });
+// 	const headers = [menuItemHeaders, postHeaders];
+// 	setOutgoingHeaders({ headers, res });
 
-	return {
-		props: {
-			menuItems,
-			posts,
-		},
-	};
-}
+// 	return {
+// 		props: {
+// 			menuItems,
+// 			posts,
+// 		},
+// 	};
+// }

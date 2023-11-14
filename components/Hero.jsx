@@ -1,17 +1,17 @@
 import React from 'react'
 import Image from 'next/image'
-import HERO_BUBBLES from "../constants/hero_bubbles.svg"
+import Link from 'next/link'
 import VERT_LINE from "../constants/vert_line.svg"
 
 const Hero = () => {
   return (
-    <div className="Hero">
+    <div className="Hero" id="hero">
         <h1>
             Cultivating Career<br />Connections
         </h1>
-        <h2>
+        <h4>
         A Framework for Building, Strengthening, and<br /> Mobilizing Students’ Social Capital
-        </h2>
+        </h4>
         <div className="hero-content">
             <p>Who helped you get to where you are now? How have you helped others get to where they are?</p>
             <br />
@@ -19,7 +19,7 @@ const Hero = () => {
 
         </div>
         <div className="get-started">
-            <button className="pill">Get Started</button>
+            <Link className="pill" href="#whyscmatters" scroll={false}>Get Started</Link>
             <Image className="hero-vert-line" src={VERT_LINE} />
         </div>
     </div>
