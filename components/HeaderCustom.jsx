@@ -10,7 +10,7 @@ const HeaderCustom = () => {
         </div>
 
         <div className="pill">
-            <button>Resources</button>
+            <button>DOWNLOAD PDF</button>
             <button>Share</button>
         </div>
     </div>
