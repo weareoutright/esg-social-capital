@@ -1,5 +1,9 @@
 import React from 'react'
 import { CustomPlaceholder } from 'react-placeholder-image'
+import Image from 'next/image'
+import INFO_AND_STATS from "../constants/info_and_stats.svg"
+import Link from 'next/link'
+import CAROUSEL from "../constants/carousel.svg"
 
 const LeadersInTheField = () => {
   return (
@@ -9,13 +13,10 @@ const LeadersInTheField = () => {
         </h3>
         <small>Click to play video</small>
         <div className="video-carousel">
-            <CustomPlaceholder height={300} 
-              width={700}
-              backgroundColor="#D3D3D3"
-              textColor="#ffffff"
-              text="a carousel will live here"            
-            />
+            <Image src={CAROUSEL} />
         </div>
+        <small className="first-last">First Last</small>
+        <small>Title or soundbyte</small>
         <div className="content-justify">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed soluta molestias totam sapiente animi fugiat ipsa dolor numquam error quae mollitia consequuntur porro natus beatae, minus impedit quaerat? Consequuntur, quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit enim earum sint magni modi iste error sapiente illum, quisquam, non itaque et? Animi voluptatibus veniam ratione ut adipisci delectus quidem.
             </p>
@@ -25,12 +26,9 @@ const LeadersInTheField = () => {
             </p>
         </div>
         <div className="info-and-stats">
-            <CustomPlaceholder height={300} 
-              width={700}
-              backgroundColor="#D3D3D3"
-              textColor="#ffffff"
-              text="stats will live here"            
-            />
+            <Link className="info-and-stats-img-link" href="https://www.linkedin.com/pulse/new-survey-reveals-85-all-jobs-filled-via-networking-lou-adler/" target='_blank' rel='noreferrer'>
+                <Image src={INFO_AND_STATS} />
+            </Link>
         </div>
         <div className="content-justify">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed soluta molestias totam sapiente animi fugiat ipsa dolor numquam error quae mollitia consequuntur porro natus beatae, minus impedit quaerat? Consequuntur, quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit enim earum sint magni modi iste error sapiente illum, quisquam, non itaque et? Animi voluptatibus veniam ratione ut adipisci delectus quidem.

@@ -7,7 +7,7 @@
 }
 
 body {
-    height: 465vh;
+    height: 470vh;
     margin-bottom: 20em !important;
     font-family: 'Merriweather', serif;
     color: #002555;
@@ -250,9 +250,31 @@ a:hover, button:hover {
     text-overflow: balance;
 }
 
-/* .LeadersInTheField .video-carousel {
+.LeadersInTheField .video-carousel {
+    margin-bottom: .25em;
+}
 
-} */
+.LeadersInTheField .info-and-stats .info-and-stats-img-link {
+    border: none;
+}
+
+.LeadersInTheField .info-and-stats .info-and-stats-img-link:hover {
+    background-color: transparent;
+}
+
+.LeadersInTheField small {
+    margin: 0;
+    margin-top: .5em;
+    margin-bottom: .25em;
+}
+
+.LeadersInTheField .first-last {
+    font-family: "Raleway" !important;
+    font-weight: 600;
+    font-size: .35em !important;
+    margin-bottom: 0 !important;
+    font-style: italic ;
+}
 
 .MapArea .red-line-end {
     margin-top: 1em;

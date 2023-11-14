@@ -3,17 +3,13 @@ import { CustomPlaceholder } from 'react-placeholder-image'
 import Image from 'next/image'
 import Link from 'next/link'
 import RED_LINE_END from "../constants/red_line_end.svg"
+import MAP from "../constants/map.svg"
 
 const MapArea = () => {
   return (
     <div className="MapArea container-custom">
         <div className="map">
-            <CustomPlaceholder height={300} 
-              width={700}
-              backgroundColor="#D3D3D3"
-              textColor="#ffffff"
-              text="a map will live here"            
-            />
+            <Image src={MAP} />
         </div>
         <Image className="red-line-end" src={RED_LINE_END} />
         <div className="content-justify">
