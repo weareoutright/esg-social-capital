@@ -2,14 +2,14 @@ import React from 'react'
 import { CustomPlaceholder } from 'react-placeholder-image'
 import Image from 'next/image'
 import Link from 'next/link'
-import RED_LINE_END from "../constants/red_line_end.svg"
-import MAP from "../constants/map.svg"
+import RED_LINE_END from "../../constants/red_line_end.svg"
+import MAP from "../../constants/map.svg"
 
 const MapArea = () => {
   return (
     <div className="MapArea container-custom">
         <div className="map">
-            <Image src={MAP} alt="Map of USA"/>
+            <Image src={MAP} alt="Map of USA" priority={true}/>
         </div>
         <Image className="red-line-end" src={RED_LINE_END} alt="" />
         <div className="content-justify">

@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import SMALL_RED_LINE from "../constants/small_red_line.svg"
+import SMALL_RED_LINE from "../../constants/small_red_line.svg"
 
 const WhySCMatters = () => {
   return (

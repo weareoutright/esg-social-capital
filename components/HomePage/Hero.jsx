@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import VERT_LINE from "../constants/vert_line.svg"
+import VERT_LINE from "../../constants/vert_line.svg"
 
 const Hero = () => {
   return (
