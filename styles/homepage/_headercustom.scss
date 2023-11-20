@@ -1,0 +1,25 @@
+.HeaderCustom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em 5em 0em 5em;
+}
+
+.HeaderCustom .logo button {
+    border: none;
+    margin: .5em;
+}
+
+.HeaderCustom .pill button {
+    padding: .5em 1em;
+    border: 1px solid #D90F03;
+    text-transform: uppercase;
+    margin: .5em .5em .5em .5em;
+    transition: all 120ms ease-in-out;
+}
+
+.HeaderCustom .pill button:hover {
+    background-color: #FCE5E5;
+    font-weight: 900;
+    transition: all 120ms ease-in-out;
+}

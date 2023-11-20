@@ -1,0 +1,32 @@
+.LeadersInTheField h3 {
+    width: 50%;
+    text-wrap: wrap;
+    text-overflow: balance;
+}
+
+.LeadersInTheField .video-carousel {
+    margin-bottom: .25em;
+}
+
+.LeadersInTheField .info-and-stats .info-and-stats-img-link {
+    border: none;
+}
+
+.LeadersInTheField .info-and-stats .info-and-stats-img-link:hover {
+    background-color: transparent;
+}
+
+.LeadersInTheField small {
+    margin: 0;
+    margin-top: .5em;
+    margin-bottom: .25em !important;
+}
+
+.LeadersInTheField .first-last {
+    font-family: "Raleway" !important;
+    font-weight: 600;
+    font-size: .35em !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    font-style: italic;
+}

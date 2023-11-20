@@ -11,8 +11,6 @@ import Hero from '../components/HomePage/Hero';
 import WhySCMatters from '../components/HomePage/WhySCMatters';
 import LeadersInTheField from '../components/HomePage/LeadersInTheField';
 import MapArea from '../components/HomePage/MapArea';
-import LayTheFoundationPage from './laythefoundation';
-import FooterNav from '../components/FooterNav';
 
 export default function Home({ menuItems, posts }) {
 	const HomepageHeader = () => (

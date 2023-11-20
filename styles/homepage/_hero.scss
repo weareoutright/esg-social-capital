@@ -1,0 +1,77 @@
+.Hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: .5em;
+    background-image: url("../../constants/hero_bubbles_1.svg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+
+.Hero h1 {
+    font-size: 1em;
+    line-height: 1.15em;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: .5em;
+}
+
+.Hero h4 {
+    font-size: .35em;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1em; /* 127.273% */
+    text-transform: capitalize;
+    line-height: 1.25em;
+}
+
+.Hero h1, .Hero h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #002555;
+}
+
+.Hero .hero-content {
+    font-family: Merriweather, serif;
+    font-size: .28em;
+    font-weight: 400;
+    margin: 2em 0em 1.5em 0em;
+    width: 55%;
+    text-overflow: balance;
+    text-align: center;
+}
+
+.Hero .get-started a {
+    border-radius: 24px;
+    border: 2px solid #D90F03;
+    background: #FFF;
+    display: inline-flex;
+    align-items: center;
+    font-size: .3em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    padding: .85em 1.5em;
+}
+
+.Hero .get-started a:hover {
+    background-color: #FCE5E5;
+    font-weight: 900;
+    transition: all 50ms ease-in;
+}
+
+.Hero .get-started {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Hero .get-started .hero-vert-line {
+    margin-top: .5em;
+}
+
+.Hero .hero-bubbles {
+    padding: 0;
+    margin: 0;
+    width: 100% !important;
+    z-index: 0;
+}

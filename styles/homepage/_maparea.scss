@@ -1,0 +1,21 @@
+.MapArea .red-line-end {
+    margin-top: 1em;
+    margin-bottom: .05em;
+}
+
+.MapArea .learn-how a {
+    border-radius: 24px;
+    border: 2px solid #D90F03;
+    background: #FFF;
+    display: inline-flex;
+    align-items: center;
+    font-size: .3em;
+    margin-bottom: 1.5em;
+    padding: .85em 1.5em;
+}
+
+.MapArea .learn-how a:hover {
+    background-color: #FCE5E5;
+    font-weight: 800;
+    transition: all 50ms ease-in;
+}
