@@ -9,9 +9,9 @@ const MapArea = () => {
   return (
     <div className="MapArea container-custom">
         <div className="map">
-            <Image src={MAP} />
+            <Image src={MAP} alt="Map of USA"/>
         </div>
-        <Image className="red-line-end" src={RED_LINE_END} />
+        <Image className="red-line-end" src={RED_LINE_END} alt="" />
         <div className="content-justify">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, atque tenetur perspiciatis excepturi dignissimos quam accusamus voluptates reprehenderit laboriosam, blanditiis quod, et ut numquam officia iste? At beatae facilis quaerat.

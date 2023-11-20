@@ -20,7 +20,7 @@ const Hero = () => {
         </div>
         <div className="get-started">
             <Link className="pill" href="#whyscmatters" scroll={false}>Get Started</Link>
-            <Image className="hero-vert-line" src={VERT_LINE} />
+            <Image className="hero-vert-line" src={VERT_LINE} alt=""/>
         </div>
     </div>
   )

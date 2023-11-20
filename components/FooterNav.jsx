@@ -29,7 +29,6 @@ const FooterNav = () => {
 
     useEffect(() => {
         setNavProgress((offset / (height/2)) * 100)
-        console.log(navProgress)
         if (navProgress < 7) {
             setNavPillHome('navPill-whiteBg')
             setNavPillLayFoundation('navPill-whiteBg')

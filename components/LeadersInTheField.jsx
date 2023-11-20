@@ -13,7 +13,7 @@ const LeadersInTheField = () => {
         </h3>
         <small>Click to play video</small>
         <div className="video-carousel">
-            <Image src={CAROUSEL} />
+            <Image src={CAROUSEL} alt=""/>
         </div>
         <small className="first-last">First Last</small>
         <small>Title or soundbyte</small>
@@ -27,7 +27,7 @@ const LeadersInTheField = () => {
         </div>
         <div className="info-and-stats">
             <Link className="info-and-stats-img-link" href="https://www.linkedin.com/pulse/new-survey-reveals-85-all-jobs-filled-via-networking-lou-adler/" target='_blank' rel='noreferrer'>
-                <Image src={INFO_AND_STATS} />
+                <Image src={INFO_AND_STATS} alt="Infographic on Social Capital Stats"/>
             </Link>
         </div>
         <div className="content-justify">

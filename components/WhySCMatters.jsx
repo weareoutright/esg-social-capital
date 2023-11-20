@@ -16,7 +16,7 @@ const WhySCMatters = () => {
             <span className="red-highlight">Social capital</span>—or, simply put, ‘who we know’—can <span className='red-highlight'>unlock</span> and <span className='red-highlight'>open doors</span> to economic and career success for all learners.
             </p>
         </h4>
-        <Image className="whyscmatters-vert-line" src={SMALL_RED_LINE} />
+        <Image className="whyscmatters-vert-line" src={SMALL_RED_LINE} alt="" />
     </div>
   )
 }
