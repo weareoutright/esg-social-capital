@@ -5,8 +5,9 @@ import HOME_BTN from "../constants/home_btn.svg"
 import RESOURCES_BTN from "../constants/auto_stories.svg"
 import Link from 'next/link'
 
-const FooterNav = () => {
-    const [navProgress, setNavProgress] = useState(0)
+const FooterNav = ({currentPage}) => {
+    const [navProgress, setNavProgress] = useState(12)
+    const [buttonProgress, setButtonProgress] = useState(50)
     const [offset, setOffset] = useState(0);
     const [navPillHome, setNavPillHome] = useState('navPill-whiteBg')
     const [navPillLayFoundation, setNavPillLayFoundation] = useState('navPill-whiteBg')
@@ -28,8 +29,8 @@ const FooterNav = () => {
       }, []);
 
     useEffect(() => {
-        setNavProgress((offset / (height/2)) * 100)
-        if (navProgress < 7) {
+        // setNavProgress((offset / (height/2)) * 100)
+        if (currentPage === 'home') {
             setNavPillHome('navPill-whiteBg')
             setNavPillLayFoundation('navPill-whiteBg')
             setNavPillDesign('navPill-whiteBg')
@@ -37,7 +38,8 @@ const FooterNav = () => {
             setNavPillShare('navPill-whiteBg')
         }
 
-        if (navProgress > 7 && navProgress < 15) {
+        if (currentPage === "lay-the-foundation") {
+            setNavProgress(30)
             setNavPillHome('navPill-pinkBg')
             setNavPillLayFoundation('navPill-whiteBg')
             setNavPillDesign('navPill-whiteBg')
@@ -45,7 +47,8 @@ const FooterNav = () => {
             setNavPillShare('navPill-whiteBg')
         }
 
-        if (navProgress > 25 && navProgress < 35) {
+        if (currentPage === "design-the-supports") {
+            setNavProgress(55)
             setNavPillHome('navPill-pinkBg')
             setNavPillLayFoundation('navPill-pinkBg')
 
@@ -54,7 +57,8 @@ const FooterNav = () => {
             setNavPillShare('navPill-whiteBg')
         }
 
-        if (navProgress > 45 && navProgress < 55) {
+        if (currentPage === "execute-and-evaluate") {
+            setNavProgress(80)
             setNavPillHome('navPill-pinkBg')
             setNavPillLayFoundation('navPill-pinkBg')
             setNavPillDesign('navPill-pinkBg')
@@ -63,21 +67,13 @@ const FooterNav = () => {
             setNavPillShare('navPill-whiteBg')
         }
 
-        if (navProgress > 65 && navProgress < 75) {
+        if (currentPage === "resources") {
+            setNavProgress(100)
             setNavPillHome('navPill-pinkBg')
             setNavPillLayFoundation('navPill-pinkBg')
             setNavPillDesign('navPill-pinkBg')
             setNavPillExecEval('navPill-pinkBg')
-
             setNavPillShare('navPill-whiteBg')
-        }
-
-        if (navProgress > 85 && navProgress < 100) {
-            setNavPillHome('navPill-pinkBg')
-            setNavPillLayFoundation('navPill-pinkBg')
-            setNavPillDesign('navPill-pinkBg')
-            setNavPillExecEval('navPill-pinkBg')
-            setNavPillShare('navPill-pinkBg')
         }
     }, [offset])
 

@@ -3,14 +3,14 @@ import FooterNav from './FooterNav';
 import styles from './layout.module.css';
 import HeaderCustom from './HeaderCustom';
 
-export default function Layout({ children, preview }) {
+export default function Layout({ children, preview, currentPage }) {
 
 	return (
 		<div className={`${styles.layout} flex flex-col`}>
 			{preview && <PreviewRibbon />}
 			<HeaderCustom />
 			<main className="mb-auto">{children}</main>
-			<FooterNav />
+			<FooterNav currentPage={currentPage}/>
 		</div>
 	);
 }
