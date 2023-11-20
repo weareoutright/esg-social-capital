@@ -1,3 +1,21 @@
+progress {
+    width: 95%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 2;
+}
+
+progress::-webkit-progress-bar {
+    background-color: transparent;
+    height: 1px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #D90F03;
+    box-shadow: 0px -.5px 0px 1px #D90F03
+}
+
 .FooterNav {
     position: fixed;
     bottom: 0;
@@ -10,4 +28,7 @@
     justify-content: space-evenly;
     z-index: 1;
     background-color: #FFF;
+    background-image: url("../constants/footernav-progress.svg");
+    background-position: center left;
+    background-repeat: no-repeat;
 }
