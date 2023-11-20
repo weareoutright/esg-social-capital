@@ -18,7 +18,7 @@ const MapArea = () => {
             </p>
         </div>
         <div className="learn-how">
-            <Link className="pill" href="#hero" scroll={false}>Learn How</Link>
+            <Link className="pill" href="/laythefoundation" scroll={false}>Learn How</Link>
         </div>
         <small>Continue to Phase 1:<br />
         Lay the Foundation</small>

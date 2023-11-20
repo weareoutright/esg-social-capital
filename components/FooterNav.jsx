@@ -85,7 +85,7 @@ const FooterNav = () => {
     <div className="FooterNav">
         <progress value={navProgress} max="100"></progress>
         <Link href="/" className={`pill ${navPillHome}`}><Image src={HOME_BTN} alt="Home"/></Link>
-        <Link href="/laythefoundations" className={`pill ${navPillLayFoundation}`}>lay the foundation</Link>
+        <Link href="/laythefoundation" className={`pill ${navPillLayFoundation}`}>lay the foundation</Link>
         <Link href="/designthesupports" className={`pill ${navPillDesign}`}>design the supports</Link>
         <Link href="/executeandevaluate" className={`pill ${navPillExecEval}`}>execute & evaluate</Link>
         <Link href="/resources" className={`pill ${navPillShare}`}><Image src={RESOURCES_BTN} alt="Share"/></Link>

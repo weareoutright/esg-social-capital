@@ -5,9 +5,13 @@
     padding: 1.5em 5em 0em 5em;
 }
 
-.HeaderCustom .logo button {
+.HeaderCustom .logo a {
     border: none;
     margin: .5em;
+}
+
+.HeaderCustom .logo a:hover {
+    background-color: transparent;
 }
 
 .HeaderCustom .pill button {
