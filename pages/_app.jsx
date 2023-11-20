@@ -1,4 +1,4 @@
-import '../styles/globals.scss';
+import '../styles/styles.scss';
 import '@pantheon-systems/nextjs-kit/style.css';
 
 function MyApp({ Component, pageProps }) {
