@@ -7,7 +7,6 @@ import Link from 'next/link'
 
 const FooterNav = ({currentPage}) => {
     const [navProgress, setNavProgress] = useState(12)
-    const [buttonProgress, setButtonProgress] = useState(50)
     const [offset, setOffset] = useState(0);
     const [navPillHome, setNavPillHome] = useState('navPill-whiteBg')
     const [navPillLayFoundation, setNavPillLayFoundation] = useState('navPill-whiteBg')
@@ -80,11 +79,11 @@ const FooterNav = ({currentPage}) => {
   return (
     <div className="FooterNav">
         <progress value={navProgress} max="100"></progress>
-        <Link href="/" className={`pill ${navPillHome}`}><Image src={HOME_BTN} alt="Home"/></Link>
-        <Link href="/laythefoundation" className={`pill ${navPillLayFoundation}`}>lay the foundation</Link>
-        <Link href="/designthesupports" className={`pill ${navPillDesign}`}>design the supports</Link>
-        <Link href="/executeandevaluate" className={`pill ${navPillExecEval}`}>execute & evaluate</Link>
-        <Link href="/resources" className={`pill ${navPillShare}`}><Image src={RESOURCES_BTN} alt="Share"/></Link>
+        <Link href="/" className={`pill ${navPillHome}`} ><Image src={HOME_BTN} alt="Home"/></Link>
+        <Link href="laythefoundation" className={`pill ${navPillLayFoundation}`}>lay the foundation</Link>
+        <Link href="designthesupports" className={`pill ${navPillDesign}`}>design the supports</Link>
+        <Link href="executeandevaluate" className={`pill ${navPillExecEval}`}>execute & evaluate</Link>
+        <Link href="resources" className={`pill ${navPillShare}`}><Image src={RESOURCES_BTN} alt="Share"/></Link>
     </div>
   )
 }
