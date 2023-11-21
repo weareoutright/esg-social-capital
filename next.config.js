@@ -56,6 +56,9 @@ const nextConfig = {
 	},
 	output: 'standalone',
 	transpilePackages: ['@pantheon-systems/nextjs-kit'],
+	sassOptions: {
+		includePaths: [path.join(__dirname, 'styles')],
+	},
 };
 
 module.exports = nextConfig;

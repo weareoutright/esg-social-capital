@@ -1,5 +1,4 @@
 import React from 'react'
-import { CustomPlaceholder } from 'react-placeholder-image'
 import Image from 'next/image'
 import INFO_AND_STATS from "../../constants/info_and_stats.svg"
 import Link from 'next/link'

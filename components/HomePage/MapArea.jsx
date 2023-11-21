@@ -1,5 +1,4 @@
 import React from 'react'
-import { CustomPlaceholder } from 'react-placeholder-image'
 import Image from 'next/image'
 import Link from 'next/link'
 import RED_LINE_END from "../../constants/red_line_end.svg"

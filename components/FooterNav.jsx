@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { document, window } from 'browser-monads-ts'
+import {document, window} from "browser-monads-ts"
 import Image from 'next/image'
 import HOME_BTN from "../constants/home_btn.svg"
 import RESOURCES_BTN from "../constants/auto_stories.svg"
