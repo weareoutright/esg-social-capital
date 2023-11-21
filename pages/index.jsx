@@ -1,9 +1,8 @@
-// import { setOutgoingHeaders } from '@pantheon-systems/wordpress-kit';
+import { setOutgoingHeaders } from '@pantheon-systems/wordpress-kit';
 import { NextSeo } from 'next-seo';
-// import { PostGrid } from '../components/grid';
 import Layout from '../components/layout';
-// import { getFooterMenu } from '../lib/Menus';
-// import { getLatestPosts } from '../lib/Posts';
+import { getFooterMenu } from '../lib/Menus';
+import { getLatestPosts } from '../lib/Posts';
 import Head from 'next/head';
 
 import styles from './index.module.css';
@@ -41,17 +40,17 @@ export default function Home({ menuItems, posts }) {
 	);
 }
 
-// export async function getServerSideProps({ res }) {
-// 	const { menuItems, menuItemHeaders } = await getFooterMenu();
-// 	const { posts, headers: postHeaders } = await getLatestPosts(12);
+export async function getServerSideProps({ res }) {
+	const { menuItems, menuItemHeaders } = await getFooterMenu();
+	const { posts, headers: postHeaders } = await getLatestPosts(12);
 
-// 	const headers = [menuItemHeaders, postHeaders];
-// 	setOutgoingHeaders({ headers, res });
+	const headers = [menuItemHeaders, postHeaders];
+	setOutgoingHeaders({ headers, res });
 
-// 	return {
-// 		props: {
-// 			menuItems,
-// 			posts,
-// 		},
-// 	};
-// }
+	return {
+		props: {
+			menuItems,
+			posts,
+		},
+	};
+}
