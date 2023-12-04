@@ -2,14 +2,31 @@ import React from 'react'
 import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
 import Head from 'next/head';
+import HeaderCustom from '../components/HeaderCustom';
+import Image from 'next/image';
+import PHASE1_TITLE_IMG from "../constants/phase1images/p1-title-img.svg"
 
 import styles from './index.module.css';
 
 export default function LayTheFoundationPage() {
 	const LayTheFoundation = () => (
-		<div className={`${styles.header} font-extrabold text-center w-fit`}>
-			Lay The Foundation
+		<>
+		<HeaderCustom homePageHeader={false}/>
+		<div className={`${styles.header} font-extrabold text-center w-fit LayTheFoundation`}>
+			<div className="sidebar">
+				<span></span>
+			</div>
+			<div className='title-div'>
+				<div>
+					<h3>Lay The Foundation</h3>
+					<p className='content-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sint est vel. Quis eligendi in enim sequi sint dolore est quos explicabo nemo labore, distinctio doloribus et temporibus minus! Dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, blanditiis corporis distinctio aliquid minima unde perferendis? Quibusdam laboriosam error totam et aspernatur amet voluptate recusandae nesciunt, fugiat, provident nobis libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptatibus obcaecati itaque quas sit. Cum nihil ad ipsa sapiente neque alias inventore perferendis eaque minus eveniet tempore eum, hic nisi?</p>
+				</div>
+				<div>
+					<Image src={PHASE1_TITLE_IMG} alt="" />
+				</div>
+			</div>
 		</div>
+		</>
 	);
 
 	return (

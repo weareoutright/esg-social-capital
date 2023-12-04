@@ -8,7 +8,6 @@ export default function Layout({ children, preview, currentPage }) {
 	return (
 		<div className={`${styles.layout} flex flex-col`}>
 			{preview && <PreviewRibbon />}
-			<HeaderCustom />
 			<main className="mb-auto">{children}</main>
 			<FooterNav currentPage={currentPage}/>
 		</div>

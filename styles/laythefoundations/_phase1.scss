@@ -1,0 +1,20 @@
+.LayTheFoundation {
+    display: flex;
+    flex-direction: row-reverse;
+    .sidebar {
+        width: 25svw;
+        background-color: $blue;
+        height: 100svh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .title-div {
+        width: 75svw;
+        display: flex;
+        flex-direction: row;
+    }
+}
+

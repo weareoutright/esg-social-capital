@@ -2,12 +2,16 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@import "./variables.scss";
+
 @import "_headercustom.scss";
 @import "./homepage/_hero.scss";
 @import "./homepage/_whyscmatters.scss";
 @import "./homepage/_leadersinthefield.scss";
 @import "./homepage/_maparea.scss";
 @import "_footernav.scss";
+
+@import "./laythefoundations/_phase1.scss";
 
 * {
     scroll-behavior: smooth;
@@ -114,3 +118,15 @@ a:hover, button:hover {
     transition: all 120ms ease-in-out;
 }
 
+.non-home-header {
+    button {
+        border: 1px solid #fff !important;
+        color: #fff !important;
+        font-weight: 400;
+    }
+
+    button:hover {
+        border: 1px solid $red !important;
+        color: $red !important;
+    }
+}
