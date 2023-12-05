@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import { getFooterMenu } from '../lib/Menus';
 import { getLatestPosts } from '../lib/Posts';
 import Head from 'next/head';
+import HeaderCustom from '../components/HeaderCustom';
 
 import styles from './index.module.css';
 import Hero from '../components/HomePage/Hero';
@@ -13,12 +14,15 @@ import MapArea from '../components/HomePage/MapArea';
 
 export default function Home({ menuItems, posts }) {
 	const HomepageHeader = () => (
+		<>
+		<HeaderCustom />
 		<div className={`${styles.header} font-extrabold text-center w-fit`}>
 			<Hero />
 			<WhySCMatters />
 			<LeadersInTheField />
 			<MapArea />
 		</div>
+		</>
 	);
 
 	return (

@@ -2,14 +2,31 @@ import React from 'react'
 import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
 import Head from 'next/head';
+import Image from 'next/image';
+import HeaderCustom from '../components/HeaderCustom';
 
 import styles from './index.module.css';
+import PhaseOneTitle from '../components/LayTheFoundations/PhaseOneTitle';
+import PhaseOneContent from "../components/LayTheFoundations/PhaseOneContent"
+import NextPage from "../components/NextPage"
+
+import FOLDED_CORNER from "../constants/phase-corner-fold.svg"
+
 
 export default function LayTheFoundationPage() {
+	const nextPage = "Phase 2: Design The Supports"
+	const nextPageAnchorLink = "/designthesupports"
+
 	const LayTheFoundation = () => (
-		<div className={`${styles.header} font-extrabold text-center w-fit`}>
-			Lay The Foundation
+		<>
+		<div className="layout_folded_corner"><Image src={FOLDED_CORNER} alt="" /></div>
+		<HeaderCustom homePageHeader={false}/>
+		<div className={`${styles.header} font-extrabold text-center w-fit LayTheFoundation`}>
+			<PhaseOneTitle />
+			<PhaseOneContent/>
 		</div>
+		<NextPage nextPage={nextPage} nextPageAnchorLink={nextPageAnchorLink}/>
+		</>
 	);
 
 	return (
