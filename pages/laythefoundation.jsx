@@ -3,35 +3,20 @@ import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
 import Head from 'next/head';
 import HeaderCustom from '../components/HeaderCustom';
-import Image from 'next/image';
-
-import PIN from "../constants/phase1images/phase-pin.svg"
-import PHASE1_TITLE_IMG from "../constants/phase1images/p1-title-img.svg"
 
 import styles from './index.module.css';
+import PhaseOneTitle from '../components/LayTheFoundations/PhaseOneTitle';
+import StickyNote from '../components/StickyNote';
+
+const testContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis assumenda, vitae itaque consectetur qui voluptas eaque sit saepe iste, impedit alias. Consequatur atque vel dolorum beatae perspiciatis autem magni quia?"
 
 export default function LayTheFoundationPage() {
 	const LayTheFoundation = () => (
 		<>
 		<HeaderCustom homePageHeader={false}/>
 		<div className={`${styles.header} font-extrabold text-center w-fit LayTheFoundation`}>
-			<div className="sidebar">
-				<span></span>
-			</div>
-			<div className='title-div'>
-				<div>
-				<p className="phase-pin"><Image src={PIN} alt="" /><span>PHASE 1</span></p>
-					<h3>Lay The Foundation</h3>
-					<p className='content-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sint est vel. Quis eligendi in enim sequi sint dolore est quos explicabo nemo labore, distinctio doloribus et temporibus minus! Dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, blanditiis corporis distinctio aliquid minima unde perferendis? Quibusdam laboriosam error totam et aspernatur amet voluptate recusandae nesciunt, fugiat, provident nobis libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptatibus obcaecati itaque quas sit. Cum nihil ad ipsa sapiente neque alias inventore perferendis eaque minus eveniet tempore eum, hic nisi?
-					<br />
-					<br />
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, nam aperiam? Fuga vel ab, nesciunt sed repudiandae distinctio est, dignissimos, sequi expedita molestiae cumque laborum modi illum animi neque maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt fugiat ipsum officiis. Nisi, molestias ipsum nulla, cumque accusamus assumenda tempora sint omnis neque sapiente minus unde obcaecati! Nemo, facere dicta.
-					</p>
-				</div>
-				<div className="phase1-title-img">
-					<Image src={PHASE1_TITLE_IMG} alt="" />
-				</div>
-			</div>
+			<PhaseOneTitle />
+			<StickyNote title="title" location="San Diego, CA" content={testContent} learnMore="www.google.com" />
 		</div>
 		</>
 	);

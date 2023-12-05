@@ -12,6 +12,7 @@
 @import "_footernav.scss";
 
 @import "./laythefoundations/_phase1.scss";
+@import "./stickyNote";
 
 * {
     scroll-behavior: smooth;
@@ -20,12 +21,12 @@
 body {
     height: fit-content;
     margin-bottom: 10em !important;
-    font-family: 'Merriweather', serif;
+    font-family: $mainFontface;
     color: $mainFont;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Raleway', sans-serif;
+    font-family: $secondaryFontface;
     color: $mainFont;
     text-transform: uppercase;
     line-height: 1em; /* 127.273% */
