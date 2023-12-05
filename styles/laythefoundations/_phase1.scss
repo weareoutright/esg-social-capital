@@ -3,6 +3,7 @@
     flex-direction: column;
     margin: 1em 1.25em !important;
     margin-right: 0em !important;
+    margin-bottom: 0em !important;
     .sidebar {
         width: 25svw;
         background-color: $blue;
@@ -123,6 +124,30 @@
                 color: $red;
             }
         }
+    }
+
+}
+
+.NextPage {
+    font-size: 1em;
+    width: 75vw;
+    text-align: right;
+    background-color: $blue;
+    padding: 3em 0em;
+    margin-bottom: -4em;
+    color: #fff;
+    span {
+        margin: 0em 1em;
+    }
+
+    .pill {
+        border: 2px solid #fff;
+        background-color: transparent;
+        color: #fff;
+        padding-right: .75em;
+        padding-left: .25em;
+        font-size: 1em;
+        margin-right: 1em;
     }
 }
 

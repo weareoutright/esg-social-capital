@@ -130,3 +130,13 @@ a:hover, button:hover {
         color: $red !important;
     }
 }
+
+.layout_folded_corner {
+    width: 75vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: absolute;
+}
+
