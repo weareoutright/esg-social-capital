@@ -1,13 +1,13 @@
 .StickyNote {
     background-color: $paleBlue;
-    width: 40%;
+    width: 100%;
     height: fit-content;
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: .5em;
-    margin: 1em 2em;
+    margin: .5em 0em;
 
     h6 {
         font-size: .5em !important;

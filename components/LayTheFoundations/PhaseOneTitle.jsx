@@ -15,9 +15,6 @@ const PhaseOneTitle = () => {
 				<p className="phase-pin"><Image src={PIN} alt="" /><span>PHASE 1</span></p>
 					<h3>Lay The Foundation</h3>
 					<p className='content-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sint est vel. Quis eligendi in enim sequi sint dolore est quos explicabo nemo labore, distinctio doloribus et temporibus minus! Dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, blanditiis corporis distinctio aliquid minima unde perferendis? Quibusdam laboriosam error totam et aspernatur amet voluptate recusandae nesciunt, fugiat, provident nobis libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptatibus obcaecati itaque quas sit. Cum nihil ad ipsa sapiente neque alias inventore perferendis eaque minus eveniet tempore eum, hic nisi?
-					<br />
-					<br />
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, nam aperiam? Fuga vel ab, nesciunt sed repudiandae distinctio est, dignissimos, sequi expedita molestiae cumque laborum modi illum animi neque maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt fugiat ipsum officiis. Nisi, molestias ipsum nulla, cumque accusamus assumenda tempora sint omnis neque sapiente minus unde obcaecati! Nemo, facere dicta.
 					</p>
 				</div>
 				<div className="phase1-title-img">

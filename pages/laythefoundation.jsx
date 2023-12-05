@@ -6,9 +6,10 @@ import HeaderCustom from '../components/HeaderCustom';
 
 import styles from './index.module.css';
 import PhaseOneTitle from '../components/LayTheFoundations/PhaseOneTitle';
-import StickyNote from '../components/StickyNote';
+import PhaseOneContent from "../components/LayTheFoundations/PhaseOneContent"
+// import StickyNote from '../components/StickyNote';
 
-const testContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis assumenda, vitae itaque consectetur qui voluptas eaque sit saepe iste, impedit alias. Consequatur atque vel dolorum beatae perspiciatis autem magni quia?"
+// const testContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis assumenda, vitae itaque consectetur qui voluptas eaque sit saepe iste, impedit alias. Consequatur atque vel dolorum beatae perspiciatis autem magni quia?"
 
 export default function LayTheFoundationPage() {
 	const LayTheFoundation = () => (
@@ -16,7 +17,7 @@ export default function LayTheFoundationPage() {
 		<HeaderCustom homePageHeader={false}/>
 		<div className={`${styles.header} font-extrabold text-center w-fit LayTheFoundation`}>
 			<PhaseOneTitle />
-			<StickyNote title="title" location="San Diego, CA" content={testContent} learnMore="www.google.com" />
+			<PhaseOneContent />
 		</div>
 		</>
 	);

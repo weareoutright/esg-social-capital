@@ -6,11 +6,10 @@
     .sidebar {
         width: 25svw;
         background-color: $blue;
-        height: 200svh;
-        position: absolute;
+        height: 100vh;
+        position: fixed;
         top: 0;
         right: 0;
-        bottom: 0;
         z-index: -1;
     }
     .title-div {
@@ -57,6 +56,67 @@
 
             img {
                 width: auto;
+            }
+        }
+    }
+}
+
+.PhaseOneContent {
+    margin: 1em 1.5em !important;
+    text-align: left;
+    .ActionStep {
+        padding: .5em 0em .5em .5em;
+        width: 45svw;
+        .action-step-title {
+            text-transform: uppercase;
+            font-family: $secondaryFontface;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: left;
+            font-size: .5em;
+            width: 100%;
+            h5 {
+                margin: 0em 1em;
+            }
+        }
+
+        .content-justify {
+            text-align: left;
+            width: 100%;
+        }
+
+        .tools, .stickyNotes {
+            margin: 1em auto;
+            display: flex;
+            flex-direction: column;
+
+            span {
+                font-size: .35em !important;
+                text-transform: uppercase;
+                font-family: $secondaryFontface;
+                letter-spacing: .25em;
+            }
+
+            a.Tool {
+                border: none;
+                font-size: 1em;
+                text-decoration: underline;
+                width: fit-content;
+                transition: all 200ms ease-in-out;
+
+                span {
+                    font-family: $secondaryFontface !important;
+                    text-transform: capitalize;
+                    font-weight: normal;
+                    font-style: italic;
+                    letter-spacing: 0em !important;
+                }
+            }
+
+            a.Tool:hover {
+                background-color: transparent;
+                color: $red;
             }
         }
     }
