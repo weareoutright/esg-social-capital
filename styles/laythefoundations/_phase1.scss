@@ -11,6 +11,10 @@
         top: 0;
         right: 0;
         z-index: -1;
+        background-image: url("../../constants/interactive-web.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     .title-div {
         margin: auto 0em auto 2em;
@@ -30,7 +34,7 @@
             margin: .5em 0em;
 
             img {
-                scale: 80%;
+                scale: 70%;
             }
         }
 
@@ -76,7 +80,7 @@
             text-align: left;
             font-size: .5em;
             width: 100%;
-            h5 {
+            .action-title {
                 margin: 0em 1em;
             }
         }

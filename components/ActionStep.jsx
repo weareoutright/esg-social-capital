@@ -6,10 +6,10 @@ import StickyNote from './StickyNote'
 const ActionStep = ({icon, title, description, toolsArr, stickyNotesArr}) => {
   return (
     <div className="ActionStep">
-        <p className="action-step-title">
+        <div className="action-step-title">
             <Image src={icon !== null ? icon : ""} alt=""/>
-            <h5>{title}</h5>
-        </p>
+            <h5 className='action-title'>{title}</h5>
+        </div>
         <p className="content-justify">
             {description}
         </p>
