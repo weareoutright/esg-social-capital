@@ -3,6 +3,7 @@ import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
 import { getFooterMenu } from '../lib/Menus';
 import { getLatestPosts } from '../lib/Posts';
+import { getPostByUri } from '../lib/Posts';
 import Head from 'next/head';
 import HeaderCustom from '../components/HeaderCustom';
 
@@ -12,7 +13,7 @@ import WhySCMatters from '../components/HomePage/WhySCMatters';
 import LeadersInTheField from '../components/HomePage/LeadersInTheField';
 import MapArea from '../components/HomePage/MapArea';
 
-export default function Home({ menuItems, posts }) {
+export default function Home({ menuItems, posts}) {
 	const HomepageHeader = () => (
 		<>
 		<HeaderCustom />

@@ -6,26 +6,39 @@ import Image from 'next/image';
 import HeaderCustom from '../components/HeaderCustom';
 
 import styles from './index.module.css';
-import PhaseOneTitle from '../components/LayTheFoundations/PhaseOneTitle';
-import PhaseOneContent from "../components/LayTheFoundations/PhaseOneContent"
+import PhaseTitle from '../components/PhaseTitle';
+import PhaseContent from "../components/PhaseContent"
 import NextPage from "../components/NextPage"
 
+import { PHASE1_CONTENT } from '../constants/jsonContent/phase1content';
+
 import FOLDED_CORNER from "../constants/phase-corner-fold.svg"
+import PIN from "../constants/phase1images/phase-pin.svg"
+import PHASE1_TITLE_IMG from "../constants/phase1images/p1-title-img.svg"
+import Phase1headerContent from '../components/LayTheFoundation/Phase1headerContent';
 
 
 export default function LayTheFoundationPage() {
-	const nextPage = "Phase 2: Design The Supports"
-	const nextPageAnchorLink = "/designthesupports"
+	const phaseInfo = {
+		headerSvg: PIN,
+		phaseNum: 1,
+		phaseTitle: "Lay The Foundation",
+		phaseHeaderContent: <Phase1headerContent />,
+		phaseHeaderImg: PHASE1_TITLE_IMG,
+		phaseContent: PHASE1_CONTENT,
+		nextPage: "Phase 2: Design The Supports",
+		nextPageAnchorLink: "/designthesupports"
+	}
 
 	const LayTheFoundation = () => (
 		<>
 		<div className="layout_folded_corner"><Image src={FOLDED_CORNER} alt="" /></div>
 		<HeaderCustom homePageHeader={false}/>
-		<div className={`${styles.header} font-extrabold text-center w-fit LayTheFoundation`}>
-			<PhaseOneTitle />
-			<PhaseOneContent/>
+		<div className={`${styles.header} font-extrabold text-center w-fit content-page LayTheFoundation`}>
+			<PhaseTitle headerSvg={phaseInfo.headerSvg} phaseNum={phaseInfo.phaseNum} phaseTitle={phaseInfo.phaseTitle} phaseHeaderContent={phaseInfo.phaseHeaderContent} phaseHeaderImg={phaseInfo.phaseHeaderImg}/>
+			<PhaseContent phaseContent={phaseInfo.phaseContent}/>	
 		</div>
-		<NextPage nextPage={nextPage} nextPageAnchorLink={nextPageAnchorLink}/>
+		<NextPage nextPage={phaseInfo.nextPage} nextPageAnchorLink={phaseInfo.nextPageAnchorLink}/>
 		</>
 	);
 
@@ -47,3 +60,18 @@ export default function LayTheFoundationPage() {
 		</>
 	);
 }
+
+// export async function getServerSideProps({ res }) {
+// 	const { menuItems, menuItemHeaders } = await getFooterMenu();
+// 	const { posts, headers: postHeaders } = await getLatestPosts(12);
+
+// 	const headers = [menuItemHeaders, postHeaders];
+// 	setOutgoingHeaders({ headers, res });
+
+// 	return {
+// 		props: {
+// 			menuItems,
+// 			posts,
+// 		},
+// 	};
+// }

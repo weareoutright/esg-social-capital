@@ -1,11 +1,10 @@
 import React from 'react'
-import { PHASE1_CONTENT } from '../../constants/phase1content'
-import ActionStep from '../ActionStep'
+import ActionStep from './ActionStep'
 
-const PhaseOneContent = () => {
+const PhaseContent = ({phaseContent}) => {
   return (
-    <div className="PhaseOneContent">
-        {PHASE1_CONTENT.map((step, index) => {
+    <div className="PhaseContent">
+        {phaseContent.map((step, index) => {
             return <ActionStep 
             key={index}
             icon={step.icon}
@@ -19,4 +18,4 @@ const PhaseOneContent = () => {
   )
 }
 
-export default PhaseOneContent
+export default PhaseContent

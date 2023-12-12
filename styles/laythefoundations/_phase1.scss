@@ -1,5 +1,3 @@
-// add to do
-
 .LayTheFoundation {
     display: flex;
     flex-direction: column;
@@ -14,7 +12,7 @@
         top: 0;
         right: 0;
         z-index: -1;
-        background-image: url("../../constants/interactive-web.svg");
+        background-image: url("../../constants/radial.svg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -65,91 +63,6 @@
                 width: auto;
             }
         }
-    }
-}
-
-.PhaseOneContent {
-    margin: 1em 1.5em !important;
-    text-align: left;
-    .ActionStep {
-        padding: .5em 0em .5em .5em;
-        width: 45svw;
-        .action-step-title {
-            text-transform: uppercase;
-            font-family: $secondaryFontface;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            text-align: left;
-            font-size: .5em;
-            width: 100%;
-            .action-title {
-                margin: 0em 1em;
-            }
-        }
-
-        .content-justify {
-            text-align: left;
-            width: 100%;
-        }
-
-        .tools, .stickyNotes {
-            margin: 1em auto;
-            display: flex;
-            flex-direction: column;
-
-            span {
-                font-size: .35em !important;
-                text-transform: uppercase;
-                font-family: $secondaryFontface;
-                letter-spacing: .25em;
-            }
-
-            a.Tool {
-                border: none;
-                font-size: 1em;
-                text-decoration: underline;
-                width: fit-content;
-                transition: all 200ms ease-in-out;
-
-                span {
-                    font-family: $secondaryFontface !important;
-                    text-transform: capitalize;
-                    font-weight: normal;
-                    font-style: italic;
-                    letter-spacing: 0em !important;
-                }
-            }
-
-            a.Tool:hover {
-                background-color: transparent;
-                color: $red;
-            }
-        }
-    }
-
-}
-
-.NextPage {
-    font-size: 1em;
-    width: 75vw;
-    text-align: right;
-    background-color: $blue;
-    padding: 3em 0em;
-    margin-bottom: -4em;
-    color: #fff;
-    span {
-        margin: 0em 1em;
-    }
-
-    .pill {
-        border: 2px solid #fff;
-        background-color: transparent;
-        color: #fff;
-        padding-right: .75em;
-        padding-left: .25em;
-        font-size: 1em;
-        margin-right: 1em;
     }
 }
 

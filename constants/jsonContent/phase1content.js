@@ -1,4 +1,4 @@
-import BUILD_THE_CASE from '../constants/phase1images/buildthecase.svg';
+import BUILD_THE_CASE from '../../constants/phase1images/buildthecase.svg';
 
 export const PHASE1_CONTENT = [
 	{
