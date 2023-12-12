@@ -1,4 +1,4 @@
-.LayTheFoundation {
+.content-page {
     display: flex;
     flex-direction: column;
     margin: 1em 1.25em !important;
@@ -12,7 +12,7 @@
         top: 0;
         right: 0;
         z-index: -1;
-        background-image: url("../../constants/radial.svg");
+        background-image: url("../constants/radial.svg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;

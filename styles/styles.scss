@@ -11,9 +11,11 @@
 @import "./homepage/_maparea.scss";
 @import "_footernav.scss";
 
+@import "_contentPage.scss";
 @import "_phaseContent.scss";
 @import "_nextPage.scss";
-@import "./laythefoundations/_phase1.scss";
+@import "./resources/_resources.scss";
+
 @import "./stickyNote";
 
 * {

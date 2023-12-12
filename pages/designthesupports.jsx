@@ -2,20 +2,16 @@ import React from 'react'
 import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
 import Head from 'next/head';
-import Image from 'next/image';
-import HeaderCustom from '../components/HeaderCustom';
 
-import FOLDED_CORNER from "../constants/phase-corner-fold.svg"
-
-import styles from './index.module.css';
+import { PHASE_INFO } from '../constants/jsonContent/phaseInfo';
+import PhaseLayout from '../components/PhaseLayout';
 
 export default function DesignTheSupportsPage() {
+	const phaseInfo = PHASE_INFO.phaseTwo;
+
 	const DesignTheSupports = () => (
 		<>
-		<HeaderCustom homePageHeader={true}/>
-		<div className={`${styles.header} font-extrabold text-center w-fit`}>
-			Design The Supports
-		</div>
+		<PhaseLayout phaseInfo={phaseInfo} />
 		</>
 	);
 

@@ -2,25 +2,22 @@ import React from 'react'
 import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
 import Head from 'next/head';
-import Image from 'next/image';
 
 import styles from './index.module.css';
-import HeaderCustom from '../components/HeaderCustom';
+import ResourcesHeader from '../components/Resources/ResourcesHeader';
+import PhaseHeader from '../components/PhaseHeader';
 import NextPage from '../components/NextPage';
-import FOLDED_CORNER from "../constants/phase-corner-fold.svg"
+import ResourcesContent from '../components/Resources/ResourcesContent';
 
 export default function ResourcesPage() {
-	const nextPage = "Phase 3: Execute & Evaluate"
-	const nextPageAnchorLink = "/executeandevaluate"
-
 	const Resources = () => (
 		<>
-		<div className="layout_folded_corner"><Image src={FOLDED_CORNER} alt="" /></div>
-		<HeaderCustom homePageHeader={false}/>
+		<PhaseHeader />
 		<div className={`${styles.header} font-extrabold text-center w-fit content-page Resources`}>
-			Resources
+			<ResourcesHeader />
+			<ResourcesContent />
 		</div>
-		<NextPage nextPage={nextPage} nextPageAnchorLink={nextPageAnchorLink}/>
+		<NextPage nextPage={null} nextPageAnchorLink={null}/>
 		</>
 	);
 

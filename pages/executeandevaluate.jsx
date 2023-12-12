@@ -3,13 +3,16 @@ import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
 import Head from 'next/head';
 
-import styles from './index.module.css';
+import { PHASE_INFO } from '../constants/jsonContent/phaseInfo';
+import PhaseLayout from '../components/PhaseLayout';
 
 export default function ExecuteAndEvaluatePage() {
+	const phaseInfo = PHASE_INFO.phaseThree;
+
 	const ExecuteAndEvaluate = () => (
-		<div className={`${styles.header} font-extrabold text-center w-fit`}>
-			Exeucute and Evaluate
-		</div>
+		<>
+			<PhaseLayout phaseInfo={phaseInfo} />
+		</>
 	);
 
 	return (

@@ -2,43 +2,17 @@ import React from 'react'
 import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
 import Head from 'next/head';
-import Image from 'next/image';
-import HeaderCustom from '../components/HeaderCustom';
 
-import styles from './index.module.css';
-import PhaseTitle from '../components/PhaseTitle';
-import PhaseContent from "../components/PhaseContent"
-import NextPage from "../components/NextPage"
-
-import { PHASE1_CONTENT } from '../constants/jsonContent/phase1content';
-
-import FOLDED_CORNER from "../constants/phase-corner-fold.svg"
-import PIN from "../constants/phase1images/phase-pin.svg"
-import PHASE1_TITLE_IMG from "../constants/phase1images/p1-title-img.svg"
-import Phase1headerContent from '../components/LayTheFoundation/Phase1headerContent';
+import { PHASE_INFO } from '../constants/jsonContent/phaseInfo';
+import PhaseLayout from '../components/PhaseLayout';
 
 
 export default function LayTheFoundationPage() {
-	const phaseInfo = {
-		headerSvg: PIN,
-		phaseNum: 1,
-		phaseTitle: "Lay The Foundation",
-		phaseHeaderContent: <Phase1headerContent />,
-		phaseHeaderImg: PHASE1_TITLE_IMG,
-		phaseContent: PHASE1_CONTENT,
-		nextPage: "Phase 2: Design The Supports",
-		nextPageAnchorLink: "/designthesupports"
-	}
+	const phaseInfo = PHASE_INFO.phaseOne;
 
 	const LayTheFoundation = () => (
 		<>
-		<div className="layout_folded_corner"><Image src={FOLDED_CORNER} alt="" /></div>
-		<HeaderCustom homePageHeader={false}/>
-		<div className={`${styles.header} font-extrabold text-center w-fit content-page LayTheFoundation`}>
-			<PhaseTitle headerSvg={phaseInfo.headerSvg} phaseNum={phaseInfo.phaseNum} phaseTitle={phaseInfo.phaseTitle} phaseHeaderContent={phaseInfo.phaseHeaderContent} phaseHeaderImg={phaseInfo.phaseHeaderImg}/>
-			<PhaseContent phaseContent={phaseInfo.phaseContent}/>	
-		</div>
-		<NextPage nextPage={phaseInfo.nextPage} nextPageAnchorLink={phaseInfo.nextPageAnchorLink}/>
+			<PhaseLayout phaseInfo={phaseInfo} />
 		</>
 	);
 
