@@ -5,7 +5,7 @@ import PhaseTitle from './PhaseTitle';
 import PhaseContent from './PhaseContent';
 import NextPage from './NextPage';
 
-import Phase1HeaderContent from "./LayTheFoundation/Phase1HeaderContent";
+import Phase1HeaderContent from "./LayTheFoundation/Phase1HeaderContent"
 import Phase2HeaderContent from './DesignTheSupports/Phase2HeaderContent';
 import Phase3HeaderContent from "./ExecuteAndEvaluate/Phase3HeaderContent"
 
