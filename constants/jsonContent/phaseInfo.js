@@ -1,6 +1,6 @@
 import PIN from '../../constants/phase-pin.svg';
-import Phase1HeaderContent from '../../components/LayTheFoundation/Phase1headerContent';
-import Phase2HeaderContent from '../../components/DesignTheSupports/Phase2headerContent';
+import Phase1HeaderContent from '../../components/LayTheFoundation/Phase1HeaderContent';
+import Phase2HeaderContent from '../../components/DesignTheSupports/Phase2HeaderContent';
 import Phase3HeaderContent from '../../components/ExecuteAndEvaluate/Phase3HeaderContent';
 import PHASE_TITLE_IMG from '../../constants/phase-title-img.svg';
 import { PHASE1_CONTENT } from './phase1content';
