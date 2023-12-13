@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 
-const PhaseTitle = ({headerSvg, phaseNum, phaseTitle, phaseHeaderContent, phaseHeaderImg}) => {
+const PhaseTitle = ({headerSvg, phaseNum, phaseTitle, phaseHeaderImg}) => {
   return (
     <>
     <div className="sidebar">
