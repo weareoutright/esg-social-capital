@@ -2,41 +2,22 @@ import React from 'react'
 import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
 import Head from 'next/head';
-import Image from 'next/image';
-import HeaderCustom from '../components/HeaderCustom';
 
-import styles from './index.module.css';
-import PhaseOneTitle from '../components/LayTheFoundations/PhaseOneTitle';
-import PhaseOneContent from "../components/LayTheFoundations/PhaseOneContent"
-import NextPage from "../components/NextPage"
-
-import FOLDED_CORNER from "../constants/phase-corner-fold.svg"
+import { PHASE_INFO } from '../constants/jsonContent/phaseInfo';
+import PhaseLayout from '../components/PhaseLayout';
 
 
 export default function LayTheFoundationPage() {
-	const nextPage = "Phase 2: Design The Supports"
-	const nextPageAnchorLink = "/designthesupports"
+	const phaseInfo = PHASE_INFO.phaseOne;
 
 	const LayTheFoundation = () => (
 		<>
-		<div className="layout_folded_corner"><Image src={FOLDED_CORNER} alt="" /></div>
-		<HeaderCustom homePageHeader={false}/>
-		<div className={`${styles.header} font-extrabold text-center w-fit LayTheFoundation`}>
-			<PhaseOneTitle />
-			<PhaseOneContent/>
-		</div>
-		<NextPage nextPage={nextPage} nextPageAnchorLink={nextPageAnchorLink}/>
+			<PhaseLayout phaseInfo={phaseInfo} />
 		</>
 	);
 
 	return (
 		<>
-		<Head>
-			<link rel="preconnect" href="https://fonts.googleapis.com" />
-			<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-			<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-		</Head>
-
 		<Layout currentPage="lay-the-foundation">
 			<NextSeo
 				title="ESG Social Capital"
@@ -47,3 +28,18 @@ export default function LayTheFoundationPage() {
 		</>
 	);
 }
+
+// export async function getServerSideProps({ res }) {
+// 	const { menuItems, menuItemHeaders } = await getFooterMenu();
+// 	const { posts, headers: postHeaders } = await getLatestPosts(12);
+
+// 	const headers = [menuItemHeaders, postHeaders];
+// 	setOutgoingHeaders({ headers, res });
+
+// 	return {
+// 		props: {
+// 			menuItems,
+// 			posts,
+// 		},
+// 	};
+// }

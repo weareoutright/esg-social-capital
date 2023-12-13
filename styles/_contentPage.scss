@@ -1,0 +1,78 @@
+.content-page {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 1.25em !important;
+    margin-right: 0em !important;
+    margin-bottom: 0em !important;
+    .sidebar {
+        width: 25svw;
+        background-color: $blue;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        background-image: url("../constants/radial.svg") ;
+        background-size: fill;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .sidebar-filter {
+        width: 25svw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        background: radial-gradient(circle at 50%, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));
+    }
+    .title-div {
+        margin: auto 0em auto 2em;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .phase-pin {
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: .25em;
+            width: fit-content;
+            margin: .5em 0em;
+
+            img {
+                scale: 70%;
+            }
+        }
+
+        h3 {
+            text-align: left;
+            font-size: 1.5em !important;
+            width: fit-content;
+        }
+
+        .content-justify {
+            width: 90%;
+            text-align: left;
+            margin: 2em 0 !important;
+        }
+        
+        .phase1-title-img {
+            width: 300%;
+            object-fit: cover;
+            margin-right: 1em;
+            margin-left: 0em !important;
+            height: auto;
+            padding-bottom: 2em;
+
+            img {
+                width: auto;
+            }
+        }
+    }
+}
+
