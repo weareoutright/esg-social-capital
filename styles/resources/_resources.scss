@@ -16,11 +16,155 @@
 
     .content-justify {
         text-align: left;
-        margin: 2em 0em 2.5em 0em;
+        margin: 1em 0em 2.5em 0em;
+        width: 100%;
     }
 
     .ResourcesContent {
         margin: auto 0em auto 2em;
+        width: 50%;
+        min-height: 80vh;
+
+        .resources-accordions {
+            margin-top: 1em;
+            .accordion-item-custom {
+                border: none;
+                padding-left: 0;
+            }
+
+            .accordion-header-custom {
+                hr {
+                    display: none;
+                }
+                button {
+                    color: $mainFont;
+                    font-style: italic;
+                    font-size: 1em;
+                    padding: .5em .5em .5em 0em;
+                    background-color: transparent;
+                }
+
+                button:hover {
+                    background-color: transparent;
+                    font-weight: 700;
+                    color: $red !important;
+                }
+
+                button.collapsed {
+                    background-color: transparent;
+                    border: none;
+                    color: $mainFont;
+                    font-weight: 700;
+                    border-bottom: 2px solid $blue;
+                }
+
+                button:not(.collapsed) {
+                    font-weight: 700;
+                    color: $red;
+                    box-shadow: none;
+                    border-bottom: 2px solid $blue;
+                }
+            }
+
+            .accordion-body-custom {
+                .content-justify {
+                    margin-bottom: 1em;
+                }
+
+                .mapped-accordion-item-custom {
+                    .mapped-accordion-header-custom {
+                        button {
+                            padding: .25em .5em .15em 0em;
+                            font-style: italic;
+                            font-size: 1em;
+                            font-weight: 600;
+                            color: $mainFont;
+                            background-color: transparent;
+                        }
+
+                        button:hover {
+                            background-color: transparent;
+                            font-weight: 700;
+                            color: $red;
+                        }
+        
+                        button.collapsed {
+                            background-color: transparent;
+                            border: none;
+                            color: $mainFont;
+                            font-weight: 700;
+                        }
+
+                        button:not(.collapsed) {
+                            font-weight: 700;
+                            color: $red;
+                            box-shadow: none;
+                        }
+                    }
+
+                    .mapped-accordion-body-custom {
+                        margin: .25em auto;
+                        display: flex;
+                        flex-direction: column;
+            
+                        span {
+                            font-size: .35em !important;
+                            text-transform: uppercase;
+                            font-family: $secondaryFontface;
+                            letter-spacing: .25em;
+                        }
+            
+                        a.Tool {
+                            border: none;
+                            font-size: 1em;
+                            text-decoration: underline;
+                            width: fit-content;
+                            transition: all 200ms ease-in-out;
+            
+                            span {
+                                font-family: $secondaryFontface !important;
+                                text-transform: capitalize;
+                                font-weight: normal;
+                                font-style: italic;
+                                letter-spacing: 0em !important;
+                            }
+                        }
+            
+                        a.Tool:hover {
+                            background-color: transparent;
+                            color: $red;
+                        }
+                    }
+                }
+
+            }
+
+            .parent-phase {
+                text-align: left;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                font-size: .2em;
+                width: fit-content;
+                margin: .5em 0em;
+                text-transform: uppercase;
+                font-family: $secondaryFontface;
+                letter-spacing: .25em;
+                color: $gray;
+            }
+
+            .accordion {
+                margin-top: .5em !important;
+                margin-bottom: .5em !important;
+            }
+        }
+    }
+
+    hr {
+        color: $blue;
+        height: 2px;
+        background-color: #3870B5;
+        opacity: 1;
     }
 }
 

@@ -1,43 +1,65 @@
 <svg width="1057" height="1057" viewBox="0 0 1057 1057" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="528.586" cy="528.42" r="354.176" fill="url(#paint0_radial_696_151)" fill-opacity="0.7"/>
-<circle cx="528.587" cy="528.42" r="429.426" fill="url(#paint1_radial_696_151)" fill-opacity="0.4"/>
-<circle cx="528.587" cy="528.42" r="527.753" fill="url(#paint2_radial_696_151)" fill-opacity="0.3"/>
-<circle cx="528.587" cy="528.42" r="283.943" fill="url(#paint3_radial_696_151)" fill-opacity="0.6"/>
-<circle cx="528.586" cy="528.42" r="206.686" fill="url(#paint4_radial_696_151)" fill-opacity="0.6"/>
+<g opacity="0.8">
+<circle cx="528.586" cy="528.42" r="354.176" fill="url(#paint0_radial_637_945)" fill-opacity="0.7"/>
+<circle cx="528.587" cy="528.42" r="429.426" fill="url(#paint1_radial_637_945)" fill-opacity="0.4"/>
+<circle cx="528.586" cy="528.42" r="527.753" fill="url(#paint2_radial_637_945)" fill-opacity="0.3"/>
+<circle cx="528.586" cy="528.42" r="283.943" fill="url(#paint3_radial_637_945)" fill-opacity="0.6"/>
+<circle cx="528.586" cy="528.42" r="206.686" fill="url(#paint4_radial_637_945)" fill-opacity="0.6"/>
 <circle cx="528.586" cy="528.42" r="126.42" fill="#3870B5" fill-opacity="0.7"/>
 <g opacity="0.6">
-<path d="M653 551.497L528.085 528.922" stroke="#002555" stroke-width="2" stroke-dasharray="8 12"/>
-<path d="M528.587 728.011L450.327 773.283" stroke="#002555" stroke-width="2" stroke-dasharray="8 12"/>
-<path d="M528.54 528.875L452.699 427.084" stroke="#002555" stroke-width="2" stroke-dasharray="8 12"/>
-<path d="M520.557 724.07L526.019 555.51" stroke="#002555" stroke-width="2" stroke-dasharray="8 12"/>
-<path d="M453.337 421.592L546.43 335.297" stroke="#002555" stroke-width="2" stroke-dasharray="8 12"/>
-<path d="M696.143 656.847L649.99 562.534" stroke="#002555" stroke-width="2" stroke-dasharray="8 12"/>
-<circle cx="528.587" cy="531.43" r="31.1066" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<path d="M652.999 551.497L528.084 528.922" stroke="#002555" stroke-width="2" stroke-dasharray="8 12"/>
+<path d="M528.586 728.011L450.326 773.283" stroke="#002555" stroke-width="2" stroke-dasharray="8 12"/>
+<path d="M528.539 528.875L452.698 427.084" stroke="#002555" stroke-width="2" stroke-dasharray="8 12"/>
+<path d="M520.557 724.07L526.018 555.51" stroke="#002555" stroke-width="2" stroke-dasharray="8 12"/>
+<path d="M528.998 532.5L382.498 634.999L282.498 775M333.998 556L524.998 531M333.998 556L251.998 610M333.998 556L288.498 417M329.999 245.5L562.998 327L518 245M634.498 409L651.498 198M634.498 409L711.498 527M634.498 409L827.5 399.5M702.998 662.5L627.999 813M678.499 927.499L437.998 784.499L259.998 862.5M648.499 193.5L757.999 163M700.5 657L860 653.5M771 362L832.5 399.5M514 242.5L582.501 104.5L492.001 86" stroke="#002555" stroke-width="2" stroke-dasharray="8 12"/>
+<path d="M453.336 421.592L546.429 335.297" stroke="#002555" stroke-width="2" stroke-dasharray="8 12"/>
+<path d="M696.142 656.847L649.989 562.534" stroke="#002555" stroke-width="2" stroke-dasharray="8 12"/>
+<circle cx="528.586" cy="531.43" r="31.1066" fill="#3870B5" stroke="#002555" stroke-width="2"/>
 <circle cx="452.333" cy="427.084" r="12.0433" fill="#3870B5" stroke="#002555" stroke-width="2"/>
-<circle cx="643.97" cy="553.504" r="22.0766" fill="#3870B5" stroke="#002555" stroke-width="2"/>
-<circle cx="561.697" cy="327.754" r="24.0833" fill="#3870B5" stroke="#002555" stroke-width="2"/>
-<circle cx="699.153" cy="660.86" r="16.0567" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="515.043" cy="245.043" r="12.0433" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="581.043" cy="104.043" r="12.0433" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="643.969" cy="553.504" r="22.0766" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="856.077" cy="652.077" r="22.0766" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="561.696" cy="327.754" r="24.0833" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="288.082" cy="417.083" r="24.0833" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="699.152" cy="660.86" r="16.0567" fill="#3870B5" stroke="#002555" stroke-width="2"/>
 <circle cx="519.556" cy="731.094" r="18.0633" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="253.062" cy="609.063" r="18.0633" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="333.063" cy="557.063" r="18.0633" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="636.063" cy="412.063" r="18.0633" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="651.063" cy="197.063" r="18.0633" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="493.064" cy="86.0633" r="18.0633" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="772.064" cy="361.063" r="18.0633" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="833.064" cy="400.063" r="18.0633" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="760.062" cy="164.063" r="18.0633" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="709.063" cy="526.063" r="18.0633" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="627.063" cy="814.063" r="18.0633" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="260.062" cy="864.063" r="18.0633" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="283.062" cy="775.063" r="18.0633" fill="#3870B5" stroke="#002555" stroke-width="2"/>
 <circle cx="436.28" cy="785.274" r="26.09" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="328.083" cy="244.083" r="24.0833" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="383.083" cy="636.083" r="24.0833" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+<circle cx="678.083" cy="927.083" r="24.0833" fill="#3870B5" stroke="#002555" stroke-width="2"/>
+</g>
 </g>
 <defs>
-<radialGradient id="paint0_radial_696_151" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(528.586 528.42) rotate(90) scale(354.176)">
+<radialGradient id="paint0_radial_637_945" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(528.586 528.42) rotate(90) scale(354.176)">
 <stop stop-color="#3870B5"/>
 <stop offset="1" stop-color="#2760A6"/>
 </radialGradient>
-<radialGradient id="paint1_radial_696_151" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(528.587 528.42) rotate(90) scale(429.426)">
+<radialGradient id="paint1_radial_637_945" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(528.587 528.42) rotate(90) scale(429.426)">
 <stop stop-color="#3870B5"/>
 <stop offset="1" stop-color="#2760A6"/>
 </radialGradient>
-<radialGradient id="paint2_radial_696_151" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(528.587 528.42) rotate(90) scale(527.753)">
+<radialGradient id="paint2_radial_637_945" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(528.586 528.42) rotate(90) scale(527.753)">
 <stop stop-color="#3870B5"/>
 <stop offset="1" stop-color="#2760A6"/>
 </radialGradient>
-<radialGradient id="paint3_radial_696_151" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(528.587 528.42) rotate(90) scale(283.943)">
+<radialGradient id="paint3_radial_637_945" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(528.586 528.42) rotate(90) scale(283.943)">
 <stop stop-color="#3870B5"/>
 <stop offset="1" stop-color="#2760A6"/>
 </radialGradient>
-<radialGradient id="paint4_radial_696_151" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(528.586 528.42) rotate(90) scale(206.686)">
+<radialGradient id="paint4_radial_637_945" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(528.586 528.42) rotate(90) scale(206.686)">
 <stop stop-color="#3870B5"/>
 <stop offset="1" stop-color="#2760A6"/>
 </radialGradient>

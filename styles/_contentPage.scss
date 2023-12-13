@@ -12,10 +12,20 @@
         top: 0;
         right: 0;
         z-index: -1;
-        background-image: url("../constants/radial.svg");
-        background-size: cover;
+        background-image: url("../constants/radial.svg") ;
+        background-size: fill;
         background-repeat: no-repeat;
         background-position: center;
+    }
+
+    .sidebar-filter {
+        width: 25svw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        background: radial-gradient(circle at 50%, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));
     }
     .title-div {
         margin: auto 0em auto 2em;

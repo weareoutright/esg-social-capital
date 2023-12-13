@@ -7,6 +7,9 @@ const PhaseTitle = ({headerSvg, phaseNum, phaseTitle, phaseHeaderContent, phaseH
     <div className="sidebar">
 				<span></span>
 	</div>
+	{/* <div className="sidebar-filter">
+				<span></span>
+	</div> */}
 			<div className='title-div'>
 				<div>
 				<p className="phase-pin"><Image src={headerSvg} alt="" /><span>PHASE {phaseNum}</span></p>
