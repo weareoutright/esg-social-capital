@@ -1,7 +1,6 @@
 import React from 'react'
 import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
-import Head from 'next/head';
 
 import { PHASE_INFO } from '../constants/jsonContent/phaseInfo';
 import PhaseLayout from '../components/PhaseLayout';
