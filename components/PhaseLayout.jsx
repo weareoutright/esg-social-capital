@@ -8,8 +8,6 @@ import NextPage from './NextPage';
 import PhaseHeader from './PhaseHeader';
 
 const PhaseLayout = ({phaseInfo}) => {
-
-
   return (
     <>
     <PhaseHeader />

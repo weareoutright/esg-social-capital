@@ -2,8 +2,6 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/laythefoundation": "pages/laythefoundation.js",
-  "/": "pages/index.js",
-  "/designthesupports": "pages/designthesupports.js",
-  "/executeandevaluate": "pages/executeandevaluate.js"
+  "/executeandevaluate": "pages/executeandevaluate.js",
+  "/laythefoundation": "pages/laythefoundation.js"
 }
