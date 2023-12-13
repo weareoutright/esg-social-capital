@@ -14,7 +14,7 @@ const ResourceAccordionItem = ({key, parentPhase, actionStepsArr}) => {
         <span className="parent-phase">{parentPhase}</span>
         {actionStepsArr.map((actionStepParent) => {        
             return (
-                <Accordion.Item eventKey={actionStepParent.key} bsPrefix='mapped-accordion-item-custom'>
+                <Accordion.Item key={actionStepParent.key} eventKey={actionStepParent.key} bsPrefix='mapped-accordion-item-custom'>
                 <Accordion.Header as={'h4'} bsPrefix='mapped-accordion-header-custom' onClick={(e) => handleClick(e)}>{actionStepParent.actionStep}</Accordion.Header>
                 <Accordion.Body bsPrefix='mapped-accordion-body-custom'>
                   {actionStepParent.actionStepLinksArr.map((actionStepChild) => {
