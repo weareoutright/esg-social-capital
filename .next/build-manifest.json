@@ -27,6 +27,16 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/designthesupports": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/designthesupports.js"
+    ],
+    "/executeandevaluate": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/executeandevaluate.js"
+    ],
     "/laythefoundation": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

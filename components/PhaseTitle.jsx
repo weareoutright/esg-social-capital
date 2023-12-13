@@ -1,7 +1,17 @@
 import React from 'react'
 import Image from 'next/image';
 
+import Phase1HeaderContent from "./LayTheFoundation/Phase1HeaderContent"
+import Phase2HeaderContent from './DesignTheSupports/Phase2HeaderContent';
+import Phase3HeaderContent from "./ExecuteAndEvaluate/Phase3HeaderContent";
+
 const PhaseTitle = ({headerSvg, phaseNum, phaseTitle, phaseHeaderContent, phaseHeaderImg}) => {
+	const phaseHeaderContents = {
+		1: <Phase1HeaderContent />,
+		2: <Phase2HeaderContent />,
+		3: <Phase3HeaderContent />
+	  }
+
   return (
     <>
     <div className="sidebar">
@@ -16,7 +26,7 @@ const PhaseTitle = ({headerSvg, phaseNum, phaseTitle, phaseHeaderContent, phaseH
 					<h3>
 						{phaseTitle}
 					</h3>
-				{phaseHeaderContent}
+				{phaseHeaderContents[phaseHeaderContent]}
 				</div>
 				<div className="phase1-title-img">
 					<Image src={phaseHeaderImg} alt="" />
