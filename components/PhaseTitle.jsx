@@ -1,17 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 
-import Phase1HeaderContent from "./LayTheFoundation/Phase1HeaderContent"
-// import Phase2HeaderContent from './DesignTheSupports/Phase2HeaderContent';
-// import Phase3HeaderContent from "./ExecuteAndEvaluate/Phase3HeaderContent";
-
 const PhaseTitle = ({headerSvg, phaseNum, phaseTitle, phaseHeaderContent, phaseHeaderImg}) => {
-	// const phaseHeaderContents = {
-	// 	1: <Phase1HeaderContent />,
-	// 	2: <Phase2HeaderContent />,
-	// 	3: <Phase3HeaderContent />
-	//   }
-
   return (
     <>
     <div className="sidebar">
@@ -26,7 +16,10 @@ const PhaseTitle = ({headerSvg, phaseNum, phaseTitle, phaseHeaderContent, phaseH
 					<h3>
 						{phaseTitle}
 					</h3>
-				<Phase1HeaderContent />
+					<p className='content-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sint est vel. Quis eligendi in enim sequi sint dolore est quos explicabo nemo labore, distinctio doloribus et temporibus minus! Dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, blanditiis corporis distinctio aliquid minima unde perferendis? Quibusdam laboriosam error totam et aspernatur amet voluptate recusandae nesciunt, fugiat, provident nobis libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptatibus obcaecati itaque quas sit. Cum nihil ad ipsa sapiente neque alias inventore perferendis eaque minus eveniet tempore eum, hic nisi?
+					</p>
+					<p className='content-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sint est vel. Quis eligendi in enim sequi sint dolore est quos explicabo nemo labore, distinctio doloribus et temporibus minus! Dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, blanditiis corporis distinctio aliquid minima unde perferendis? Quibusdam laboriosam error totam et aspernatur amet voluptate recusandae nesciunt, fugiat, provident nobis libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptatibus obcaecati itaque quas sit. Cum nihil ad ipsa sapiente neque alias inventore perferendis eaque minus eveniet tempore eum, hic nisi?
+					</p>
 				</div>
 				<div className="phase1-title-img">
 					<Image src={phaseHeaderImg} alt="" />
