@@ -9,7 +9,7 @@
 	"repository": "",
 	"author": "",
 	"engines": {
-		"node": "18"
+		"node": "10"
 	},
 	"scripts": {
 		"dev": "echo 'Preview will be available at the URL specified in the proxy section of the .lando.yml file.' && next dev",
