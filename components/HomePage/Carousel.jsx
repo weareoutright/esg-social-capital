@@ -10,9 +10,9 @@ const Carousel = () => {
   const [[activeIndex, direction], setActiveIndex] = useState([0, 0]);
 //   const items = ['🍔', '🍕', '🌭', '🍗'];
   const items = [
-    <Image className="leader" src={LEADER1} alt="" />,
-    <Image className="leader" src={LEADER2} alt="" />,
-    <Image className="leader" src={LEADER3} alt="" />,
+    <Image key="leader1" className="leader" src={LEADER1} alt="" />,
+    <Image key="leader2" className="leader" src={LEADER2} alt="" />,
+    <Image key="leader3" className="leader" src={LEADER3} alt="" />,
   ]
   
   // we want the scope to be always to be in the scope of the array so that the carousel is endless
