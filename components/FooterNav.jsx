@@ -83,7 +83,7 @@ const FooterNav = ({currentPage}) => {
         <Link href="laythefoundation" className={`pill ${navPillLayFoundation}`}>lay the foundation</Link>
         <Link href="designthesupports" className={`pill ${navPillDesign}`}>design the supports</Link>
         <Link href="executeandevaluate" className={`pill ${navPillExecEval}`}>execute & evaluate</Link>
-        <Link href="resources" className={`pill ${navPillShare}`}><Image src={RESOURCES_BTN} alt="Share"/></Link>
+        <Link href="resources" className={`pill ${navPillShare} resources-btn`}><Image src={RESOURCES_BTN} alt="Share"/></Link>
     </div>
   )
 }
