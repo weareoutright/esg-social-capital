@@ -79,11 +79,11 @@ const FooterNav = ({currentPage}) => {
   return (
     <div className="FooterNav">
         <progress value={navProgress} max="100"></progress>
-        <Link href="/" className={`pill ${navPillHome}`} ><Image src={HOME_BTN} alt="Home"/></Link>
+        <Link href="/" className={`pill ${navPillHome} image-btn`} ><Image src={HOME_BTN} alt="Home"/></Link>
         <Link href="laythefoundation" className={`pill ${navPillLayFoundation}`}>lay the foundation</Link>
         <Link href="designthesupports" className={`pill ${navPillDesign}`}>design the supports</Link>
         <Link href="executeandevaluate" className={`pill ${navPillExecEval}`}>execute & evaluate</Link>
-        <Link href="resources" className={`pill ${navPillShare} resources-btn`}><Image src={RESOURCES_BTN} alt="Share"/></Link>
+        <Link href="resources" className={`pill ${navPillShare} image-btn`}><Image src={RESOURCES_BTN} alt="Share"/></Link>
     </div>
   )
 }
