@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import INFO_AND_STATS from "../../constants/info_and_stats.svg"
 import Link from 'next/link'
-import CAROUSEL from "../../constants/carousel.svg"
+import Carousel from './Carousel'
 
 const LeadersInTheField = () => {
   return (
@@ -11,11 +11,11 @@ const LeadersInTheField = () => {
             Hear what social capital <br />means to leaders in the field
         </h3>
         <small>Click to play video</small>
+
         <div className="video-carousel">
-            <Image src={CAROUSEL} alt=""/>
+            <Carousel />
         </div>
-        <small className="first-last">First Last</small>
-        <small>Title or soundbyte</small>
+        
         <div className="content-justify">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed soluta molestias totam sapiente animi fugiat ipsa dolor numquam error quae mollitia consequuntur porro natus beatae, minus impedit quaerat? Consequuntur, quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit enim earum sint magni modi iste error sapiente illum, quisquam, non itaque et? Animi voluptatibus veniam ratione ut adipisci delectus quidem.
             </p>
