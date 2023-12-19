@@ -7,7 +7,7 @@ const HeaderCustom = ({homePageHeader}) => {
   return (
     <div className="HeaderCustom">
         <div className="logo">
-            <Link href="/" className="logo-link"><Image src={ESG_LOGO} alt="ESG LOGO"/></Link>
+            <Link href="https://edstrategy.org/" target="_blank" rel="noreferrer" className="logo-link"><Image src={ESG_LOGO} alt="ESG LOGO"/></Link>
         </div>
 
         <div className={`pill ${homePageHeader === false ? "non-home-header" : ""}`}>
