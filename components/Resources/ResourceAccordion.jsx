@@ -2,6 +2,7 @@ import React from 'react'
 import Accordion from "react-bootstrap/Accordion"
 import ResourceAccordionItem from './ResourceAccordionItem';
 import { RESOURCE_INFO } from '../../constants/jsonContent/resourceInfo';
+import { PHASE1_CONTENT, PHASE2_CONTENT, PHASE3_CONTENT } from '../../constants/jsonContent/phaseContent';
 
 const ResourceAccordion = ({}) => {
     const handleClick = (e) => {
@@ -18,7 +19,6 @@ const ResourceAccordion = ({}) => {
             {RESOURCE_INFO.map((resource) => {
                 return <ResourceAccordionItem key={resource.key} parentPhase={resource.parentPhase} actionStepsArr={resource.actionStepsArr} />
             })}
-          
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>

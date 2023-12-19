@@ -2,6 +2,8 @@ import BUILD_THE_CASE from '../../constants/phase1images/buildthecase.svg';
 
 export const PHASE1_CONTENT = [
 	{
+		key: 'ltf1',
+		parentPhase: 'Lay The Foundation',
 		icon: BUILD_THE_CASE,
 		title: 'Create a theory of action',
 		description:
@@ -16,6 +18,8 @@ export const PHASE1_CONTENT = [
 		stickyNotesArr: [],
 	},
 	{
+		key: 'ltf2',
+		parentPhase: 'Lay The Foundation',
 		icon: BUILD_THE_CASE,
 		title: 'Build The Case',
 		description:
@@ -49,6 +53,8 @@ export const PHASE1_CONTENT = [
 		],
 	},
 	{
+		key: 'ltf3',
+		parentPhase: 'Lay The Foundation',
 		icon: BUILD_THE_CASE,
 		title: 'Identify Your Assets',
 		description:
@@ -86,6 +92,8 @@ export const PHASE1_CONTENT = [
 		],
 	},
 	{
+		key: 'ltf4',
+		parentPhase: 'Lay The Foundation',
 		icon: BUILD_THE_CASE,
 		title: 'Map Your Network',
 		description:
