@@ -1,8 +1,6 @@
 import PIN from '../../constants/phase-pin.svg';
 
 import PHASE_TITLE_IMG from '../../constants/phase-title-img.svg';
-import Phase2HeaderContent from '../../components/DesignTheSupports/Phase2headerContent';
-import Phase3HeaderContent from '../../components/ExecuteAndEvaluate/Phase3HeaderContent';
 import { PHASE1_CONTENT, PHASE2_CONTENT, PHASE3_CONTENT } from './phaseContent';
 
 export const PHASE_INFO = {
