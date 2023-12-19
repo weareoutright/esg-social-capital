@@ -1,4 +1,5 @@
 import PIN from '../../constants/phase-pin.svg';
+import Red from '../../helperFuncs/Red';
 
 import PHASE_TITLE_IMG from '../../constants/phase-title-img.svg';
 import { PHASE1_CONTENT, PHASE2_CONTENT, PHASE3_CONTENT } from './phaseContent';
