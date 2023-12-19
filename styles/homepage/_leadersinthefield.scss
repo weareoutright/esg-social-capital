@@ -31,6 +31,30 @@
     font-style: italic;
 }
 
+.LeadersInTheField {
+    .content-justify {
+        margin-top: 2em;
+    }
+    .info-and-stats {
+        color: $gray;
+        small {
+            text-align: center;
+            display: block;
+            padding: 0;
+            margin-top: -3em;
+            font-style: italic;
+            a {
+                border: none;
+                &:hover {
+                    color: $red;
+                    background-color: transparent;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
 // Carousel
 .card {
     border-radius: 50%;
@@ -50,6 +74,9 @@
     }
   .carousel-btn {
     border: none;
+    &:hover {
+        background-color: transparent;
+    }
   }
   .prev-and-next-item {
     opacity: .45;

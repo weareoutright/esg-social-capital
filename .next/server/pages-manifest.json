@@ -1,23 +1,6 @@
 {
-  "/_error": "pages/_error.js",
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/404": "pages/404.html",
-  "/api/clear-preview": "pages/api/clear-preview.js",
-  "/500": "pages/500.html",
-  "/api/hello": "pages/api/hello.js",
-  "/api/preview": "pages/api/preview.js",
-  "/designthesupports": "pages/designthesupports.html",
-  "/executeandevaluate": "pages/executeandevaluate.html",
-  "/resources": "pages/resources.html",
-  "/examples/ssg-isr": "pages/examples/ssg-isr.js",
-  "/examples": "pages/examples.js",
-  "/examples/auth-api": "pages/examples/auth-api.js",
-  "/examples/pagination/[[...page]]": "pages/examples/pagination/[[...page]].js",
-  "/laythefoundation": "pages/laythefoundation.html",
-  "/": "pages/index.js",
-  "/posts": "pages/posts.js",
-  "/pages/[...uri]": "pages/pages/[...uri].js",
-  "/posts/[...slug]": "pages/posts/[...slug].js",
-  "/pages": "pages/pages.js"
+  "/_error": "pages/_error.js",
+  "/executeandevaluate": "pages/executeandevaluate.js"
 }

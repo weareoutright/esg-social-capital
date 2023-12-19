@@ -1,14 +1,17 @@
 import PIN from '../../constants/phase-pin.svg';
 
 import PHASE_TITLE_IMG from '../../constants/phase-title-img.svg';
-import { PHASE1_CONTENT } from './phase1content';
+import Phase1HeaderContent from '../../components/LayTheFoundation/Phase1HeaderContent';
+import Phase2HeaderContent from '../../components/DesignTheSupports/Phase2headerContent';
+import Phase3HeaderContent from '../../components/ExecuteAndEvaluate/Phase3HeaderContent';
+import { PHASE1_CONTENT, PHASE2_CONTENT, PHASE3_CONTENT } from './phaseContent';
 
 export const PHASE_INFO = {
 	phaseOne: {
 		headerSvg: PIN,
 		phaseNum: 1,
 		phaseTitle: 'Lay The Foundation',
-		// phaseHeaderContent: <Phase1HeaderContent />,
+		phaseHeaderContent: <Phase1HeaderContent />,
 		phaseHeaderImg: PHASE_TITLE_IMG,
 		phaseContent: PHASE1_CONTENT,
 		nextPage: 'Phase 2: Design The Supports',
@@ -18,19 +21,19 @@ export const PHASE_INFO = {
 		headerSvg: PIN,
 		phaseNum: 2,
 		phaseTitle: 'Design The Supports',
-		// phaseHeaderContent: <Phase2HeaderContent />,
+		phaseHeaderContent: <Phase2HeaderContent />,
 		phaseHeaderImg: PHASE_TITLE_IMG,
-		phaseContent: PHASE1_CONTENT,
+		phaseContent: PHASE2_CONTENT,
 		nextPage: 'Phase 3: Execute and Evaluate',
 		nextPageAnchorLink: '/executeandevaluate',
 	},
 	phaseThree: {
 		headerSvg: PIN,
 		phaseNum: 3,
-		phaseTitle: 'Execute and Evaluate',
-		// phaseHeaderContent: <Phase3HeaderContent />,
+		phaseTitle: 'Execute & Evaluate',
+		phaseHeaderContent: <Phase3HeaderContent />,
 		phaseHeaderImg: PHASE_TITLE_IMG,
-		phaseContent: PHASE1_CONTENT,
+		phaseContent: PHASE3_CONTENT,
 		nextPage: 'Cultivating Career Connections: Additional Resources',
 		nextPageAnchorLink: '/resources',
 	},

@@ -16,7 +16,6 @@ const Hero = () => {
             <p>Who helped you get to where you are now? How have you helped others get to where they are?</p>
             <br />
             <p>Social capital—or, simply put, “who we know”—can unlock and open doors to economic and career success for all learners. But how can schools, districts, and communities actively support students in recognizing the value of their existing relationships, expanding their connections,  and leveraging their networks to open up new educational and career opportunities?</p>
-
         </div>
         <div className="get-started">
             <Link className="pill" href="#whyscmatters" scroll={false}>Get Started</Link>

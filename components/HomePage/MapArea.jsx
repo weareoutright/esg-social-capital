@@ -13,7 +13,7 @@ const MapArea = () => {
         <Image className="red-line-end" src={RED_LINE_END} alt="" />
         <div className="content-justify">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, atque tenetur perspiciatis excepturi dignissimos quam accusamus voluptates reprehenderit laboriosam, blanditiis quod, et ut numquam officia iste? At beatae facilis quaerat.
+            Through two years of work with these ten different communities, Education Strategy Group has gained valuable insight into how educational and community leaders can take action to make social capital access, development, and activation more equitable for their students
             </p>
         </div>
         <div className="learn-how">

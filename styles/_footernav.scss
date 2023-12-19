@@ -26,7 +26,7 @@ progress::-webkit-progress-value {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    z-index: 1;
+    z-index: 5;
     background-color: #FFF;
     background-image: url("../constants/footernav-progress.svg");
     background-position: right;

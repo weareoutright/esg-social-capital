@@ -12,7 +12,12 @@ const PhaseLayout = ({phaseInfo}) => {
     <>
     <PhaseHeader />
 		<div className={`${styles.header} font-extrabold text-center w-fit content-page`}>
-			<PhaseTitle headerSvg={phaseInfo.headerSvg} phaseNum={phaseInfo.phaseNum} phaseTitle={phaseInfo.phaseTitle} phaseHeaderContent={phaseInfo.phaseNum} phaseHeaderImg={phaseInfo.phaseHeaderImg}/>
+			<PhaseTitle 
+        headerSvg={phaseInfo.headerSvg} 
+        phaseNum={phaseInfo.phaseNum} 
+        phaseTitle={phaseInfo.phaseTitle} 
+        phaseHeaderContent={phaseInfo.phaseHeaderContent} 
+        phaseHeaderImg={phaseInfo.phaseHeaderImg}/>
 			<PhaseContent phaseContent={phaseInfo.phaseContent}/>	
 		</div>
 		<NextPage nextPage={phaseInfo.nextPage} nextPageAnchorLink={phaseInfo.nextPageAnchorLink}/>
