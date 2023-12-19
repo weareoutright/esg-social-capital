@@ -1,4 +1,5 @@
 import React from 'react'
+import Red from '../../helperFuncs/Red'
 import Image from 'next/image'
 import INFO_AND_STATS from "../../constants/info_and_stats.svg"
 import Link from 'next/link'
@@ -17,13 +18,51 @@ const LeadersInTheField = () => {
         </div>
         
         <div className="content-justify">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed soluta molestias totam sapiente animi fugiat ipsa dolor numquam error quae mollitia consequuntur porro natus beatae, minus impedit quaerat? Consequuntur, quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit enim earum sint magni modi iste error sapiente illum, quisquam, non itaque et? Animi voluptatibus veniam ratione ut adipisci delectus quidem.
-            </p>
-            <br />
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam incidunt, qui nihil quidem quis doloremque fuga a dolorem quibusdam vel quod vitae dignissimos? Omnis similique asperiores corporis provident error quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, facilis ipsum soluta alias fuga consequatur maxime nesciunt magni libero voluptatum quo voluptates possimus impedit! Atque corrupti perspiciatis a voluptatibus alias.
-            </p>
-        </div>
+			<p>
+				Expanding and mobilizing social capital is most imperative for students
+				of backgrounds that have been{' '}
+				<Red>
+					historically underrepresented in high-wage, high-demand fields
+				</Red>{' '}
+				like healthcare and information technology. Research shows that weak
+				ties—or one’s acquaintances—are the most helpful for connecting people
+				to new job opportunities (Source:
+				<Link  
+                    className="inline-link"
+					href="https://hbr.org/2022/12/which-connections-really-help-you-find-a-job"
+					alt=""
+					target="_blank"
+					rel="noreferrer"
+				>
+					Harvard Business Review
+				</Link>
+				), as the diversity and breadth of one’s network increases access to
+				different information, resources, and support.
+			</p>
+			<br />
+			<p>
+				Without direct, even if loose, connections to people in industries that
+				provide a family-sustaining wage, the likelihood of a person finding
+				their way to these jobs diminishes. Yet, research by the{' '}
+				<Link
+					className="inline-link"
+                    href="https://cci.stradaeducation.org/pv-release-dec-8-2021/#clarity"
+					target="_blank"
+					rel="noreferrer"
+					alt=""
+				>
+					Strada Education Foundation
+				</Link>{' '}
+				reveals that{' '}
+				<Red>
+					just half of college seniors feel confident in their ability to
+					network with alumni or professionals to make career connections
+				</Red>
+				. Untapped opportunities to build social capital in occupations or
+				fields of interest can leave some students a step behind as they begin
+				their careers.
+			</p>
+		</div>
         <div className="info-and-stats">
             <Link className="info-and-stats-img-link" href="https://www.linkedin.com/pulse/new-survey-reveals-85-all-jobs-filled-via-networking-lou-adler/" target='_blank' rel='noreferrer'>
                 <Image src={INFO_AND_STATS} alt="Infographic on Social Capital Stats"/>
@@ -31,12 +70,12 @@ const LeadersInTheField = () => {
             <small>(Source: <Link href="https://www.cnbc.com/2019/12/27/how-to-get-a-job-often-comes-down-to-one-elite-personal-asset.html" target='_blank' rel="noreferrer" alt="">CNBC WORK</Link>; <Link href="https://www.linkedin.com/pulse/new-survey-reveals-85-all-jobs-filled-via-networking-lou-adler/" target='_blank' rel="noreferrer" alt="">LinkedIn</Link>)</small>
         </div>
         <div className="content-justify">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed soluta molestias totam sapiente animi fugiat ipsa dolor numquam error quae mollitia consequuntur porro natus beatae, minus impedit quaerat? Consequuntur, quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit enim earum sint magni modi iste error sapiente illum, quisquam, non itaque et? Animi voluptatibus veniam ratione ut adipisci delectus quidem.
+            <p>Addressing inequities in economic opportunity requires addressing network inequities — and <Red>that work must start long before a student enters the workforce</Red>. Few education systems identify social capital development as a critical component in their college and career preparation priorities despite the fact that expanding students’ networks and giving students the tools, confidence, and know-how to leverage their relationships can increase their access to new information, resources, and opportunities. Regrettably, this is too often left to chance. As they work to prepare students for college and career, education systems can more intentionally work to help students build and leverage their connections. 
             </p>
             <br />
             <p>[[A VIDEO GOES HERE]]</p>
             <br />
-            <p>How can communities more intentionally bring social capital to the forefront in their work to prepare students for college and career? On this website, you’ll find a framework for how to <span className="red-highlight">more purposefully integrate social capital development into pathways and help students develop the skills, confidence, and agency</span> to leverage existing relationships and build new connections in pursuit of their educational and professional aspirations.</p>
+            <p>How can communities more intentionally bring social capital to the forefront in their work to prepare students for college and career? On this website, you’ll find a framework for how to <Red>more purposefully integrate social capital development into pathways and help students develop the skills, confidence, and agency</Red> to leverage existing relationships and build new connections in pursuit of their educational and professional aspirations.</p>
             <br />
             <p>Through generous philanthropic support, Education Strategy Group has worked with communities across the U.S. as they’ve incorporated social capital development strategies into their college and career pathways, in areas like work-based learning, college and career advising, and classroom learning. These include: </p>
         </div>

@@ -9,11 +9,18 @@ const WhySCMatters = () => {
             <br />
         Capital Matters</h2>
         <div className="content-justify">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut magni fugit repellat laboriosam esse voluptatum ipsum voluptatem aliquid eaque soluta omnis maiores, odit beatae labore cumque perspiciatis eveniet illo asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel nihil optio corporis voluptate rem eaque natus nesciunt iusto consectetur, cum at animi? Delectus, molestias. Quisquam, facere? Sapiente, sint perspiciatis.
+        <p>
+          Social capital—or, simply put, “who we know”—can unlock doors to new
+          opportunities. When embedded within educational pathways, social capital
+          tools and strategies can ensure students are better connected to key
+          individuals who can help them understand their postsecondary and career
+          options, prepare for the requirements and expectations of their chosen
+          occupation, and begin to build a strong occupational identity.
+        </p>
         </div>
         <h4 className="container-custom">
             <p>
-            <span className="red-highlight">Social capital</span>—or, simply put, ‘who we know’—can <span className='red-highlight'>unlock</span> and <span className='red-highlight'>open doors</span> to economic and career success for all learners.
+            <Red>Social capital</Red>—or, simply put, ‘who we know’—can <Red>unlock</Red> and <Red>open doors</Red> to economic and career success for all learners.
             </p>
         </h4>
         <Image className="whyscmatters-vert-line" src={SMALL_RED_LINE} alt="" />

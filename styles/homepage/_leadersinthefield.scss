@@ -53,6 +53,12 @@
             }
         }
     }
+    a.inline-link {
+        border: none;
+        color: $gray;
+        font-style: italic;
+        text-decoration: underline;
+    }
 }
 
 // Carousel

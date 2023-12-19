@@ -44,6 +44,7 @@ h3 {
 
 p {
     white-space: pre-wrap;
+    text-wrap: balance;
 }
 
 small {
@@ -69,7 +70,7 @@ a:hover, button:hover {
 .red-highlight {
     color: $red;
     font-weight: 600;
-    display: inline-block;
+    display: inline;
 }
 
 .container-custom {
@@ -85,7 +86,7 @@ a:hover, button:hover {
     font-family: Merriweather, serif;
     font-size: .28em !important;
     font-weight: 400;
-    margin: 4em 0em 2.5em 0em;
+    margin: 2em 0em 2.5em 0em;
     width: 50%;
     text-overflow: balance;
     text-align: center;
