@@ -48,7 +48,36 @@ export const PHASE_INFO = {
 		headerSvg: PIN,
 		phaseNum: 2,
 		phaseTitle: 'Design The Supports',
-		phaseHeaderContent: <Phase2HeaderContent />,
+		phaseHeaderContent: (
+			<div className="Phase2HeaderContent">
+				<p className="content-justify">
+					Communities must have a clear system of program elements addressing
+					social capital in order to ensure their vision becomes a reality for
+					their students. Once a community has developed a theory of action and
+					better understands their current assets, they can narrow in on where
+					current practices could be enhanced or strengthened with social
+					capital development strategies, tools, or resources. Leveraging
+					existing programs, resources, and infrastructures in this work ensures
+					alignment and sustainability long-term and reduces the chances that
+					staff with limited capacity see this as an additional burden. There
+					are also a host of organizations and comprehensive programs available
+					for purchase that can help fill in gaps.
+				</p>
+				<p className="content-justify">
+					The second phase of the Cultivating Connections framework includes{' '}
+					<span className="red-highlight">developing a framework</span> to
+					structure the student experience,{' '}
+					<span className="red-highlight">creating a scope and sequence</span>{' '}
+					that sets grade-level expectations for social capital development,{' '}
+					<span className="red-highlight">identifying opportunity areas</span>{' '}
+					and how to solve for them,{' '}
+					<span className="red-highlight">writing an evaluation plan</span> for
+					continuous monitoring, and{' '}
+					<span className="red-highlight">training their team</span> to ensure
+					high-quality implementation and delivery.
+				</p>
+			</div>
+		),
 		phaseHeaderImg: PHASE_TITLE_IMG,
 		phaseContent: PHASE2_CONTENT,
 		nextPage: 'Phase 3: Execute and Evaluate',
@@ -58,7 +87,35 @@ export const PHASE_INFO = {
 		headerSvg: PIN,
 		phaseNum: 3,
 		phaseTitle: 'Execute & Evaluate',
-		phaseHeaderContent: <Phase3HeaderContent />,
+		phaseHeaderContent: (
+			<div className="Phase3HeaderContent">
+				<p className="content-justify">
+					While every community’s needs and existing resources (human,
+					financial, or otherwise) are unique, there are student-facing
+					strategies that can provide a natural sequencing to help students
+					articulate the value of their social capital, better understand who
+					they currently have in their network, build the skill sets and
+					confidence to make new connections, and practice this learning within
+					safe spaces.
+				</p>
+				<p className="content-justify">
+					Communities must implement their plan with fidelity, including
+					evaluating and updating approaches along the way, in order to track
+					progress toward, and ultimately achieve, their vision of success for
+					all students. In phase three of the Cultivating Connections framework,
+					communities <Red>work their plan</Red>, beginning their student-facing
+					work by <Red>introducing and translating social capital concepts</Red>
+					, guiding students as they{' '}
+					<Red>
+						map their current relationships, building student social capital
+						toolkits
+					</Red>{' '}
+					with the necessary skills and tools, and putting students into the
+					driver seat as they{' '}
+					<Red>expand and mobilize their professional networks</Red>.
+				</p>
+			</div>
+		),
 		phaseHeaderImg: PHASE_TITLE_IMG,
 		phaseContent: PHASE3_CONTENT,
 		nextPage: 'Cultivating Career Connections: Additional Resources',
