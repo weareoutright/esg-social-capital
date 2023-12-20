@@ -3,7 +3,7 @@ import Red from '../../helperFuncs/Red';
 
 import PHASE1_TITLE_IMG from '../../constants/esg_illustrations/ltf-header.svg';
 import PHASE2_TITLE_IMG from '../../constants/esg_illustrations/dts-header.svg';
-import PHASE1_TITLE_IMG from '../../constants/esg_illustrations/ee-header.svg';
+import PHASE3_TITLE_IMG from '../../constants/esg_illustrations/ee-header.svg';
 
 import { PHASE1_CONTENT, PHASE2_CONTENT, PHASE3_CONTENT } from './phaseContent';
 
@@ -14,7 +14,7 @@ export const PHASE_INFO = {
 		phaseTitle: 'Lay The Foundation',
 		phaseHeaderContent: (
 			<>
-				<p className="content-justify">
+				<p className="content-justify phase-content">
 					School districts likely already have many of the foundational pieces
 					in place for helping students build social capital. These might
 					include current strategies around work-based learning, important
@@ -25,7 +25,7 @@ export const PHASE_INFO = {
 					all students are benefiting from these critical relationship-building
 					experiences.
 				</p>
-				<p className="content-justify">
+				<p className="content-justify phase-content">
 					Communities must create a strong vision and set intentions for this
 					work to ensure all students will leave with a robust personal network
 					and the skills to activate it toward their goals. The Cultivating
@@ -52,7 +52,7 @@ export const PHASE_INFO = {
 		phaseTitle: 'Design The Supports',
 		phaseHeaderContent: (
 			<div className="Phase2HeaderContent">
-				<p className="content-justify">
+				<p className="content-justify phase-content">
 					Communities must have a clear system of program elements addressing
 					social capital in order to ensure their vision becomes a reality for
 					their students. Once a community has developed a theory of action and
@@ -65,7 +65,7 @@ export const PHASE_INFO = {
 					are also a host of organizations and comprehensive programs available
 					for purchase that can help fill in gaps.
 				</p>
-				<p className="content-justify">
+				<p className="content-justify phase-content">
 					The second phase of the Cultivating Connections framework includes{' '}
 					<span className="red-highlight">developing a framework</span> to
 					structure the student experience,{' '}
@@ -91,7 +91,7 @@ export const PHASE_INFO = {
 		phaseTitle: 'Execute & Evaluate',
 		phaseHeaderContent: (
 			<div className="Phase3HeaderContent">
-				<p className="content-justify">
+				<p className="content-justify phase-content">
 					While every community’s needs and existing resources (human,
 					financial, or otherwise) are unique, there are student-facing
 					strategies that can provide a natural sequencing to help students
@@ -100,7 +100,7 @@ export const PHASE_INFO = {
 					confidence to make new connections, and practice this learning within
 					safe spaces.
 				</p>
-				<p className="content-justify">
+				<p className="content-justify phase-content">
 					Communities must implement their plan with fidelity, including
 					evaluating and updating approaches along the way, in order to track
 					progress toward, and ultimately achieve, their vision of success for

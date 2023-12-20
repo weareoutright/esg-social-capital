@@ -61,18 +61,23 @@
             margin: 2em 0 !important;
         }
         
-        .phase1-title-img {
+        .phase-title-img {
             width: 300%;
             object-fit: cover;
             margin-right: 1em;
             margin-left: 0em !important;
             height: auto;
-            padding-bottom: 2em;
+            padding-bottom: 4em;
 
             img {
                 width: auto;
             }
+
+            &.wider-header-svg {
+                img {
+                    scale: 115%;
+                }
+            }
         }
     }
 }
-

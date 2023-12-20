@@ -6,7 +6,7 @@ import SCOPE_IT_OUT from '../esg_illustrations/scope-it-out.svg';
 import FRAME_PROGRAM from '../esg_illustrations/frame-program.svg';
 import ID_GAP_AREAS from '../esg_illustrations/id-gap-areas.svg';
 import WRITE_PLAN from '../esg_illustrations/write-plan.svg';
-import EQUITY_AND_ASSETS from '../esg_illustrations/equty-and-assets.svg';
+import EQUITY_AND_ASSETS from '../esg_illustrations/equity-and-assets.svg';
 import DISTRICT_TEAM from '../esg_illustrations/district-team.svg';
 import PREPARE_PARTNERS from '../esg_illustrations/prepare-partners.svg';
 import INTRO_AND_TRANSLATE from '../esg_illustrations/intro-and-translate.svg';
