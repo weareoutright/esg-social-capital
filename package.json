@@ -44,6 +44,7 @@
 		"react-bootstrap": "^2.9.1",
 		"react-dom": "18.2.0",
 		"react-placeholder-image": "^0.1.8",
+		"react-player": "^2.14.1",
 		"react-scroll-progress-bar": "^1.1.13",
 		"sharp": "^0.32.6"
 	},

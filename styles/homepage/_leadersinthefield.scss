@@ -22,15 +22,6 @@
     margin-bottom: .25em !important;
 }
 
-.LeadersInTheField .first-last {
-    font-family: "Raleway" !important;
-    font-weight: 600;
-    font-size: .35em !important;
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-    font-style: italic;
-}
-
 .LeadersInTheField {
     .content-justify {
         margin-top: 2em;
@@ -88,11 +79,21 @@
     opacity: .45;
   }
   .current-item {
+    padding-top: 1.5em;
     .play-btn {
         position: absolute;
         right: .75em;
-        bottom: 0;
+        bottom: 0em;
         z-index: 4;
+    }
+    .first-last {
+        font-family: "Raleway" !important;
+        font-weight: 600;
+        font-size: .5em !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+        font-style: italic;
+        color: $mainFont;
     }
   }
   .main-wrapper {
@@ -103,5 +104,5 @@
   }
   .wrapper {
     display: flex;
-    margin: 20px;
+    margin: .25em auto 1em auto;
   }

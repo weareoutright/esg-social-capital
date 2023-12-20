@@ -4,6 +4,7 @@ import Image from 'next/image'
 import INFO_AND_STATS from "../../constants/info_and_stats.svg"
 import Link from 'next/link'
 import Carousel from './Carousel'
+import ReactPlayer from "react-player"
 
 const LeadersInTheField = () => {
   return (
@@ -73,7 +74,7 @@ const LeadersInTheField = () => {
             <p>Addressing inequities in economic opportunity requires addressing network inequities — and <Red>that work must start long before a student enters the workforce</Red>. Few education systems identify social capital development as a critical component in their college and career preparation priorities despite the fact that expanding students’ networks and giving students the tools, confidence, and know-how to leverage their relationships can increase their access to new information, resources, and opportunities. Regrettably, this is too often left to chance. As they work to prepare students for college and career, education systems can more intentionally work to help students build and leverage their connections. 
             </p>
             <br />
-            <p>[[A VIDEO GOES HERE]]</p>
+            <p><ReactPlayer url="https://youtu.be/kTar7wB45gw" /></p>
             <br />
             <p>How can communities more intentionally bring social capital to the forefront in their work to prepare students for college and career? On this website, you’ll find a framework for how to <Red>more purposefully integrate social capital development into pathways and help students develop the skills, confidence, and agency</Red> to leverage existing relationships and build new connections in pursuit of their educational and professional aspirations.</p>
             <br />

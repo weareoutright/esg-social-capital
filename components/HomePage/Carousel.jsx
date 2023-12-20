@@ -1,38 +1,37 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import Image from "next/image"
-import { useState } from 'react';
+import Image from "next/image";
+import { useState, useEffect } from 'react';
 import PLAY from "../../constants/carousel/PlayButton.svg"
-import LEADER1 from "../../constants/carousel/leader1.svg"
-import LEADER2 from "../../constants/carousel/leader2.svg"
-import LEADER3 from "../../constants/carousel/leader3.svg"
+
+import { CAROUSEL_CONTENT } from '../../constants/jsonContent/carouselContent';
+
+import VideoPopup from '../VideoPopup';
 
 const Carousel = () => {
+  const [showVideoPopup, setShowVideoPopup] = useState(false)
   const [[activeIndex, direction], setActiveIndex] = useState([0, 0]);
-  // const items = ['🍔', '🍕', '🌭', '🍗'];
-  const items = [
-    {key: "leader2", img: <Image key="leader2" className="leader" src={LEADER2} alt="" />},
-    {key: "leader1", img: <Image key="leader1" className="leader" src={LEADER1} alt="" />},
-    {key: "leader3", img: <Image key="leader3" className="leader" src={LEADER3} alt="" />},
-    {key: "leader1a", img: <Image key="leader1" className="leader" src={LEADER1} alt="" />},
-    {key: "leader1b", img: <Image key="leader1" className="leader" src={LEADER1} alt="" />},
-  ]
-  // const items = [LEADER1, LEADER2, LEADER3, LEADER2]
-  
-  // we want the scope to be always to be in the scope of the array so that the carousel is endless
+    // we want the scope to be always to be in the scope of the array so that the carousel is endless
   const indexInArrayScope =
-    ((activeIndex % items.length) + items.length) % items.length;
-  
-  // so that the carousel is endless, we need to repeat the items twice
-  // then, we slice the the array so that we only have 3 items visible at the same time
-  const visibleItems = [...items, ...items].slice(
+  ((activeIndex % CAROUSEL_CONTENT.length) + CAROUSEL_CONTENT.length) % CAROUSEL_CONTENT.length;
+
+  const visibleItems = [...CAROUSEL_CONTENT, ...CAROUSEL_CONTENT].slice(
     indexInArrayScope,
     indexInArrayScope + 3
   );
-  const handleClick = newDirection => {
+
+  const [speakerName, setSpeakerName] = useState(visibleItems[1].name)
+  const [videoUrl, setVideoUrl] = useState("")
+
+  // so that the carousel is endless, we need to repeat the items twice
+  // then, we slice the the array so that we only have 3 items visible at the same time
+
+  const handleClick = (newDirection ) => {
     setActiveIndex(prevIndex => [prevIndex[0] + newDirection, newDirection]);
+
   };
 
   return (
+    <>
     <div className="main-wrapper">
       <div className="wrapper">
         <motion.button
@@ -41,12 +40,12 @@ const Carousel = () => {
           className="carousel-btn"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="33" viewBox="0 0 18 33" fill="none">
-<path d="M16.5 1L1 16.5L16.5 32" stroke="#D90F03" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+          <path d="M16.5 1L1 16.5L16.5 32" stroke="#D90F03" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </motion.button>
         {/*AnimatePresence is necessary to show the items after they are deleted because only max. 3 are shown*/}
         <AnimatePresence mode="popLayout" initial={false}>
-          {visibleItems.map((item) => {
+          {visibleItems.map((item, index) => {
             // The layout prop makes the elements change its position as soon as a new one is added
             // The key tells framer-motion that the elements changed its position
             return (
@@ -72,20 +71,37 @@ const Carousel = () => {
                 exit="exit"
                 transition={{ duration: 1 }}
               > 
-                {item === visibleItems[1] ? <div className="current-item">{item.img}<Image className="play-btn" src={PLAY} alt=""/></div> : <div className="prev-and-next-item">{item.img}</div>}
+                {item === visibleItems[1] ? <div onClick={() =>{
+                  setVideoUrl(item.url);
+                  setShowVideoPopup(true);
+                }}className="current-item">
+                  {item.img}<Image className="play-btn" src={PLAY} alt=""/>
+                  <small className="first-last">{item.name}</small>
+                </div> : 
+                item === visibleItems[0] ? <div 
+                onClick={(e) => {e.preventDefault; handleClick(-1);}}
+                className="prev-and-next-item">
+                  {item.img}
+                  </div> : 
+                <div 
+                onClick={(e) => {e.preventDefault; handleClick(1);}}
+                className="prev-and-next-item">
+                  {item.img}
+                  </div>}
               </motion.div>
             );
           })}
         </AnimatePresence>
         <motion.button className="carousel-btn" whileTap={{ scale: 0.8 }} onClick={(e) => {e.preventDefault; handleClick(1);}}>
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="33" viewBox="0 0 18 33" fill="none">
-<path d="M1 1L16.5 16.5L1 32" stroke="#D90F03" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+          <path d="M1 1L16.5 16.5L1 32" stroke="#D90F03" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </motion.button>
       </div>
-      <small className="first-last">First Last</small>
-        <small>Title or soundbyte</small>
+
     </div>
+    {showVideoPopup && <VideoPopup setShowVideoPopup={setShowVideoPopup} url={videoUrl}/>}
+    </>
   );
 }
 
