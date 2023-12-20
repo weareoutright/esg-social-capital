@@ -1,7 +1,10 @@
 import PIN from '../../constants/phase-pin.svg';
 import Red from '../../helperFuncs/Red';
 
-import PHASE_TITLE_IMG from '../../constants/phase-title-img.svg';
+import PHASE1_TITLE_IMG from '../../constants/esg_illustrations/ltf-header.svg';
+import PHASE2_TITLE_IMG from '../../constants/esg_illustrations/dts-header.svg';
+import PHASE1_TITLE_IMG from '../../constants/esg_illustrations/ee-header.svg';
+
 import { PHASE1_CONTENT, PHASE2_CONTENT, PHASE3_CONTENT } from './phaseContent';
 
 export const PHASE_INFO = {
@@ -38,7 +41,7 @@ export const PHASE_INFO = {
 				</p>
 			</>
 		),
-		phaseHeaderImg: PHASE_TITLE_IMG,
+		phaseHeaderImg: PHASE1_TITLE_IMG,
 		phaseContent: PHASE1_CONTENT,
 		nextPage: 'Phase 2: Design The Supports',
 		nextPageAnchorLink: '/designthesupports',
@@ -77,7 +80,7 @@ export const PHASE_INFO = {
 				</p>
 			</div>
 		),
-		phaseHeaderImg: PHASE_TITLE_IMG,
+		phaseHeaderImg: PHASE2_TITLE_IMG,
 		phaseContent: PHASE2_CONTENT,
 		nextPage: 'Phase 3: Execute and Evaluate',
 		nextPageAnchorLink: '/executeandevaluate',
@@ -115,7 +118,7 @@ export const PHASE_INFO = {
 				</p>
 			</div>
 		),
-		phaseHeaderImg: PHASE_TITLE_IMG,
+		phaseHeaderImg: PHASE3_TITLE_IMG,
 		phaseContent: PHASE3_CONTENT,
 		nextPage: 'Cultivating Career Connections: Additional Resources',
 		nextPageAnchorLink: '/resources',

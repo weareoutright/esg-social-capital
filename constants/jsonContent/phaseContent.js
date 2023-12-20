@@ -1,10 +1,26 @@
-import BUILD_THE_CASE from '../../constants/phase1images/buildthecase.svg';
+import CREATE_A_THEORY from '../esg_illustrations/create-a-theory.svg';
+import BUILD_THE_CASE from '../esg_illustrations/build-the-case.svg';
+import IDENTIFY_ASSETS from '../esg_illustrations/identify-your-assets.svg';
+import MAP_NETWORK from '../esg_illustrations/map-network.svg';
+import SCOPE_IT_OUT from '../esg_illustrations/scope-it-out.svg';
+import FRAME_PROGRAM from '../esg_illustrations/frame-program.svg';
+import ID_GAP_AREAS from '../esg_illustrations/id-gap-areas.svg';
+import WRITE_PLAN from '../esg_illustrations/write-plan.svg';
+import EQUITY_AND_ASSETS from '../esg_illustrations/equty-and-assets.svg';
+import DISTRICT_TEAM from '../esg_illustrations/district-team.svg';
+import PREPARE_PARTNERS from '../esg_illustrations/prepare-partners.svg';
+import INTRO_AND_TRANSLATE from '../esg_illustrations/intro-and-translate.svg';
+import MAP_AND_ASSESS from '../esg_illustrations/map-and-assess.svg';
+import TOOLKITS from '../esg_illustrations/student-toolkits.svg';
+import EXPAND_AND_MOBILIZE from '../esg_illustrations/expand-and-mobilize.svg';
+import MONITOR_AND_ADJUST from '../esg_illustrations/monitor-and-adjust.svg';
+import ANNUALLY_RESET from '../esg_illustrations/annually-reset.svg';
 
 export const PHASE1_CONTENT = [
 	{
 		key: 'ltf1',
 		parentPhase: 'Lay The Foundation',
-		icon: BUILD_THE_CASE,
+		icon: CREATE_A_THEORY,
 		title: 'Create a theory of action',
 		description:
 			'Consider what you want for all students in your community and how an intentional social capital strategy will help you accomplish it. What will the impact be on your community because you prioritized social capital development in your college and career pathways work?',
@@ -55,7 +71,7 @@ export const PHASE1_CONTENT = [
 	{
 		key: 'ltf3',
 		parentPhase: 'Lay The Foundation',
-		icon: BUILD_THE_CASE,
+		icon: IDENTIFY_ASSETS,
 		title: 'Identify Your Assets',
 		description:
 			'Inventory the programs and curricula you already have in place within your school and community that provide students with opportunities to learn about and build their social capital. Where are you already helping students make connections or have new conversations with the people they already know? Map what they are, how they might intersect with one another, and where the opportunities are to strengthen these efforts.',
@@ -94,7 +110,7 @@ export const PHASE1_CONTENT = [
 	{
 		key: 'ltf4',
 		parentPhase: 'Lay The Foundation',
-		icon: BUILD_THE_CASE,
+		icon: MAP_NETWORK,
 		title: 'Map Your Network',
 		description:
 			'Your staff, leaders, and school community already have a rich network from which your students can benefit. Consider the people and organizations already a part of your ecosystem and map these relationships to help you better understand the connections you might leverage and identify new relationships you might want to build. ',
@@ -126,7 +142,7 @@ export const PHASE1_CONTENT = [
 
 export const PHASE2_CONTENT = [
 	{
-		icon: BUILD_THE_CASE,
+		icon: FRAME_PROGRAM,
 		title: 'Frame Your Program',
 		description:
 			'Use the Asset Map from 1.C. to determine a clear Framework for how and when to provide access to social capital concepts, skill building, and experiences. What do we want to be true for all students?',
@@ -140,7 +156,7 @@ export const PHASE2_CONTENT = [
 		stickyNotesArr: [],
 	},
 	{
-		icon: BUILD_THE_CASE,
+		icon: SCOPE_IT_OUT,
 		title: 'Scope It Out',
 		description:
 			'Using the Theory of Action you created in 1.A. your existing school, district, and state expectations/standards, and the framework from 2.A., customize a Scope and Sequence for social capital concepts and expectations by grade level.What should this work look like at every grade? How will we measure success?',
@@ -163,7 +179,7 @@ export const PHASE2_CONTENT = [
 		],
 	},
 	{
-		icon: BUILD_THE_CASE,
+		icon: ID_GAP_AREAS,
 		title: 'Identify Gap Areas',
 		description:
 			'Compare your scope and sequence with your asset map from 1C. Where are there gaps in what you currently offer based on what you would like to offer? Are there tools or resources that need to be built? Make a plan for building these or doing some research about solutions that may be available for purchase.',
@@ -192,7 +208,7 @@ export const PHASE2_CONTENT = [
 		],
 	},
 	{
-		icon: BUILD_THE_CASE,
+		icon: WRITE_PLAN,
 		title: 'Write Your Plan',
 		description:
 			'Develop a plan for implementing, monitoring, and evaluating the strategies and activities you’ve identified in your scope and sequence. Who will own the different aspects of the plan? Are there any other people (staff, partners, etc.) who might need to be brought in?  When will you assess student impact?',
@@ -222,7 +238,7 @@ export const PHASE2_CONTENT = [
 		],
 	},
 	{
-		icon: BUILD_THE_CASE,
+		icon: EQUITY_AND_ASSETS,
 		title: 'Center Equity and Asset-Based Strategies',
 		description:
 			'Consider any additional supports needed to better ensure the full participation of all students, particularly first generation college-going students, those with diverse learning needs, and English language or multilingual learners. What materials might need to be modified? Who might you need to partner with or intentionally include? How might you best leverage the assets they bring?',
@@ -262,7 +278,7 @@ export const PHASE2_CONTENT = [
 		],
 	},
 	{
-		icon: BUILD_THE_CASE,
+		icon: DISTRICT_TEAM,
 		title: 'Train Your District Team',
 		description:
 			'Identify the people that need purposeful learning and engagement around this work. Develop a training plan that encourages buy-in, customizes for the audience, and equips plan implementers or advocates for driving the work. Some of your team might just need a “101” training while others would find it beneficial to go deeper into ideas on mindsets or best practices before engaging with students.',
@@ -286,7 +302,7 @@ export const PHASE2_CONTENT = [
 		],
 	},
 	{
-		icon: BUILD_THE_CASE,
+		icon: PREPARE_PARTNERS,
 		title: 'Prepare Your Partners',
 		description:
 			'External partners (community organizations, industry partners, alumni, and families) are essential to this work but may not have thought about the importance of social capital in their work or about how they serve as facilitators of student social capital. Ahead of implementation, consider what strengths these partners bring, how you want to engage them, and what they may need to be prepared to support students in this work. How will you continue to engage them over the course of the year?',
@@ -327,7 +343,7 @@ export const PHASE2_CONTENT = [
 
 export const PHASE3_CONTENT = [
 	{
-		icon: BUILD_THE_CASE,
+		icon: INTRO_AND_TRANSLATE,
 		title: 'Work Your Plan: Introduce and Translate Social Capital Concepts',
 		description:
 			'The term “social capital” can mean a variety of things to students. It can seem a foreign concept or one that holds negative connotations. An important first step in this work might be to start with defining what is meant by social capital and why it is an important and renewable resource, particularly as they are planning for college and career. This introduction could take a variety of forms, ranging from highly structured to more informal.',
@@ -356,7 +372,7 @@ export const PHASE3_CONTENT = [
 		],
 	},
 	{
-		icon: BUILD_THE_CASE,
+		icon: MAP_AND_ASSESS,
 		title: 'Work Your Plan: Map and Assess Current Relationships',
 		description:
 			'Relationship mapping is a powerful tool for helping students visualize who is in their network and in what settings. While the goal should always be an asset-based discussion of student networks and how to leverage them, teams can employ different approaches depending on the needs of their student population.',
@@ -395,7 +411,7 @@ export const PHASE3_CONTENT = [
 		],
 	},
 	{
-		icon: BUILD_THE_CASE,
+		icon: TOOLKITS,
 		title: 'Work Your Plan: Build Student Social Capital Toolkits',
 		description:
 			'Communities can help students take full advantage of opportunities to build new connections by equipping them with the tools and skill sets to increase their confidence, agency, and ability to communicate about themselves. This tool development can take many forms -  elevator pitches, strength and interests assessments, resume building workshops - and serve as opportunities for students to gain the confidence, know-how, and practice in talking about their goals, strengths, and experiences.',
@@ -440,7 +456,7 @@ export const PHASE3_CONTENT = [
 		],
 	},
 	{
-		icon: BUILD_THE_CASE,
+		icon: EXPAND_AND_MOBILIZE,
 		title: 'Work Your Plan: Expand and Mobilize Student Professional Networks',
 		description:
 			'Once students feel confident and are equipped with social capital-building tools and skill sets, Communities can provide them with safe opportunities to practice, whether in smaller, more intimate settings like classrooms or in larger networking events. This is an opportunity to pull in industry and community partners for support as hosts and/or participants. Equip students with follow-up strategies that will allow them to stay connected to the new additions to their network and possibly leverage these relationships down the line.',
@@ -474,7 +490,7 @@ export const PHASE3_CONTENT = [
 		],
 	},
 	{
-		icon: BUILD_THE_CASE,
+		icon: MONITOR_AND_ADJUST,
 		title: 'Monitor and Adjust',
 		description:
 			"Review student data on a regular basis in normal planning and curriculum cycles. Are your students learning the content? Are their networks expanding? Are they able to better leverage their strong and weak ties? Is the content/curriculum you’ve planned meeting your students' needs? \n\nWhile surveys can be helpful evaluation instruments, communities might consider alternative or additional ways of capturing information about their strategies. Methods like student focus groups or interviews may help give life to what the surveys are saying and bring in student voice in a more intentional and purposeful way. Allowing for staff and teachers to also provide their feedback is also critical for ensuring sustained buy-in and continuous improvement.",
@@ -516,7 +532,7 @@ export const PHASE3_CONTENT = [
 		],
 	},
 	{
-		icon: BUILD_THE_CASE,
+		icon: ANNUALLY_RESET,
 		title: 'Annually Reset',
 		description:
 			'Spend some time reflecting with your team and partners on where you feel you made an impact, what could have gone better, and where you see opportunities for strengthening the work moving forward. Use your data from 3.E. to update your Framework created in 2.B., Scope and Sequence from 2.A. and your annual plan in 2.D.',
