@@ -25,7 +25,7 @@ const LeadersInTheField = () => {
 				</Red>{' '}
 				like healthcare and information technology. Research shows that weak
 				ties—or one&#39;s acquaintances—are the most helpful for connecting people
-				to new job opportunities (Source:
+				to new job opportunities  
 				<Link  
                     className="inline-link"
 					href="https://hbr.org/2022/12/which-connections-really-help-you-find-a-job"
@@ -33,9 +33,9 @@ const LeadersInTheField = () => {
 					target="_blank"
 					rel="noreferrer"
 				>
-					Harvard Business Review
+				(Source: Harvard Business Review)
 				</Link>
-				), as the diversity and breadth of one&#39;s network increases access to
+				, as the diversity and breadth of one&#39;s network increases access to
 				different information, resources, and support.
 			</p>
 			<br />
@@ -73,7 +73,7 @@ const LeadersInTheField = () => {
             </p>
             <br />
             <ReactPlayer style={{
-				margin: "0 auto",
+				margin: "1em auto",
 				border: "1px solid #000",
 			}}
 			url="https://youtu.be/kTar7wB45gw" />
