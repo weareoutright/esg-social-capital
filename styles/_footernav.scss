@@ -2,12 +2,12 @@ progress {
     width: 90%;
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 49.9%;
     z-index: 2;
 }
 
 progress::-webkit-progress-bar {
-    background-color: none;
+    background-color: $red;
     height: 1px;
 }
 
@@ -31,6 +31,7 @@ progress::-webkit-progress-value {
     background-image: url("../constants/footernav-progress.svg");
     background-position: right;
     background-repeat: no-repeat;
+    background-size: 100%;
 
     .image-btn {
         height: 2.5em;

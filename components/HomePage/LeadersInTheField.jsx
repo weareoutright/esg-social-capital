@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import Red from '../../helperFuncs/Red'
 import Image from 'next/image'
 import INFO_AND_STATS from "../../constants/info_and_stats.svg"

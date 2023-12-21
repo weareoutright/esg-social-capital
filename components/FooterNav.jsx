@@ -28,7 +28,7 @@ const FooterNav = ({currentPage}) => {
       }, []);
 
     useEffect(() => {
-        // setNavProgress((offset / (height/2)) * 100)
+        setNavProgress((offset / (height/2)) * 100)
         if (currentPage === 'home') {
             setNavPillHome('navPill-whiteBg')
             setNavPillLayFoundation('navPill-whiteBg')
