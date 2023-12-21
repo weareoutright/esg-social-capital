@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Red from '../../helperFuncs/Red'
 import Image from 'next/image'
 import INFO_AND_STATS from "../../constants/info_and_stats.svg"
@@ -14,9 +14,7 @@ const LeadersInTheField = () => {
         </h3>
         <small>Click to play video</small>
 
-        <div className="video-carousel">
-            <Carousel />
-        </div>
+        <Carousel />
         
         <div className="content-justify">
 			<p>
@@ -26,7 +24,7 @@ const LeadersInTheField = () => {
 					historically underrepresented in high-wage, high-demand fields
 				</Red>{' '}
 				like healthcare and information technology. Research shows that weak
-				ties—or one’s acquaintances—are the most helpful for connecting people
+				ties—or one&#39;s acquaintances—are the most helpful for connecting people
 				to new job opportunities (Source:
 				<Link  
                     className="inline-link"
@@ -37,7 +35,7 @@ const LeadersInTheField = () => {
 				>
 					Harvard Business Review
 				</Link>
-				), as the diversity and breadth of one’s network increases access to
+				), as the diversity and breadth of one&#39;s network increases access to
 				different information, resources, and support.
 			</p>
 			<br />
@@ -71,14 +69,18 @@ const LeadersInTheField = () => {
             <small>(Source: <Link href="https://www.cnbc.com/2019/12/27/how-to-get-a-job-often-comes-down-to-one-elite-personal-asset.html" target='_blank' rel="noreferrer" alt="">CNBC WORK</Link>; <Link href="https://www.linkedin.com/pulse/new-survey-reveals-85-all-jobs-filled-via-networking-lou-adler/" target='_blank' rel="noreferrer" alt="">LinkedIn</Link>)</small>
         </div>
         <div className="content-justify">
-            <p>Addressing inequities in economic opportunity requires addressing network inequities — and <Red>that work must start long before a student enters the workforce</Red>. Few education systems identify social capital development as a critical component in their college and career preparation priorities despite the fact that expanding students’ networks and giving students the tools, confidence, and know-how to leverage their relationships can increase their access to new information, resources, and opportunities. Regrettably, this is too often left to chance. As they work to prepare students for college and career, education systems can more intentionally work to help students build and leverage their connections. 
+            <p>Addressing inequities in economic opportunity requires addressing network inequities — and <Red>that work must start long before a student enters the workforce</Red>. Few education systems identify social capital development as a critical component in their college and career preparation priorities despite the fact that expanding students&#39; networks and giving students the tools, confidence, and know-how to leverage their relationships can increase their access to new information, resources, and opportunities. Regrettably, this is too often left to chance. As they work to prepare students for college and career, education systems can more intentionally work to help students build and leverage their connections. 
             </p>
             <br />
-            <p><ReactPlayer url="https://youtu.be/kTar7wB45gw" /></p>
+            <ReactPlayer style={{
+				margin: "0 auto",
+				border: "1px solid #000",
+			}}
+			url="https://youtu.be/kTar7wB45gw" />
             <br />
-            <p>How can communities more intentionally bring social capital to the forefront in their work to prepare students for college and career? On this website, you’ll find a framework for how to <Red>more purposefully integrate social capital development into pathways and help students develop the skills, confidence, and agency</Red> to leverage existing relationships and build new connections in pursuit of their educational and professional aspirations.</p>
+            <p>How can communities more intentionally bring social capital to the forefront in their work to prepare students for college and career? On this website, you&#39;ll find a framework for how to <Red>more purposefully integrate social capital development into pathways and help students develop the skills, confidence, and agency</Red> to leverage existing relationships and build new connections in pursuit of their educational and professional aspirations.</p>
             <br />
-            <p>Through generous philanthropic support, Education Strategy Group has worked with communities across the U.S. as they’ve incorporated social capital development strategies into their college and career pathways, in areas like work-based learning, college and career advising, and classroom learning. These include: </p>
+            <p>Through generous philanthropic support, Education Strategy Group has worked with communities across the U.S. as they&#39;ve incorporated social capital development strategies into their college and career pathways, in areas like work-based learning, college and career advising, and classroom learning. These include: </p>
         </div>
     </div>
   )

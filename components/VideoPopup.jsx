@@ -6,9 +6,14 @@ import ReactPlayer from "react-player"
 const VideoPopup = ({url, setShowVideoPopup}) => {
   return (
     <div className="VideoPopup">
-        <div className="video-bg"><span></span></div>
-        <button onClick={() => setShowVideoPopup(false)} className="pill">CLOSE <Image src={CLOSE_BTN_X} alt=""></Image></button>
-        <ReactPlayer url={url} />
+        <div onClick={() => setShowVideoPopup(false)}  className="video-bg"><span> </span></div>
+        <div className="video-player">
+            <button onClick={() => setShowVideoPopup(false)} className="pill ">CLOSE <Image className="close-btn-x" src={CLOSE_BTN_X} alt=""></Image></button>
+            <ReactPlayer width={800} height={450}
+            url={url} />
+            <h3 style={{color: "#fff", marginTop: "1em"}}>What is SoCap?</h3>
+        </div>
+
     </div>
   )
 }

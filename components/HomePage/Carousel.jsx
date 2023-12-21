@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from "next/image";
 import { useState, useEffect } from 'react';
-import PLAY from "../../constants/carousel/PlayButton.svg"
+import PLAY from "../../constants/carousel/PlayButton.svg";
 
 import { CAROUSEL_CONTENT } from '../../constants/jsonContent/carouselContent';
 
@@ -10,7 +10,7 @@ import VideoPopup from '../VideoPopup';
 const Carousel = () => {
   const [showVideoPopup, setShowVideoPopup] = useState(false)
   const [[activeIndex, direction], setActiveIndex] = useState([0, 0]);
-    // we want the scope to be always to be in the scope of the array so that the carousel is endless
+
   const indexInArrayScope =
   ((activeIndex % CAROUSEL_CONTENT.length) + CAROUSEL_CONTENT.length) % CAROUSEL_CONTENT.length;
 
@@ -19,16 +19,18 @@ const Carousel = () => {
     indexInArrayScope + 3
   );
 
-  const [speakerName, setSpeakerName] = useState(visibleItems[1].name)
   const [videoUrl, setVideoUrl] = useState("")
-
-  // so that the carousel is endless, we need to repeat the items twice
-  // then, we slice the the array so that we only have 3 items visible at the same time
 
   const handleClick = (newDirection ) => {
     setActiveIndex(prevIndex => [prevIndex[0] + newDirection, newDirection]);
-
   };
+
+  useEffect(() => {
+    if (showVideoPopup) {
+      document.body.style.overflow = 'hidden';
+    } else document.body.style.overflow = 'scroll';
+    return () => {};
+  }, [showVideoPopup]);
 
   return (
     <>
@@ -43,11 +45,8 @@ const Carousel = () => {
           <path d="M16.5 1L1 16.5L16.5 32" stroke="#D90F03" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </motion.button>
-        {/*AnimatePresence is necessary to show the items after they are deleted because only max. 3 are shown*/}
         <AnimatePresence mode="popLayout" initial={false}>
-          {visibleItems.map((item, index) => {
-            // The layout prop makes the elements change its position as soon as a new one is added
-            // The key tells framer-motion that the elements changed its position
+          {visibleItems.map((item) => {
             return (
               <motion.div
                 className="card"
@@ -71,10 +70,12 @@ const Carousel = () => {
                 exit="exit"
                 transition={{ duration: 1 }}
               > 
-                {item === visibleItems[1] ? <div onClick={() =>{
+                {item === visibleItems[1] ? <div onClick={(e) =>{
+                  e.preventDefault();
                   setVideoUrl(item.url);
-                  setShowVideoPopup(true);
-                }}className="current-item">
+                  setShowVideoPopup(!showVideoPopup);
+                  
+                }} className="current-item">
                   {item.img}<Image className="play-btn" src={PLAY} alt=""/>
                   <small className="first-last">{item.name}</small>
                 </div> : 
