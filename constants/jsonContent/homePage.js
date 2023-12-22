@@ -1,7 +1,7 @@
 import INFO_AND_STATS from '../../constants/info_and_stats.svg';
 
 export const HERO_CONTENT = {
-	main_title: 'Cultivating Career Connections',
+	main_title: 'Cultivating Connections',
 	subtitle:
 		'A Framework for Building, Strengthening, and Mobilizing Students’ Social Capital',
 	intro_content: (

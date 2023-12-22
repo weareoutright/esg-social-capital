@@ -28,7 +28,7 @@
         background: radial-gradient(circle at 50%, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73));
     }
     .title-div {
-        margin: auto 0em auto 2em;
+        margin: -.75em 0em 0em 2em;
         height: fit-content;
         display: flex;
         flex-direction: row;
@@ -62,10 +62,11 @@
         }
         
         .phase-title-img {
-            width: 300%;
+            width: 250%;
             object-fit: cover;
             margin-right: 1em;
             margin-left: 0em !important;
+            margin-top: 1em;
             height: auto;
             padding-bottom: 4em;
 
@@ -75,7 +76,7 @@
 
             &.wider-header-svg {
                 img {
-                    scale: 115%;
+                    scale: 103%;
                 }
             }
         }

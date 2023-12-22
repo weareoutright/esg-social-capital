@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="Hero" id="hero">
         <h1>
-            Cultivating Career<br />Connections
+            Cultivating<br />Connections
         </h1>
         <h4>
         A Framework for Building, Strengthening, and<br /> Mobilizing Students’ Social Capital

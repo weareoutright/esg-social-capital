@@ -153,11 +153,12 @@ a:hover, button:hover {
     align-items: flex-end;
     justify-content: flex-end;
     position: absolute;
+    z-index: 0;
 }
 
 .wider-header-svg {
     img {
-        width: 400% !important;
+        width: 200% !important;
     }
 }
 

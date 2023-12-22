@@ -2,15 +2,22 @@
     position: relative;
     z-index: 2;
         button {
+            border: none;
             background-color: transparent;
             padding: 0 !important;
             z-index: 1;
+
+            &:hover {
+                background-color: transparent !important;
+                font-weight: 850;
+                border: 1px solid $red;
+            }
         }
 
       .track {
         min-width: 15em;
         height: 2em;
-        border-radius: 20px;
+        border-radius: 2em;
         padding: 0;
         margin: 0;
         z-index: -1;
@@ -20,15 +27,15 @@
       .filled {
         background: $lightRed;
         height: 2em;
-        border-radius: 10px;
-        transition: 0.5s width;
+        border-radius: 2em;
         padding: 0;
         margin: 0;
         z-index: 0;
+        max-width: 15em;
       }
 
       .text{
-        z-index: 2;
+        z-index: 5;
         margin-top: -1.45em;
       }  
   }

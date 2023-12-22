@@ -1,14 +1,12 @@
-import React, {useState} from 'react'
+import React, {use, useEffect, useState} from 'react'
 
-const MeterBtn = (progress, navPillShare) => {
-    const [width, setWidth] = useState("18%");
-
+const MeterBtn = ({phaseTitle, scroll, navPillShare}) => {
     return (
         <div className="MeterBtn">
-            <button className="pill">
+            <button className={`pill ${navPillShare}`}>
             <div className="track">
-                <div className="filled" style={{ width }}></div>
-                <div className="text">Lay The Foundation</div>
+                <div className="filled" style={{ width: `${scroll+12}%`}}></div>
+                <div className="text">{phaseTitle}</div>
             </div>
             </button>
         </div>
