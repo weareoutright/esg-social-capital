@@ -2,7 +2,7 @@ import React from 'react'
 import Accordion from "react-bootstrap/Accordion"
 import Tool from '../Tool'
 
-const ResourceAccordionItem = ({key, parentPhase, actionStepsArr}) => {
+const ResourceAccordionItem = ({keyText, parentPhase, actionStepsArr}) => {
     const handleClick = (e) => {
         e.preventDefault();
         e.target.blur();
@@ -10,7 +10,7 @@ const ResourceAccordionItem = ({key, parentPhase, actionStepsArr}) => {
 
   return (
     <>
-    <Accordion defaultActiveKey={key}>
+    <Accordion defaultActiveKey={keyText}>
         <span className="parent-phase">{parentPhase}</span>
         {actionStepsArr.map((actionStepParent) => {        
             return (

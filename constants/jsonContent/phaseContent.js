@@ -314,7 +314,7 @@ export const PHASE2_CONTENT = [
 					'Learning Memo: Building Employer Capacity to Facilitate Student Social Capital Development',
 			},
 			{
-				key: 'employer-capacity',
+				key: 'youth-apprenticeship',
 				href: 'https://docs.google.com/document/d/1cJJqQewwfRrh7egzBDihe5orFNBeAo_xZJt_IFtGH38/edit?usp=sharing',
 				title: 'Indianapolis Youth Apprenticeship Manager Conversation Guides',
 			},
