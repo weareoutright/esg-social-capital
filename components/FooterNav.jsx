@@ -12,13 +12,14 @@ import MeterBtn from './MeterBtn';
 const FooterNav = () => {
     const router = useRouter();
     const {route} = router;
+
     const [navProgress, setNavProgress] = useState(0)
+    const [currentPageProgress, setCurrentPageProgress] = useState(0)
+    const [ltfProgress, setLtfProgress] = useState(0)
+    const [dtsProgress, setDtsProgress] = useState(0)
+    const [eeProgress, setEeProgress] = useState(0)
+
     const [offset, setOffset] = useState(0);
-    const [navPillHome, setNavPillHome] = useState('navPill-whiteBg')
-    const [navPillLayFoundation, setNavPillLayFoundation] = useState('navPill-whiteBg')
-    const [navPillDesign, setNavPillDesign] = useState('navPill-whiteBg')
-    const [navPillExecEval, setNavPillExecEval] = useState('navPill-whiteBg')
-    const [navPillShare, setNavPillShare] = useState('navPill-whiteBg')
 
     const body = document.body;
     const html = document.documentElement;
@@ -32,75 +33,58 @@ const FooterNav = () => {
       }, []);
 
     useEffect(() => {
-      if (route === 'home' || route === '/') setOffset(0)
-      if (route === '/laythefoundation') setOffset(100)
-
+      if (route === 'home' || route === '/') setCurrentPageProgress(12)
+      if (route === '/laythefoundation') setCurrentPageProgress(30)
+      if (route === '/designthesupports') setCurrentPageProgress(50)
+      if (route === '/executeandevaluate') setCurrentPageProgress(80)
+      if (route === '/resources') setCurrentPageProgress(100)
     }, [route])
 
-    
-
     useEffect(() => {
-        setNavProgress(((offset / (height/2)) * 60))
-        // if (navProgress < 8) {
-        //   setNavPillHome('navPill-whiteBg')
-        //   setNavPillLayFoundation('navPill-whiteBg')
-        //   setNavPillDesign('navPill-whiteBg')
-        //   setNavPillExecEval('navPill-whiteBg')
-        //   setNavPillShare('navPill-whiteBg')
-        // }
+      if (route === '/') {
+        setLtfProgress(-12)
+        setDtsProgress(-12)
+        setEeProgress(-12)
+      }
 
-        // if (navProgress >= 8 && navProgress <= 13) {
-        //     setNavPillHome('navPill-pinkBg')
-        //     setNavPillLayFoundation('navPill-whiteBg')
-        //     setNavPillDesign('navPill-whiteBg')
-        //     setNavPillExecEval('navPill-whiteBg')
-        //     setNavPillShare('navPill-whiteBg')
-        // }
-        // if (navProgress >= 23 && navProgress <= 35) {
-        //     setNavPillHome('navPill-pinkBg')
-        //     setNavPillLayFoundation('navPill-pinkBg')
-        //     setNavPillDesign('navPill-whiteBg')
-        //     setNavPillExecEval('navPill-whiteBg')
-        //     setNavPillShare('navPill-whiteBg')
-        // }
+      if (route === '/laythefoundation') {
+        setLtfProgress(((offset / (height/2)) * 60))
+        setDtsProgress(-12)
+        setEeProgress(-12)
+      }
 
-        // if (navProgress >= 45 && navProgress <= 60) {
-        //     setNavPillHome('navPill-pinkBg')
-        //     setNavPillLayFoundation('navPill-pinkBg')
-        //     setNavPillDesign('navPill-pinkBg')
-        //     setNavPillExecEval('navPill-whiteBg')
-        //     setNavPillShare('navPill-whiteBg')
-        // }
+      if (route === '/designthesupports') {
+        setLtfProgress(100)
+        setDtsProgress(((offset / (height/2)) * 60))
+        setEeProgress(-12)
+      }
 
-        // if (navProgress >= 70 && navProgress <= 83) {
-        //     setNavPillHome('navPill-pinkBg')
-        //     setNavPillLayFoundation('navPill-pinkBg')
-        //     setNavPillDesign('navPill-pinkBg')
+      if (route === '/executeandevaluate') {
+        setLtfProgress(100)
+        setDtsProgress(100)
+        setEeProgress(((offset / (height/2)) * 60))
+      }
 
-        //     setNavPillExecEval('navPill-pinkBg')
-        //     setNavPillShare('navPill-whiteBg')
-        // }
+      if (route === '/resources') {
+        setLtfProgress(100)
+        setDtsProgress(100)
+        setEeProgress(100)
+      }
 
-        // if (navProgress >= 90) {
-        //     setNavPillHome('navPill-pinkBg')
-        //     setNavPillLayFoundation('navPill-pinkBg')
-        //     setNavPillDesign('navPill-pinkBg')
-        //     setNavPillExecEval('navPill-pinkBg')
-        //     setNavPillShare('navPill-pinkBg')
-        // }
     }, [offset])
 
   return (
     <div className="FooterNav">
-        <progress className="footer-nav-progress" value={navProgress} min={0} max={100}></progress>
-        <Link href="/" className={`pill ${navPillHome} image-btn`} ><Image src={HOME_BTN} alt="Home"/></Link>
+        <progress className="footer-nav-progress" value={currentPageProgress} max={100}></progress>
+        <Link href="/" className={`pill navPill-whiteBg image-btn`} ><Image src={HOME_BTN} alt="Home"/></Link>
 
-        <Link href="laythefoundation"><MeterBtn phaseTitle={"Lay The Foundation"} scroll={navProgress} navPillShare={navPillLayFoundation} /></Link>
+        <Link href="laythefoundation"><MeterBtn phaseTitle={"Lay The Foundation"} scroll={ltfProgress} /></Link>
 
-        <Link href="designthesupports"><MeterBtn phaseTitle={"Design The Supports"} scroll={navProgress} navPillShare={navPillDesign} /></Link>
+        <Link href="designthesupports"><MeterBtn phaseTitle={"Design The Supports"} scroll={dtsProgress} /></Link>
 
-        <Link href="executeandevaluate"><MeterBtn phaseTitle={"Execute & Evaluate"} scroll={navProgress} navPillShare={navPillLayFoundation} /></Link>
-        <Link href="resources" className={`pill ${navPillShare} image-btn`}><Image src={RESOURCES_BTN} alt="Share"/></Link>
+        <Link href="executeandevaluate"><MeterBtn phaseTitle={"Execute & Evaluate"} scroll={eeProgress} /></Link>
+
+        <Link href="resources" className={`pill navPill-whiteBg image-btn`}><Image src={RESOURCES_BTN} alt="Share"/></Link>
 
         
     </div>
