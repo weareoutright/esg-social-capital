@@ -17,7 +17,7 @@ const ResourceAccordion = ({}) => {
         <Accordion.Header as={'h4'} bsPrefix='accordion-header-custom' onClick={(e) => handleClick(e)}>Why Social Capital Matters</Accordion.Header>
         <Accordion.Body bsPrefix='accordion-body-custom'>
             {RESOURCE_INFO.map((resource) => {
-                return <ResourceAccordionItem keyText={resource.key} parentPhase={resource.parentPhase} actionStepsArr={resource.actionStepsArr} />
+                return <ResourceAccordionItem key={resource.key} keyText={resource.key} parentPhase={resource.parentPhase} actionStepsArr={resource.actionStepsArr} />
             })}
         </Accordion.Body>
       </Accordion.Item>
