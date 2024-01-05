@@ -18,7 +18,7 @@ const HeaderCustom = ({homePageHeader}) => {
             <Link className="pill navPill-whiteBg" href="https://drive.google.com/file/d/1uuxbRu4V1TRfjpMrTurJ6tSoy9iYNRp_/view">DOWNLOAD FRAMEWORK RESOURCES</Link>
             <CopyToClipboard text={SHARE_LINK}
               onCopy={() => setCopied(true)}>
-              <button>Share</button>
+              <button className="pill">Share</button>
             </CopyToClipboard>
         </div>
     </div>
