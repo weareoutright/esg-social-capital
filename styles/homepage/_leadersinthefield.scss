@@ -94,6 +94,17 @@
         padding-bottom: 0 !important;
         font-style: italic;
         color: $mainFont;
+        display: block;
+    }
+    .first-last-org {
+        font-family: "Raleway" !important;
+        font-weight: 600;
+        font-size: .35em !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+        font-style: italic;
+        color: $mainFont;
+        display: block;
     }
   }
   .main-wrapper {

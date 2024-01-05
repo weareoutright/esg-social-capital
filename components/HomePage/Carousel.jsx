@@ -78,6 +78,7 @@ const Carousel = () => {
                 }} className="current-item">
                   {item.img}<Image className="play-btn" src={PLAY} alt=""/>
                   <small className="first-last">{item.name}</small>
+                  <small className="first-last-org">{item.org}</small>
                 </div> : 
                 item === visibleItems[0] ? <div 
                 onClick={(e) => {e.preventDefault; handleClick(-1);}}
