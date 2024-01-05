@@ -15,7 +15,7 @@ const HeaderCustom = ({homePageHeader}) => {
         </div>
 
         <div className={`pill ${homePageHeader === false ? "non-home-header" : ""}`}>
-            <Link className="pill navPill-whiteBg" href="https://drive.google.com/file/d/1uuxbRu4V1TRfjpMrTurJ6tSoy9iYNRp_/view">DOWNLOAD FRAMEWORK RESOURCES</Link>
+            <Link className="pill navPill-whiteBg download" href="https://drive.google.com/file/d/1uuxbRu4V1TRfjpMrTurJ6tSoy9iYNRp_/view">DOWNLOAD FRAMEWORK RESOURCES</Link>
             <CopyToClipboard text={SHARE_LINK}
               onCopy={() => setCopied(true)}>
               <button className="pill">Share</button>
