@@ -11,7 +11,7 @@ const HeaderCustom = ({homePageHeader}) => {
         </div>
 
         <div className={`pill ${homePageHeader === false ? "non-home-header" : ""}`}>
-            <button>DOWNLOAD PDF</button>
+            <button>DOWNLOAD FRAMEWORK RESOURCES</button>
             <button>Share</button>
         </div>
     </div>
