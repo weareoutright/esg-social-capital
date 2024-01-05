@@ -76,7 +76,7 @@ const FooterNav = () => {
   return (
     <div className="FooterNav">
         <progress className="footer-nav-progress" value={currentPageProgress} max={100}></progress>
-        <Link href="/" className={`pill navPill-whiteBg image-btn`} ><Image src={HOME_BTN} alt="Home"/></Link>
+        <Link href="/" className={`pill navPill-whiteBg image-btn home-nav-btn`} ><Image src={HOME_BTN} alt="Home"/></Link>
 
         <Link href="laythefoundation"><MeterBtn phaseTitle={"Lay The Foundation"} scroll={ltfProgress} /></Link>
 
@@ -84,7 +84,7 @@ const FooterNav = () => {
 
         <Link href="executeandevaluate"><MeterBtn phaseTitle={"Execute & Evaluate"} scroll={eeProgress} /></Link>
 
-        <Link href="resources" className={`pill navPill-whiteBg image-btn`}><Image src={RESOURCES_BTN} alt="Share"/></Link>
+        <Link href="resources" className={`pill navPill-whiteBg image-btn ${route === "/resources" ? "resources-nav-btn" : ""}`}><Image src={RESOURCES_BTN} alt="Share"/></Link>
 
         
     </div>
