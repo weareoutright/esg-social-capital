@@ -16,6 +16,8 @@
 
 .HeaderCustom button, .download {
     font-size: .85em !important;
+    position: relative;
+    z-index: 6;
 }
 
 .HeaderCustom .pill button {
