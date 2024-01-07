@@ -13,7 +13,7 @@ const ResourcesHeader = () => {
 				<div>
 				<p className="phase-pin"><Image src={RESOURCES_FOLDER} alt="" /><span className='resources-phase-title'>Cultivating Career Connections</span></p>
 					<span className="resources-title">
-						Additional Resources
+						Resources
 					</span>
 			  </div>
 		  </div>
