@@ -506,11 +506,6 @@ export const PHASE3_CONTENT = [
 				title:
 					'Social Capital Assessment + Learning for Equity (SCALE) Measures - User Guide ',
 			},
-			{
-				key: 'networking-101',
-				href: 'https://drive.google.com/file/d/1EG78UGh0R7ruJ296fWg8QSXMA_b-coWy/view?usp=sharing',
-				title: 'Networking 101 Workshop (San Diego)',
-			},
 		],
 		stickyNotesArr: [
 			{
