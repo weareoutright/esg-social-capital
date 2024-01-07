@@ -44,21 +44,20 @@
     }
 
     .pill {
-        color: $mainFont;
-        border: 2px solid $mainFont;
+        color: $blue;
+        border: 2px solid $blue;
         background-color: #fff;
         font-family: $secondaryFontface;
         font-size: .25em;
-        font-weight: 400;
+        font-weight: 600;
+        padding: .5em 1.5em;
     }
 
     .pill:hover {
         color: #fff;
-        border: 2px solid $mainFont;
+        border: 2px solid $blue;
         background-color: $blue;
         font-family: $secondaryFontface;
-        font-size: .25em;
-        font-weight: 400;
     }
 
 }
