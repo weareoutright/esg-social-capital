@@ -64,7 +64,7 @@
 }
 .folded_corner{
     color: $mainFont;
-    background: linear-gradient(to top left, transparent 50%, $cornerFold 0) no-repeat 100% 100%/2.6em 1.8em, linear-gradient(-35deg, transparent 1.5em, $paleBlue 0)
+    background: linear-gradient(to top left, transparent 50%, $cornerFold 0) no-repeat 100% 100%/2.1em 2.1em, linear-gradient(-45deg, transparent 1.5em, $paleBlue 0)
   }
   .folded_corner::before{
     position:absolute;
