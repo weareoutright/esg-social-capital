@@ -116,10 +116,11 @@
             
                         a.Tool {
                             border: none;
-                            font-size: 1em;
+                            font-size: .85em;
                             text-decoration: underline;
                             width: fit-content;
                             transition: all 200ms ease-in-out;
+                            margin-left: -.125em;
             
                             span {
                                 font-family: $secondaryFontface !important;
