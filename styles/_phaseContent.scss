@@ -37,17 +37,20 @@
 
             a.Tool {
                 border: none;
-                font-size: 1em;
+                font-size: .85em;
                 text-decoration: underline;
                 width: fit-content;
                 transition: all 200ms ease-in-out;
+                padding: .05em 0em;
+                margin-left: -.125em;
 
                 span {
                     font-family: $secondaryFontface !important;
                     text-transform: capitalize;
-                    font-weight: normal;
+                    font-weight: 500;
                     font-style: italic;
                     letter-spacing: 0em !important;
+                    color: $gray;
                 }
             }
 
