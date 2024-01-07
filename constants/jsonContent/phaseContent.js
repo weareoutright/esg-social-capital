@@ -192,7 +192,7 @@ export const PHASE2_CONTENT = [
 			{
 				key: 'edtech-connect',
 				href: 'https://whoyouknow.org/tools/',
-				title: 'EdTech That Connects (Clayton Christensen Institute',
+				title: 'EdTech That Connects (Clayton Christensen Institute)',
 			},
 		],
 		stickyNotesArr: [
