@@ -1,5 +1,3 @@
-import { PHASE1_CONTENT, PHASE2_CONTENT, PHASE3_CONTENT } from './phaseContent';
-
 export const RESOURCE_INFO = [
 	{
 		key: 'ltf',
