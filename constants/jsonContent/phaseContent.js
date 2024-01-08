@@ -53,8 +53,8 @@ export const PHASE1_CONTENT = [
 			},
 			{
 				key: 'talking-guide',
-				href: 'www.google.com',
-				title: 'A Guide For Talking About Social Capital',
+				href: 'https://www.equitablefutures.org/toolkit/a-guide-for-talking-about-social-capital/',
+				title: 'A Guide For Talking About Social Capital (Equitable Futures)',
 			},
 		],
 		stickyNotesArr: [
@@ -80,12 +80,6 @@ export const PHASE1_CONTENT = [
 				key: 'mapping-exercise',
 				href: 'https://docs.google.com/document/d/1EFyEbkWbOK3XxRlKbe4Rw_FlkrsWW7fusU5RaFxMoKE/edit?usp=sharing',
 				title: 'Social Capital Mapping Exercise',
-			},
-			{
-				key: 'socap-playbook',
-				href: 'https://docs.google.com/document/u/1/d/1rURUHGdtuwCrLjouLV3hcTfz7o3T158RPxt2QX3cwRs/copy?ts=607dd322',
-				title:
-					'Christensen Institute’s Social Capital Playbook Worksheet - Activity 2',
 			},
 		],
 		stickyNotesArr: [
@@ -119,7 +113,7 @@ export const PHASE1_CONTENT = [
 				key: 'clayton-playbook',
 				href: 'https://docs.google.com/document/u/1/d/1rURUHGdtuwCrLjouLV3hcTfz7o3T158RPxt2QX3cwRs/copy?ts=607dd322',
 				title:
-					'Clayton Christensen Institute Social Capital Playbook Worksheet',
+					'Social Capital Playbook Worksheet (Clayton Christensen Institute)',
 			},
 			{
 				key: 'community-resources',
@@ -145,7 +139,7 @@ export const PHASE2_CONTENT = [
 		icon: FRAME_PROGRAM,
 		title: 'Frame Your Program',
 		description:
-			'Use the Asset Map from 1.C. to determine a clear Framework for how and when to provide access to social capital concepts, skill building, and experiences. What do we want to be true for all students?',
+			'Use the Asset Map from Identify Your Assets in Phase 1 to determine a clear Framework for how and when to provide access to social capital concepts, skill building, and experiences. What do we want to be true for all students?',
 		toolsArr: [
 			{
 				key: 'framework-template',
@@ -159,7 +153,7 @@ export const PHASE2_CONTENT = [
 		icon: SCOPE_IT_OUT,
 		title: 'Scope It Out',
 		description:
-			'Using the Theory of Action you created in 1.A. your existing school, district, and state expectations/standards, and the framework from 2.A., customize a Scope and Sequence for social capital concepts and expectations by grade level.What should this work look like at every grade? How will we measure success?',
+			'Using the Theory of Action you created in Create A Theory of Action in Phase 1, your existing school, district, and state expectations/standards, and the framework from Phase 2, customize a Scope and Sequence for social capital concepts and expectations by grade level.What should this work look like at every grade? How will we measure success?',
 		toolsArr: [
 			{
 				key: 'scope-and-sequence',
@@ -182,7 +176,7 @@ export const PHASE2_CONTENT = [
 		icon: ID_GAP_AREAS,
 		title: 'Identify Gap Areas',
 		description:
-			'Compare your scope and sequence with your asset map from 1C. Where are there gaps in what you currently offer based on what you would like to offer? Are there tools or resources that need to be built? Make a plan for building these or doing some research about solutions that may be available for purchase.',
+			'Compare your scope and sequence with your asset map from Identify Your Assets in Phase 1. Where are there gaps in what you currently offer based on what you would like to offer? Are there tools or resources that need to be built? Make a plan for building these or doing some research about solutions that may be available for purchase.',
 		toolsArr: [
 			{
 				key: 'socap-opp-areas',
@@ -222,7 +216,7 @@ export const PHASE2_CONTENT = [
 				key: 'assessment-learning',
 				href: 'https://drive.google.com/file/d/1WHoX56ggBR3Cex8C5RrmCH2JpptDocsO/view?usp=sharing',
 				title:
-					'Social Capital Assessment + Learning for Equity (SCALE) Measures - User Guide',
+					'Social Capital Assessment + Learning for Equity (SCALE) Measures - User Guide (Search Institute)',
 			},
 		],
 		stickyNotesArr: [
@@ -315,7 +309,7 @@ export const PHASE2_CONTENT = [
 			},
 			{
 				key: 'youth-apprenticeship',
-				href: 'https://docs.google.com/document/d/1cJJqQewwfRrh7egzBDihe5orFNBeAo_xZJt_IFtGH38/edit?usp=sharing',
+				href: 'https://drive.google.com/drive/folders/1LvZxkKi8e4OoaSz9F6sRzMVF226WVjL_?usp=sharing',
 				title: 'Indianapolis Youth Apprenticeship Manager Conversation Guides',
 			},
 		],
@@ -351,13 +345,13 @@ export const PHASE3_CONTENT = [
 			{
 				key: 'mc-lesson-1',
 				href: 'https://docs.google.com/presentation/d/1CqpmSR-IWPcRPH0-8gEENPqTE2LBL4z2919oBAumfL4/edit?usp=sharing',
-				title: 'Montgomery County Social Capital Lesson 1: Who do YOU know?',
+				title: 'Lesson: Who Do YOU Know? (Montgomery County Public Schools)',
 			},
 			{
 				key: 'sd-after-high-school',
 				href: 'https://drive.google.com/file/d/1sWrr4CiBBFjQl_e2H-Ic9Fl0PPKNNt4z/view?usp=drive_link',
 				title:
-					'San Diego workshop presentation: “Building Social Capital After High School”',
+					'Building Social Capital After High School (Avenues for Success)',
 			},
 		],
 		stickyNotesArr: [
@@ -380,12 +374,12 @@ export const PHASE3_CONTENT = [
 			{
 				key: 'no-wrong-door',
 				href: 'https://drive.google.com/file/d/1z4eEejJGBn5zEY-a96WcHOG5JRmkCwaI/view?usp=sharing',
-				title: 'No Wrong Door Systems Mapping Relationships',
+				title: 'Mapping Relationships (Administration for Community Living)',
 			},
 			{
 				key: 'ci-relationship',
 				href: 'https://docs.google.com/document/d/1XmhdPIM5cSSHxEnAn2hXO4wlfPGXHQ1m/copy',
-				title: 'Christensen Institute Relationship Mapping Tool',
+				title: 'Relationship Mapping Tool (Clayton Christensen Institute)',
 			},
 			{
 				key: 'rm-pinellas',
@@ -498,13 +492,13 @@ export const PHASE3_CONTENT = [
 			{
 				key: 'search-institute',
 				href: 'https://docs.google.com/document/d/1EcqPNqmpBRu_GOuRle_zsqNDbA7fsRRV/edit?usp=sharing&ouid=111141657303388023157&rtpof=true&sd=true',
-				title: 'Search Institute Social Capital Focus Group Tool',
+				title: 'Social Capital Focus Group Tool (Search Institute)',
 			},
 			{
 				key: 'scale-measures',
 				href: 'https://drive.google.com/file/d/1WHoX56ggBR3Cex8C5RrmCH2JpptDocsO/view?usp=sharing',
 				title:
-					'Social Capital Assessment + Learning for Equity (SCALE) Measures - User Guide ',
+					'Social Capital Assessment + Learning For Equity (SCALE) Measures - User Guide (Search Institute)',
 			},
 		],
 		stickyNotesArr: [
@@ -530,7 +524,7 @@ export const PHASE3_CONTENT = [
 		icon: ANNUALLY_RESET,
 		title: 'Annually Reset',
 		description:
-			'Spend some time reflecting with your team and partners on where you feel you made an impact, what could have gone better, and where you see opportunities for strengthening the work moving forward. Use your data from 3.E. to update your Framework created in 2.B., Scope and Sequence from 2.A. and your annual plan in 2.D.',
+			'Spend some time reflecting with your team and partners on where you feel you made an impact, what could have gone better, and where you see opportunities for strengthening the work moving forward. Use your data from Monitor and Adjust (above) to update your Framework, Scope and Sequence, and annual plan (all created in Phase 2).',
 		toolsArr: [
 			{
 				key: 'framework-template-1',
