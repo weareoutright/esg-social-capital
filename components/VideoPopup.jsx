@@ -11,9 +11,7 @@ const VideoPopup = ({url, setShowVideoPopup}) => {
             <button onClick={() => setShowVideoPopup(false)} className="pill ">CLOSE <Image className="close-btn-x" src={CLOSE_BTN_X} alt=""></Image></button>
             <ReactPlayer width={800} height={450}
             url={url} />
-            {/* <h3 style={{color: "#fff", marginTop: "1em"}}>What is SoCap?</h3> */}
         </div>
-
     </div>
   )
 }
