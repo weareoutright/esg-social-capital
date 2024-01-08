@@ -17,6 +17,22 @@
     span {
         margin: 0em .5em 0em .75em;
     }
+
+    img {
+        animation-name: alternate;
+        animation-duration: .7s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes alternate {
+        0% {
+          transform: translate(9px, 0px);
+        }
+        100% {
+          transform: translate(-5px, 0px);
+        }
+      }
 }
 
 .MapArea .learn-how a:hover {
