@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import RED_LINE_END from "../../constants/red_line_end.svg"
 import MAP from "../../constants/map.svg"
+import RED_ARROW from "../../constants/redArrow.svg"
 
 const MapArea = () => {
   return (
@@ -17,10 +18,9 @@ const MapArea = () => {
             </p>
         </div>
         <div className="learn-how">
-            <Link className="pill" href="/laythefoundation" >Learn How</Link>
+            <small>Continue to Phase 1: Lay the Foundation</small>
+            <Link className="pill" href="/laythefoundation" alt=""><span>Learn How</span> <Image src={RED_ARROW} alt="" /></Link>
         </div>
-        <small>Continue to Phase 1:<br />
-        Lay the Foundation</small>
     </div>
   )
 }

@@ -10,8 +10,13 @@
     display: inline-flex;
     align-items: center;
     font-size: .3em;
-    margin-bottom: 1.5em;
-    padding: .85em 1.5em;
+    margin: 1.5em .75em;
+    padding: .5em 1em;
+    transition: all 120ms ease-in-out;
+
+    span {
+        margin: 0em .5em 0em .75em;
+    }
 }
 
 .MapArea .learn-how a:hover {
