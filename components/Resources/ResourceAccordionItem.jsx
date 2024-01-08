@@ -2,31 +2,23 @@ import React from 'react'
 import Accordion from "react-bootstrap/Accordion"
 import Tool from '../Tool'
 
-const ResourceAccordionItem = ({keyText, parentPhase, actionStepsArr}) => {
-    const handleClick = (e) => {
-        e.preventDefault();
-        e.target.blur();
-    }
+const ResourceAccordionItem = ({actionStepLinksArr, keyText, actionStep}) => {
+  const handleClick = (e) => {
+      e.preventDefault();
+      e.target.blur();
+  }
 
   return (
-    <>
-    <Accordion defaultActiveKey={keyText}>
-        <span className="parent-phase">{parentPhase}</span>
-        {actionStepsArr.map((actionStepParent) => {        
-            return (
-                <Accordion.Item key={actionStepParent.key} eventKey={actionStepParent.key} bsPrefix='mapped-accordion-item-custom'>
-                <Accordion.Header as={'h4'} bsPrefix='mapped-accordion-header-custom' onClick={(e) => handleClick(e)}>{actionStepParent.actionStep}</Accordion.Header>
-                <Accordion.Body bsPrefix='mapped-accordion-body-custom'>
-                  {actionStepParent.actionStepLinksArr.map((actionStepChild) => {
-                    return <Tool key={actionStepChild.key} href={actionStepChild.href} title={actionStepChild.title}/>
-                  })}
-                </Accordion.Body>
-                </Accordion.Item>
-            )}
-        )}
-    </Accordion>
-    <hr></hr>
-    </>
+    <Accordion>
+      <Accordion.Item key={keyText} eventKey={keyText} bsPrefix='mapped-accordion-item-custom'>
+      <Accordion.Header as={'h4'} bsPrefix='mapped-accordion-header-custom'>{actionStep}</Accordion.Header>
+      <Accordion.Body bsPrefix='mapped-accordion-body-custom'>
+        {actionStepLinksArr.map((actionStepChild) => {
+          return <Tool key={actionStepChild.key} href={actionStepChild.href} title={actionStepChild.title}/>
+        })}
+      </Accordion.Body>
+      </Accordion.Item>
+      </Accordion>
   );
 }
 

@@ -1,5 +1,41 @@
 export const RESOURCE_INFO = [
 	{
+		key: 'wscm',
+		parentPhase: 'Why Social Captial Matters',
+		actionStepsArr: [
+			{
+				key: 'wscm-1',
+				actionStep: 'Helpful Articles',
+				actionStepLinksArr: [
+					{
+						key: 'find-job',
+						href: 'https://hbr.org/2022/12/which-connections-really-help-you-find-a-job',
+						title:
+							'Which Connections Really Help You Find a Job? (Harvard Business Review)',
+					},
+					{
+						key: 'clarity-and-confidence',
+						href: 'https://cci.stradaeducation.org/pv-release-dec-8-2021/#clarity',
+						title:
+							'Gaining Clarity and Confidence in Career Plans (Strada Education Foundation)',
+					},
+					{
+						key: 'elite-personal-asset',
+						href: 'https://www.cnbc.com/2019/12/27/how-to-get-a-job-often-comes-down-to-one-elite-personal-asset.html',
+						title:
+							'How to get a job often comes down to one elite personal asset, and many people still don’t realize it (CNBC)',
+					},
+					{
+						key: 'linkedin-jobs',
+						href: 'https://www.linkedin.com/pulse/new-survey-reveals-85-all-jobs-filled-via-networking-lou-adler/',
+						title:
+							'Survey Reveals 85% of All Jobs are Filled Via Networking (LinkedIn)',
+					},
+				],
+			},
+		],
+	},
+	{
 		key: 'ltf',
 		parentPhase: 'Lay The Foundation',
 		actionStepsArr: [
