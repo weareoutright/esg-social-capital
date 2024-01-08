@@ -5,8 +5,8 @@ import Link from 'next/link'
 import {CopyToClipboard} from "react-copy-to-clipboard"
 
 const HeaderCustom = ({homePageHeader}) => {
-  const [copied, setCopied] = useState(false)
-  const SHARE_LINK = "https://esg-social-capital.vercel.app/"
+  // const [copied, setCopied] = useState(false)
+  // const SHARE_LINK = "https://esg-social-capital.vercel.app/"
 
   return (
     <div className="HeaderCustom">
@@ -15,7 +15,7 @@ const HeaderCustom = ({homePageHeader}) => {
         </div>
 
         <div className={`pill ${homePageHeader === false ? "non-home-header" : ""}`}>
-            <Link className="pill navPill-whiteBg download" href="https://drive.google.com/file/d/1uuxbRu4V1TRfjpMrTurJ6tSoy9iYNRp_/view" target='_blank' rel="noreferrer">DOWNLOAD FRAMEWORK RESOURCES</Link>
+            <Link className="pill navPill-whiteBg download" href="https://drive.google.com/file/d/1uuxbRu4V1TRfjpMrTurJ6tSoy9iYNRp_/view?usp=drive_link">DOWNLOAD FRAMEWORK RESOURCES</Link>
             {/* <CopyToClipboard text={SHARE_LINK}
               onCopy={() => setCopied(true)}>
               <button className="pill">Share</button>
