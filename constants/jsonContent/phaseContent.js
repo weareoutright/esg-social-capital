@@ -23,7 +23,7 @@ export const PHASE1_CONTENT = [
 		icon: CREATE_A_THEORY,
 		title: 'Create a theory of action',
 		description:
-			'Consider what you want for all students in your community and how an intentional social capital strategy will help you accomplish it. What will the impact be on your community because you prioritized social capital development in your college and career pathways work?',
+			'Consider your goals for effectively setting students up on a path to in-demand, fulfilling jobs that pay a family-sustaining wage and how an intentional social capital strategy will help you accomplish this. What will the impact be on your community because you prioritized social capital development in your college and career pathways work?',
 		toolsArr: [
 			{
 				key: 'action-exercise',
@@ -139,7 +139,7 @@ export const PHASE2_CONTENT = [
 		icon: FRAME_PROGRAM,
 		title: 'Frame Your Program',
 		description:
-			'Use the Asset Map from Identify Your Assets in Phase 1 to determine a clear Framework for how and when to provide access to social capital concepts, skill building, and experiences. What do we want to be true for all students?',
+			'Use the Asset Map from Identify Your Assets in Phase 1 to determine a clear Framework for how and when to provide access to social capital concepts, skill building, and experiences. It is important to build this work comprehensively into the range of college and career pathways efforts already underway. Social capital development should not be contained within a program that just some students have access to, but instead be integrated across the full body of work underway to prepare students for their futures. What do we want to be true for ALL students?',
 		toolsArr: [
 			{
 				key: 'framework-template',
@@ -153,7 +153,7 @@ export const PHASE2_CONTENT = [
 		icon: SCOPE_IT_OUT,
 		title: 'Scope It Out',
 		description:
-			'Using the Theory of Action you created in Create A Theory of Action in Phase 1, your existing school, district, and state expectations/standards, and the framework from Phase 2, customize a Scope and Sequence for social capital concepts and expectations by grade level.What should this work look like at every grade? How will we measure success?',
+			'Using the Theory of Action you created in Create A Theory of Action in Phase 1, your existing school, district, and state expectations/standards, and the framework from Frame Your Program above, customize a Scope and Sequence for social capital concepts and expectations by grade level. What should this work look like at every grade? How will we measure success?',
 		toolsArr: [
 			{
 				key: 'scope-and-sequence',
@@ -273,7 +273,7 @@ export const PHASE2_CONTENT = [
 	},
 	{
 		icon: DISTRICT_TEAM,
-		title: 'Train Your District Team',
+		title: 'Train Your Team',
 		description:
 			'Identify the people that need purposeful learning and engagement around this work. Develop a training plan that encourages buy-in, customizes for the audience, and equips plan implementers or advocates for driving the work. Some of your team might just need a “101” training while others would find it beneficial to go deeper into ideas on mindsets or best practices before engaging with students.',
 		toolsArr: [
@@ -338,7 +338,8 @@ export const PHASE2_CONTENT = [
 export const PHASE3_CONTENT = [
 	{
 		icon: INTRO_AND_TRANSLATE,
-		title: 'Work Your Plan: Introduce and Translate Social Capital Concepts',
+		title:
+			'Implement Your Plan: Introduce and Translate Social Capital Concepts',
 		description:
 			'The term “social capital” can mean a variety of things to students. It can seem a foreign concept or one that holds negative connotations. An important first step in this work might be to start with defining what is meant by social capital and why it is an important and renewable resource, particularly as they are planning for college and career. This introduction could take a variety of forms, ranging from highly structured to more informal.',
 		toolsArr: [
@@ -367,9 +368,9 @@ export const PHASE3_CONTENT = [
 	},
 	{
 		icon: MAP_AND_ASSESS,
-		title: 'Work Your Plan: Map and Assess Current Relationships',
+		title: 'Implement Your Plan: Map and Assess Current Relationships',
 		description:
-			'Relationship mapping is a powerful tool for helping students visualize who is in their network and in what settings. While the goal should always be an asset-based discussion of student networks and how to leverage them, teams can employ different approaches depending on the needs of their student population.',
+			"Relationship mapping is a powerful tool for helping students visualize who is in their network and in what settings. While the goal should always be an asset-based discussion of student networks and how to leverage them, teams can employ different approaches depending on the needs of their student population. As students grow their networks, they should go back to their network map and update it so that at any given point in time, it's a real-time reflection of who they know.",
 		toolsArr: [
 			{
 				key: 'no-wrong-door',
@@ -406,9 +407,9 @@ export const PHASE3_CONTENT = [
 	},
 	{
 		icon: TOOLKITS,
-		title: 'Work Your Plan: Build Student Social Capital Toolkits',
+		title: 'Implement Your Plan: Build Student Social Capital Toolkits',
 		description:
-			'Communities can help students take full advantage of opportunities to build new connections by equipping them with the tools and skill sets to increase their confidence, agency, and ability to communicate about themselves. This tool development can take many forms -  elevator pitches, strength and interests assessments, resume building workshops - and serve as opportunities for students to gain the confidence, know-how, and practice in talking about their goals, strengths, and experiences.',
+			'Armed with an understanding of who they already know and what their personal networks look like, the next step will be helping students understand what they need to build new connections. Communities can help students take full advantage of opportunities to expand their network by equipping them with the tools and skill sets to increase their confidence, agency, and ability to communicate about themselves. This tool development can take many forms -  elevator pitches, strength and interests assessments, resume building workshops - and serve as opportunities for students to gain the confidence, know-how, and practice in talking about their goals, strengths, and experiences.',
 		toolsArr: [
 			{
 				key: 'linkedin-workshop',
@@ -451,7 +452,8 @@ export const PHASE3_CONTENT = [
 	},
 	{
 		icon: EXPAND_AND_MOBILIZE,
-		title: 'Work Your Plan: Expand and Mobilize Student Professional Networks',
+		title:
+			'Implement Your Plan: Expand and Mobilize Student Professional Networks',
 		description:
 			'Once students feel confident and are equipped with social capital-building tools and skill sets, Communities can provide them with safe opportunities to practice, whether in smaller, more intimate settings like classrooms or in larger networking events. This is an opportunity to pull in industry and community partners for support as hosts and/or participants. Equip students with follow-up strategies that will allow them to stay connected to the new additions to their network and possibly leverage these relationships down the line.',
 		toolsArr: [

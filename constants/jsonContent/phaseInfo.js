@@ -15,8 +15,8 @@ export const PHASE_INFO = {
 		phaseHeaderContent: (
 			<>
 				<p className="content-justify phase-content">
-					School districts likely already have many of the foundational pieces
-					in place for helping students build social capital. These might
+					Schools and communities likely already have many of the foundational
+					pieces in place for helping students build social capital. These might
 					include current strategies around work-based learning, important
 					partnerships with employers and postsecondary institutions, or
 					advising plans to guide students in their next step. However, these
@@ -26,10 +26,10 @@ export const PHASE_INFO = {
 					experiences.
 				</p>
 				<p className="content-justify phase-content">
-					Communities must create a strong vision and set intentions for this
-					work to ensure all students will leave with a robust personal network
-					and the skills to activate it toward their goals. The Cultivating
-					Connections framework starts with{' '}
+					Creating a strong vision and setting intentions for this work is
+					critical to ensuring all students will leave with a robust personal
+					network and the skills to activate it toward their goals. The
+					Cultivating Connections framework starts with{' '}
 					<span className="red-highlight">creating a theory of action</span> for
 					what a social capital strategy should look like for their students,
 					then <span className="red-highlight">building the case</span> for why
