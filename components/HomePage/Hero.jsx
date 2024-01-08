@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import VERT_LINE from "../../constants/vert_line.svg"
+import Red from "../../helperFuncs/Red"
 
 const Hero = () => {
   return (
@@ -15,7 +16,7 @@ const Hero = () => {
         <div className="hero-content">
             <p>Who helped you get to where you are now? How have you helped others get to where they are?</p>
             <br />
-            <p>Social capital—or, simply put, “who we know”—can unlock and open doors to economic and career success for all learners. But how can schools, districts, and communities actively support students in recognizing the value of their existing relationships, expanding their connections,  and leveraging their networks to open up new educational and career opportunities?</p>
+            <p>Social capital—or, simply put, “who we know”—can <Red>unlock and open doors to economic and career success</Red> for all learners. But how can schools, districts, and communities actively support students in recognizing the value of their existing relationships, expanding their connections, and leveraging their networks to open up new educational and career opportunities?</p>
         </div>
         <div className="get-started">
             <Link className="pill" href="#whyscmatters" scroll={false}>Get Started</Link>

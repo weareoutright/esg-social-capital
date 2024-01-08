@@ -93,6 +93,7 @@
                             border: none;
                             color: $mainFont;
                             font-weight: 700;
+                            font-family: $secondaryFontface !important;
                         }
 
                         button:not(.collapsed) {
