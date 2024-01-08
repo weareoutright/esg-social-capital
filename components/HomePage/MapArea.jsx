@@ -14,7 +14,7 @@ const MapArea = () => {
         <Image className="red-line-end" src={RED_LINE_END} alt="" />
         <div className="content-justify">
             <p>
-            Through two years of work with these ten different communities, Education Strategy Group has gained valuable insight into how educational and community leaders can take action to make social capital access, development, and activation more equitable for their students
+            Through two years of work with these ten different communities, Education Strategy Group has gained valuable insight into how educational and community leaders can take action to make social capital access, development, and activation more equitable for their students.
             </p>
         </div>
         <div className="learn-how">
