@@ -18,6 +18,13 @@
         padding-left: .25em;
         font-size: 1em;
         margin-right: 1em;
+
+        img {
+            animation-name: alternate;
+            animation-duration: .7s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
     }
 
     .pill:hover {
@@ -26,4 +33,13 @@
         padding-right: .75em;
         padding-left: .25em;
     }
+
+    @keyframes alternate {
+        0% {
+          transform: translate(9px, 0px);
+        }
+        100% {
+          transform: translate(-5px, 0px);
+        }
+      }
 }
