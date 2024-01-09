@@ -64,7 +64,7 @@ export const PHASE1_CONTENT = [
 				location: 'San Diego, California',
 				content:
 					'For the San Diego team, it was necessary and beneficial to introduce the concept and benefits of social capital to families. They started with parents participating in an existing leadership program. Family engagement was already a core tenet in their approach to delivering equitable, community-oriented programming, and they found significant interest among parents in learning more about social capital. Leveraging families as both partners in helping students better understand the power in their networks and as brokers for new relationships can add tremendous value and keep these conversations going after the school day is over. It also recognizes the assets that schools already have in their students and families. In other words, there’s value in starting with a community’s own networks before seeking out new connections.',
-				href: 'https://docs.google.com/document/d/14XS_Yq3s5OzUGgx4XG325ugPSR8e-ZUBmTNcOLJfobA/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/1BjHkLm5dfjA6VYvesP2ECep3sshd_9Gx/view?usp=drive_link',
 			},
 		],
 	},
@@ -89,7 +89,7 @@ export const PHASE1_CONTENT = [
 				location: 'Chattanooga, Tennessee',
 				content:
 					'Communities may already have trusted materials that could be used in different and more intentional ways to help build student social capital. As part of helping students prepare for internship opportunities through their STEP-UP program, the Public Education Foundation in Chattanooga,TN had a work readiness guide that walked students through various activities to help them feel confident and ready for their internships. This team took the existing document, divided it into modules that worked for delivery within the advisory periods, and supplemented it with other social capital resources, like the Connected Futures curriculum. This approach minimized the need to develop completely brand new content and served to make social capital development a more explicit component within the existing materials.',
-				href: 'https://docs.google.com/document/d/1a5IfQ7_1LcJh5u_ORTqCbgY2yseLKzjPswEjimXRKeE/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/161tVrMTU_KlfNb70foZiHEtxpAJC9K0R/view?usp=drive_link',
 			},
 			{
 				key: '1c2',
@@ -97,7 +97,7 @@ export const PHASE1_CONTENT = [
 				location: 'Nashville, Tennessee',
 				content:
 					'Career and Technical Education (CTE) courses aren’t the only places where students should learn about the value of building and leveraging their social capital. Academic classes can also build relevance and student engagement by incorporating these ideas and strategies. At Maplewood High School in Nashville, the College and Career Readiness coach partnered with the sociology teacher to integrate social capital lessons into their syllabus. Once or twice a week, the coach would come into the classroom and bring a concept (e.g., relationship mapping, strong ties/weak ties, networking) to life, aligning the lesson to what students were currently learning in their existing sociology coursework.',
-				href: 'https://docs.google.com/document/u/0/d/1nVJt_TOWZWKkJIr6PgnpAwD9CKOnZNi4Rf4fJcBlaIk/edit',
+				href: 'https://drive.google.com/file/d/1KiP4i28C1knJxXO2lIF_bgDuLLPaD4Xj/view?usp=drive_link',
 			},
 		],
 	},
@@ -128,7 +128,7 @@ export const PHASE1_CONTENT = [
 				location: 'Tacoma, Washington',
 				content:
 					'While it is important to provide support to students to build and mobilize their own networks, it is also valuable for student-facing staff to see themselves as potential relationship brokers. This includes connecting with educators and administrators within the school building and looking outside the school community to bring new connections to students. The College Success Foundation advisor at Lincoln High School in Tacoma, WA made it a priority to strengthen her own ties to teachers and staff in the building to better serve as a resource to them and to the students. As a result of these efforts, several teachers invited her into their classrooms to deliver quick presentations on the work of the College Success Foundation and how they could benefit from participation in their programming.',
-				href: 'www.google.com',
+				href: 'https://drive.google.com/file/d/1utGADovO08UL-If_J661H2_ZrzJSAm3e/view?usp=drive_link',
 			},
 		],
 	},
@@ -168,7 +168,7 @@ export const PHASE2_CONTENT = [
 				location: 'Boston, Massachusetts',
 				content:
 					'A major priority for the Boston team was ensuring that social capital conversations, materials, tools, and resources did not suggest (explicitly or implicitly, to both young people and adults) that students were lacking in relationships or that their networks and experiences held no value. Continuously centering the lived experiences of the district’s most vulnerable students—including Black and Latinx students, students with disabilities, emerging multilingual learners, queer and trans students, and students from economically disinvested communities—with an emphasis on asset-forward language led to robust and necessary conversations about framing and preparing the adults for meeting students where they are. The team continues to discuss how to best ensure that everyone involved in this work—from district leaders to community partners to teachers—approaches this from a perspective that recognizes and celebrates the unique contribution that each student brings to their communities.',
-				href: 'https://docs.google.com/document/d/1SZhU1SfziCXwYgU_pDc9nt-CFMeXTZS_-woQYsCTIEw/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/1xs-rP_yJA6BwJkWm9jIuVp1t_AkYO2bD/view?usp=drive_link',
 			},
 		],
 	},
@@ -197,7 +197,7 @@ export const PHASE2_CONTENT = [
 				location: 'Pinellas County, Florida',
 				content:
 					'If the types of expertise that would help students gain the skills to mobilize their social capital aren’t available in-house, communities might look to external partners to help meet that need. This was a strategy used by the two pilot schools in Pinellas County, FL. At Boca Ciega High School, the teacher who led the pilot found a great deal of value in investing in a Dale Carnegie course focused on professional development and communication. The feedback survey administered at the end of the year showed that students found this experience among the most helpful because it gave them practice in introducing themselves and asking questions of others. Similarly, the teacher at Lealman Innovation Academy did not have a structure for work-based learning and invested in support from Junior Achievement and their work-based learning curriculum. Both teachers looked to external expertise to bring additional and well-respected learning to their students.',
-				href: 'https://docs.google.com/document/d/15M1s_flaN76RHU5ZP2Ae05Zb5S4AjdnRTxRPe5jqj5k/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/1Dkic4xvPUmAYp0cd8o2y80_Xc2aWo0U9/view?usp=drive_link',
 			},
 		],
 	},
@@ -227,7 +227,7 @@ export const PHASE2_CONTENT = [
 				location: 'San Diego, California',
 				content:
 					'The San Diego team made a conscious decision to have a dedicated staff member on the Avenues for Success team (housed under San Diego State University) lead the social capital pilot. This person was responsible for integrating social capital strategies, tools, and resources into the team’s existing framework and programming. While not every community might have the resources and capacity for an entire position, it is necessary to think about how much time is required for developing a social capital approach and who might be equipped to lead that work, particularly at the front end. For the San Diego team, this person also helped build the knowledge and the internal capacity of their staff for supporting student social capital development.',
-				href: 'https://docs.google.com/document/d/14XS_Yq3s5OzUGgx4XG325ugPSR8e-ZUBmTNcOLJfobA/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/1BjHkLm5dfjA6VYvesP2ECep3sshd_9Gx/view?usp=drive_link',
 			},
 		],
 	},
@@ -258,7 +258,7 @@ export const PHASE2_CONTENT = [
 				location: 'Chattanooga, Tennessee',
 				content:
 					'Because of the breadth of their implementation plan, the Chattanooga team spent additional time and resources to get English Language Learners the support needed to more fully engage in their pilot. They invested in translated materials and worked with ELL teachers to adapt their delivery but found that one of their most effective strategies for increasing access to the learning was in inviting a partner from a community-based organization to help translate and provide guidance for students. As the team noted, having a person who shared a common background and could speak their home language participate in the planned experiences helped build excitement and interest among students who were otherwise feeling disengaged.',
-				href: 'https://docs.google.com/document/d/1a5IfQ7_1LcJh5u_ORTqCbgY2yseLKzjPswEjimXRKeE/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/161tVrMTU_KlfNb70foZiHEtxpAJC9K0R/view?usp=drive_link',
 			},
 			{
 				key: '2e2',
@@ -267,7 +267,7 @@ export const PHASE2_CONTENT = [
 				location: 'San Antonio, Texas',
 				content:
 					'Throughout the pilot, the San Antonio team was committed to engaging professionals that reflected the experiences and racial and ethnic backgrounds of participating students. The STEM panel, for example, was made up of professionals and undergraduates whose stories resonated with the high school students. They were first-generation professionals, many of whom had grown up in the San Antonio region. Similarly, the near-peer mentors recruited through the Alamo Fellows program were all first-generation college students and STEM majors who had attended schools in San Antonio ISD or neighboring school districts. The near peer mentorship experience benefitted both the mentors and mentees as it provided the young mentors to also see themselves as role models and an opportunity to “give back” to their community and future generations.',
-				href: 'https://docs.google.com/document/u/0/d/1yz0Da2QMbhR3NX7Sw927B0DELoQebSs2lPOP7EScAxc/edit',
+				href: 'https://drive.google.com/file/d/1SuMkcbydGRrcAzgQ_kXB2he5bNiO_0Ox/view?usp=drive_link',
 			},
 		],
 	},
@@ -291,7 +291,7 @@ export const PHASE2_CONTENT = [
 				location: 'Indianapolis, Indiana',
 				content:
 					'In Indianapolis, Modern Apprenticeship Program (MAP) apprentices benefit from a Youth Apprenticeship Manager (YAM) who serves as their coach, support, and liaison to their supervisor. The YAMS meet regularly with both apprentice and supervisor to make sure the assignment is going well and that all parties are getting the support they need. Before launching the pilot, the MAP team convened the YAMs for a social capital orientation to introduce them to the goals of the project and to outline what this work would mean for them. In addition, to avoid adding more to YAMs’ workload and to maintain some consistency, the MAP team developed a “script” to be used with students and supervisors. The YAMs were given the freedom to make the script more personal but were provided the language to help deliver consistent information to all of their apprentices and industry partners.',
-				href: 'https://docs.google.com/document/d/1VBziqW29ElQWT8uM6G_y149ouEXVyzBBA759XRB5hyA/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/16ADhaxDHcc510A7ZV01Qf0OXpK50YcOP/view?usp=drive_link',
 			},
 		],
 	},
@@ -320,7 +320,7 @@ export const PHASE2_CONTENT = [
 				location: 'Montgomery County, Maryland',
 				content:
 					'The Montgomery County social capital project team found different ways to incorporate the “success stories” of near-peers who have recently earned bachelor’s degrees and achieved career success into the social capital pilot. In the introductory social capital asynchronous module they developed for the student orientation, the team featured a video of a recent ACES (Achieving Collegiate Excellence and Success) graduate discussing their academic and career journey. The featured graduate shared the people in their network that helped through their transitions from community college to a four year university. In addition, the social capital project team hosted a summer bridge program, which included a series of professional panels and opportunities for students to network with several graduates of Montgomery County Public Schools and the ACES program who shared their career and postsecondary journeys. Hearing from people with similar backgrounds and experiences can be affirming to students. It reinforces that their aspirations are feasible, can generate ideas about who in their network they could leverage, and garner support and guidance.',
-				href: 'https://docs.google.com/document/d/1g1p8Wfmli0uB-863_j2pkewm1NWBttIy1ChjMEcLD8w/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/1N54Bvf1RmeOCL9hEReXAgIq3tQ80TowH/view?usp=drive_link',
 			},
 			{
 				key: '2g2',
@@ -329,7 +329,7 @@ export const PHASE2_CONTENT = [
 				location: 'Indianapolis, Indiana',
 				content:
 					'Helping students build new connections and mentoring relationships is often stated as a benefit of work-based learning and other career-connected learning opportunities but is too frequently assumed to be something that comes about organically. To move past the assumption that social capital building is happening during these experiences, it is important to make this an explicit expectation for students and employer partners alike. The Indianapolis team developed the Expand Connections Challenge, where apprentices were incentivized to meet and have meaningful conversations with people within their worksite. The team previewed the Challenge with worksite supervisors and set the expectation that they provide opportunities (e.g., staff meetings, work events) for apprentices to form new connections and encourage them to share their career interests and educational aspirations with colleagues. Over the course of the pilot, one student even had the opportunity to sit down for a conversation with the company CEO, who connected her with other people with whom she shared career interests.',
-				href: 'https://docs.google.com/document/d/1VBziqW29ElQWT8uM6G_y149ouEXVyzBBA759XRB5hyA/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/16ADhaxDHcc510A7ZV01Qf0OXpK50YcOP/view?usp=drive_link',
 			},
 		],
 	},
@@ -362,7 +362,7 @@ export const PHASE3_CONTENT = [
 				location: 'Boston, Massachusetts',
 				content:
 					'The term “social capital” can seem jargony or may connote, for some people, a transactional, or inauthentic relationship. The Boston team recognized the value in engaging students in the ideas of social capital but questioned the utility of sticking to the terminology. For example, in their pilot, Apprentice Learning chose to frame initial social capital conversations by asking students about their “team.” Who are the people that are rooting for them? The ones that are on their bench? Who do they currently have on their team and who do they need? This language better resonated with the students and was more consistent with the programming being delivered by the Apprentice Learning staff.',
-				href: 'https://docs.google.com/document/d/1SZhU1SfziCXwYgU_pDc9nt-CFMeXTZS_-woQYsCTIEw/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/1xs-rP_yJA6BwJkWm9jIuVp1t_AkYO2bD/view?usp=drive_link',
 			},
 		],
 	},
@@ -401,7 +401,7 @@ export const PHASE3_CONTENT = [
 				location: 'Pinellas County, Florida',
 				content:
 					'In Boca Ciega High School in Pinellas County, FL, students were frequently encouraged to go back to their original relationship maps and continue to add contacts they might have either forgotten to list in the first place or had recently met. This kept networks at the top of students’ minds and many began to add the guest speakers in their classroom as weak tie connections. At Lealman Innovation Academy, students did the exercise at least twice to deepen their understanding of who was in their network. After the original mapping exercise revealed to the teacher that students did not have a clear understanding of who should be included, she decided to do the exercise again - giving students more practice in thinking about the connections they have in their lives.',
-				href: 'https://docs.google.com/document/d/15M1s_flaN76RHU5ZP2Ae05Zb5S4AjdnRTxRPe5jqj5k/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/1Dkic4xvPUmAYp0cd8o2y80_Xc2aWo0U9/view?usp=drive_link',
 			},
 		],
 	},
@@ -446,7 +446,7 @@ export const PHASE3_CONTENT = [
 				location: 'San Antonio, Texas',
 				content:
 					'The San Antonio team provided several workshops meant to scaffold student learning to prepare them, one step at a time, for their participation in summer internship opportunities and employment after high school. Most workshops helped students develop the tangible tools (e.g., resumes, LinkedIn profiles) they needed to apply for the internships but also increased their confidence and preparedness for interviews. In a focus group conducted by the team, students shared that this was their first opportunity to develop a resume, create a LinkedIn profile, or network with employers. They expressed that these types of skill-building opportunities were missing from their education, where the emphasis on academics seemed disconnected from the skill sets students felt they needed for the “real world.”',
-				href: 'https://docs.google.com/document/d/1yz0Da2QMbhR3NX7Sw927B0DELoQebSs2lPOP7EScAxc/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/1SuMkcbydGRrcAzgQ_kXB2he5bNiO_0Ox/view?usp=drive_link',
 			},
 		],
 	},
@@ -481,7 +481,7 @@ export const PHASE3_CONTENT = [
 				location: 'Nashville, Tennessee',
 				content:
 					'Networking events were critical milestones for most of the Nashville pilots and several of the College and Career Readiness coaches called them the most impactful experiences for their students. However, they also recognized that many students require more time to prepare for these types of experiences, especially if held off-site. Across multiple events, the range of preparedness varied from students who showed up in business attire, confident in their ability to engage with employer partners, to those whose anxieties and concerns kept them from making it on the bus. This was true despite students having developed elevator pitches and a battery of questions to ask industry partners. Upon reflection, coaches realized that a scaffolded approach, building up to an off-site networking event, would have likely helped students gradually build up their confidence and ease their anxieties.',
-				href: 'https://docs.google.com/document/d/1nVJt_TOWZWKkJIr6PgnpAwD9CKOnZNi4Rf4fJcBlaIk/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/1KiP4i28C1knJxXO2lIF_bgDuLLPaD4Xj/view?usp=drive_link',
 			},
 		],
 	},
@@ -510,7 +510,7 @@ export const PHASE3_CONTENT = [
 				location: 'Dallas, Texas',
 				content:
 					'The Graduation Alliance team in Dallas, TX relied on a tool they called their workbook to keep track of their interactions with students. The workbook is comprehensive and helps the staff document conversations and resource-sharing with students. As a part of this pilot, the team incorporated additional social capital metrics (e.g. number of new connections, types of conversations they were having with supervisors) and regularly asked students about the new or stronger connections they were building during their apprenticeship. Utilizing an existing tool meant the team did not have to create a different tracker and ensured that social capital development remained top of mind during coaching check-ins.',
-				href: 'https://docs.google.com/document/d/1ssqjBB5C1HWMIZjm7XUCid3eKGQv-TozsCzfZ_snhHw/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/1s-b8cTi9oj4bDLClXAcOztyADGTsXqqy/view?usp=drive_link',
 			},
 			{
 				key: '3e2',
@@ -518,7 +518,7 @@ export const PHASE3_CONTENT = [
 				location: 'Chattanooga, Tennessee',
 				content:
 					'The Chattanooga team discovered early on that students enjoyed participating in conversations about their relationships and networks. A focus group intended to be a one-time event became a monthly meeting of a group called the SoCap Student Leadership Ambassadors, who represented all 17 of the 10th grade advisory classrooms. This addition to the pilot plan ensured that the team remained student-focused and provided students with learning and experiences that they wanted. In return, the ambassadors supported and championed the content that was being delivered to them and their classmates during their advisory periods.',
-				href: 'https://docs.google.com/document/d/1a5IfQ7_1LcJh5u_ORTqCbgY2yseLKzjPswEjimXRKeE/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/161tVrMTU_KlfNb70foZiHEtxpAJC9K0R/view?usp=drive_link',
 			},
 		],
 	},
