@@ -43,12 +43,12 @@ export const PHASE1_CONTENT = [
 		toolsArr: [
 			{
 				key: 'module',
-				href: 'https://docs.google.com/presentation/d/1U_YwFAVatI_ZNP0ZvZ1K5BZ1xb1sR27kjbdXSXMfUNM/edit?usp=sharing',
+				href: 'https://docs.google.com/presentation/d/1qHvVrx5W8WB920IrzotM6M9FAbh28MXWGR3s8No28pY/view#slide=id.g2a681975fa2_0_128',
 				title: 'SoCap 101 Professional Development - Module',
 			},
 			{
 				key: 'facilitation',
-				href: 'https://docs.google.com/document/d/1nUqaS6gghaT2MZ21Ui_dR6AWUwZW2s5oP-Y5d1I9dsA/edit?usp=sharing',
+				href: 'https://docs.google.com/document/d/1nUqaS6gghaT2MZ21Ui_dR6AWUwZW2s5oP-Y5d1I9dsA/view#heading=h.y27ktevzmrvl',
 				title: 'SoCap 101 Professional Development - Faciliation Guide',
 			},
 			{
@@ -78,7 +78,7 @@ export const PHASE1_CONTENT = [
 		toolsArr: [
 			{
 				key: 'mapping-exercise',
-				href: 'https://docs.google.com/document/d/1EFyEbkWbOK3XxRlKbe4Rw_FlkrsWW7fusU5RaFxMoKE/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/1c0YyKP4A2Ba16KLxdsucfqK95-dOsNIS/view?usp=drive_link',
 				title: 'Social Capital Mapping Exercise',
 			},
 		],
