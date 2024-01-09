@@ -30,7 +30,7 @@
             .accordion-item-custom {
                 border: none;
                 padding-left: 0;
-                padding-bottom: .25em;
+                padding-bottom: 0em;
                 border-bottom: 2px solid $blue;
             }
 
@@ -75,16 +75,18 @@
                     .mapped-accordion-header-custom {
                         button {
                             padding: 0em .5em 0em 0em;
-                            font-style: italic;
-                            font-size: 1em;
-                            font-weight: 500;
-                            color: $mainFont;
+                            font-size: .75em;
+                            font-weight: 700;
                             background-color: transparent;
+                            margin: .5em 0em;
+                            text-transform: uppercase;
+                            font-family: $secondaryFontface;
+                            letter-spacing: .2em;
+                            color: $gray !important;
                         }
 
                         button:hover {
                             background-color: transparent;
-                            font-weight: 500;
                             color: $red;
                         }
         
@@ -92,12 +94,10 @@
                             background-color: transparent;
                             border: none;
                             color: $mainFont;
-                            font-weight: 500;
                             font-family: $secondaryFontface !important;
                         }
 
                         button:not(.collapsed) {
-                            font-weight: 500;
                             color: $red;
                             box-shadow: none;
                         }
