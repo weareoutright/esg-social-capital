@@ -38,6 +38,7 @@
         z-index: -3;
         background-color: $blue;
     }
+
     .title-div {
         margin: -.75em 0em 0em 2em;
         height: fit-content;
@@ -90,6 +91,17 @@
                     scale: 103%;
                 }
             }
+        }
+    }
+
+    @media  (min-width: $smMin) and (max-width: $smMax) {
+        .content-page {
+            width: fit-content;
+            margin: 0;
+        }
+
+        .sidebar, .sidebar-filter, .sidebar-blur {
+            display: none;
         }
     }
 }

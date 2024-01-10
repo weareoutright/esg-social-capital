@@ -45,4 +45,35 @@
         background-color: $red;
         box-shadow: 0px -.5px 0px 1px $red;
     }
+
+    @media  (min-width: 350px) and (max-width: 480px) {
+        background-image: none;
+        height: .65em;
+        background-color: transparent;
+        box-shadow: none;
+
+        a, svg {
+            display: none;
+        }
+
+        progress {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            z-index: 5;
+            height: .65em;
+            background-color: transparent;
+        }
+
+        progress::-webkit-progress-bar {
+            background-color: transparent;
+        }
+        
+        progress::-webkit-progress-value {
+            background-color: $red;
+            box-shadow: none;
+        }
+    }
 }

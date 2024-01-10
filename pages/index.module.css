@@ -16,10 +16,27 @@
 	font-size: 1.5rem;
 }
 
+/*
+$smMin: 350px;
+$smMax: 480px;
+$mdMin: 481px;
+$mdMax: 768px;
+$lgMin: 769px;
+$lgMax: 1279px;
+$xlMin: 1280px; 
+*/
+
 /* sm breakpoint */
 @media (max-width: 320px) {
 	.onPantheon {
 		@apply flex-col;
 		margin: 0 auto;
+	}
+}
+
+@media  (min-width: 350px) and (max-width: 480px) {
+	.header {
+		font-size: 1.5em;
+		margin: 0em !important;
 	}
 }
