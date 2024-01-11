@@ -15,9 +15,9 @@ const ResourcesContent = () => {
         </div>
         <hr></hr>
         <div className="resources-contact">
-            <h4>Contact</h4>
+          <h4>Contact</h4>
           <p className="content-justify">
-            If you’d like to learn more about this work, please contact us at <strong>impact@edstrategy.org</strong>
+          If you’d like to learn more about this work, or about how ESG can support your organization or community in building students' social capital, please contact us at <strong>impact@edstrategy.org</strong>
           </p>
         </div>
     </div>
