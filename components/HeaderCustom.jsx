@@ -14,7 +14,7 @@ const HeaderCustom = ({homePageHeader}) => {
     <div className="HeaderCustom">
         <div className="logo">
             <Link href="/" target="_blank" rel="noreferrer" className="logo-link"><Image src={CULTIVATING_CONNECTIONS} alt="ESG LOGO"/></Link>
-            <button className="hamburger-menu">Menu <Image src={HAMBURGER_MENU} alt="" className="hamburger-menu-icon"/></button>
+            <button onClick={() => alert("Menu in progress 🚧")} className="hamburger-menu">Menu <Image src={HAMBURGER_MENU} alt="" className="hamburger-menu-icon"/></button>
             <Link href="https://edstrategy.org/" target="_blank" rel="noreferrer" className="logo-link"><Image src={ESG_LOGO} alt="ESG LOGO"/></Link>
         </div>
 

@@ -192,6 +192,7 @@
 @media  (min-width: $smMin) and (max-width: $smMax) {
     .Resources {
         margin-top: 2em;
+        height: 100svh;
         .ResourcesContent {
             width: 100svw;
             margin: 0;
