@@ -27,7 +27,7 @@ export const PHASE1_CONTENT = [
 		toolsArr: [
 			{
 				key: 'action-exercise',
-				href: 'https://docs.google.com/document/d/1kVPRCKpMBngJf37tx3NNELNQ5WP5NfhAYM8Ab3BGKnI/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/1naEskdKuSWp6SF3yUyoP6Uh7DnBvOVS5/view?usp=drive_link',
 				title: 'Social Capital Theory of Action Exercise',
 			},
 		],
