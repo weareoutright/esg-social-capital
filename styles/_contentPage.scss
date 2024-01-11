@@ -97,7 +97,7 @@
     @media  (min-width: $smMin) and (max-width: $smMax) {
         .content-page {
             width: fit-content;
-            margin: 0;
+            margin: 0 !important;
         }
 
         .sidebar, .sidebar-filter, .sidebar-blur {

@@ -11,8 +11,8 @@ const NextPage = ({nextPage, nextPageAnchorLink}) => {
     <div className="NextPage">
       {nextPage !== null ?
       <>
-      <span>Continue to {nextPage}</span>
-      <Link className="pill" href={nextPageAnchorLink} alt="" onMouseEnter={() => setNextArrow(NEXT_ARROW_DARK)} onMouseLeave={() => setNextArrow(NEXT_ARROW)}><span>Next</span> <Image src={nextArrow} alt="" /></Link>
+      <span className='continue-text'>Continue to {nextPage}</span>
+      <Link className="pill next-btn" href={nextPageAnchorLink} alt="" onMouseEnter={() => setNextArrow(NEXT_ARROW_DARK)} onMouseLeave={() => setNextArrow(NEXT_ARROW)}><span>Next</span> <Image src={nextArrow} alt="" /></Link>
       </> : <span></span>
       }
     </div>
