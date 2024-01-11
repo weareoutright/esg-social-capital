@@ -33,7 +33,7 @@ export const CAROUSEL_CONTENT = [
 	{
 		key: 'j-tousant',
 		name: 'Jarrad Toussant',
-		org: 'Nashville Area Chamber of Commerce',
+		org: 'Dallas Regional Chamber',
 		img: <Image key="leader2" className="leader" src={JARRAD} alt="" />,
 		url: 'https://youtu.be/MlDtCCG_4HM',
 	},
