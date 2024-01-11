@@ -140,7 +140,7 @@ export const RESOURCE_INFO = [
 					{
 						key: 'edtech-connect',
 						href: 'https://whoyouknow.org/tools/',
-						title: 'EdTech That Connects (Clayton Christensen Institute',
+						title: 'EdTech That Connects (Clayton Christensen Institute)',
 					},
 				],
 			},
@@ -157,7 +157,7 @@ export const RESOURCE_INFO = [
 						key: 'assessment-learning',
 						href: 'https://drive.google.com/file/d/1WHoX56ggBR3Cex8C5RrmCH2JpptDocsO/view?usp=sharing',
 						title:
-							'Social Capital Assessment + Learning for Equity (SCALE) Measures - User Guide',
+							'Social Capital Assessment + Learning for Equity (SCALE) Measures - User Guide (Search Institute)',
 					},
 				],
 			},
@@ -202,7 +202,7 @@ export const RESOURCE_INFO = [
 					},
 					{
 						key: 'youth-apprenticeship',
-						href: 'https://docs.google.com/document/d/1cJJqQewwfRrh7egzBDihe5orFNBeAo_xZJt_IFtGH38/edit?usp=sharing',
+						href: 'https://drive.google.com/drive/folders/1LvZxkKi8e4OoaSz9F6sRzMVF226WVjL_?usp=sharing',
 						title:
 							'Indianapolis Youth Apprenticeship Manager Conversation Guides',
 					},
@@ -222,13 +222,13 @@ export const RESOURCE_INFO = [
 						key: 'mc-lesson-1',
 						href: 'https://docs.google.com/presentation/d/1CqpmSR-IWPcRPH0-8gEENPqTE2LBL4z2919oBAumfL4/edit?usp=sharing',
 						title:
-							'Montgomery County Social Capital Lesson 1: Who do YOU know?',
+							'Lesson: Who Do YOU Know? (Montgomery County Public Schools)',
 					},
 					{
 						key: 'sd-after-high-school',
 						href: 'https://drive.google.com/file/d/1sWrr4CiBBFjQl_e2H-Ic9Fl0PPKNNt4z/view?usp=drive_link',
 						title:
-							'San Diego workshop presentation: “Building Social Capital After High School”',
+							'Workshop: “Building Social Capital After High School” (Avenues for Success)',
 					},
 				],
 			},
@@ -239,12 +239,13 @@ export const RESOURCE_INFO = [
 					{
 						key: 'no-wrong-door',
 						href: 'https://drive.google.com/file/d/1z4eEejJGBn5zEY-a96WcHOG5JRmkCwaI/view?usp=sharing',
-						title: 'No Wrong Door Systems Mapping Relationships',
+						title:
+							'Mapping Relationships (Administration for Community Living)',
 					},
 					{
 						key: 'ci-relationship',
 						href: 'https://docs.google.com/document/d/1XmhdPIM5cSSHxEnAn2hXO4wlfPGXHQ1m/copy',
-						title: 'Christensen Institute Relationship Mapping Tool',
+						title: 'Relationship Mapping Tool (Clayton Christensen Institute)',
 					},
 					{
 						key: 'rm-pinellas',
@@ -319,18 +320,13 @@ export const RESOURCE_INFO = [
 					{
 						key: 'search-institute',
 						href: 'https://docs.google.com/document/d/1EcqPNqmpBRu_GOuRle_zsqNDbA7fsRRV/edit?usp=sharing&ouid=111141657303388023157&rtpof=true&sd=true',
-						title: 'Search Institute Social Capital Focus Group Tool',
+						title: 'Social Capital Focus Group Tool (Search Institute)',
 					},
 					{
 						key: 'scale-measures',
 						href: 'https://drive.google.com/file/d/1WHoX56ggBR3Cex8C5RrmCH2JpptDocsO/view?usp=sharing',
 						title:
-							'Social Capital Assessment + Learning for Equity (SCALE) Measures - User Guide ',
-					},
-					{
-						key: 'networking-101',
-						href: 'https://drive.google.com/file/d/1EG78UGh0R7ruJ296fWg8QSXMA_b-coWy/view?usp=sharing',
-						title: 'Networking 101 Workshop (San Diego)',
+							'Social Capital Assessment + Learning For Equity (SCALE) Measures - User Guide (Search Institute)',
 					},
 				],
 			},
