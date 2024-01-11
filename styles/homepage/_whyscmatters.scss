@@ -1,19 +1,36 @@
 .WhySCMatters {
     margin-top: 1em;
+
+    .container-custom {
+        font-size: .45em;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 1em; /* 127.273% */
+        text-transform: none;
+        line-height: 1.25em;
+        color: #002555;
+        width: 50%;
+    }
+
+    .whyscmatters-vert-line {
+        margin-top: .85em;
+        margin-bottom: .1em;
+    }
 }
 
-.WhySCMatters .container-custom {
-    font-size: .45em;
-    font-style: italic;
-    font-weight: 500;
-    line-height: 1em; /* 127.273% */
-    text-transform: none;
-    line-height: 1.25em;
-    color: #002555;
-    width: 50%;
-}
+@media  (min-width: 350px) and (max-width: 480px) {
+    #whyscmatters {
+        margin: 0;
+        width: 100svw;
+    }
 
-.WhySCMatters .whyscmatters-vert-line {
-    margin-top: .85em;
-    margin-bottom: .1em;
+    .WhySCMatters {
+        p.content-justify {
+            width: 80% !important;
+        }
+
+        .container-custom {
+            width: 80%;
+        }
+    }
 }
