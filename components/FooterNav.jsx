@@ -85,8 +85,6 @@ const FooterNav = () => {
         <Link href="executeandevaluate"><MeterBtn phaseTitle={"Execute & Evaluate"} scroll={eeProgress} /></Link>
 
         <Link href="resources" className={`pill navPill-whiteBg image-btn ${route === "/resources" ? "resources-nav-btn" : ""}`}><Image src={RESOURCES_BTN} alt="Share"/></Link>
-
-        
     </div>
   )
 }

@@ -4,17 +4,17 @@ import CULTIVATING_CONNECTIONS from "../constants/cultivating-connections-header
 import HAMBURGER_MENU from "../constants/hamburger-menu-icon.svg"
 import Image from 'next/image'
 import Link from 'next/link'
-// import {CopyToClipboard} from "react-copy-to-clipboard"
+import MobileMenu from "./MobileMenu"
 
 const HeaderCustom = ({homePageHeader}) => {
-  // const [copied, setCopied] = useState(false)
-  // const SHARE_LINK = "https://esg-social-capital.vercel.app/"
+  const [showMenu, setShowMenu] = useState(false)
 
   return (
+    <>
     <div className="HeaderCustom">
         <div className="logo">
             <Link href="/" target="_blank" rel="noreferrer" className="logo-link"><Image src={CULTIVATING_CONNECTIONS} alt="ESG LOGO"/></Link>
-            <button onClick={() => alert("Menu in progress 🚧")} className="hamburger-menu">Menu <Image src={HAMBURGER_MENU} alt="" className="hamburger-menu-icon"/></button>
+            <button onClick={() => setShowMenu(!showMenu)} className="hamburger-menu">Menu <Image src={HAMBURGER_MENU} alt="" className="hamburger-menu-icon"/></button>
             <Link href="https://edstrategy.org/" target="_blank" rel="noreferrer" className="logo-link"><Image src={ESG_LOGO} alt="ESG LOGO"/></Link>
         </div>
 
@@ -26,6 +26,8 @@ const HeaderCustom = ({homePageHeader}) => {
             </CopyToClipboard> */}
         </div>
     </div>
+        {showMenu && <MobileMenu />}
+    </>
   )
 }
 

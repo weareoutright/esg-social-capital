@@ -23,7 +23,7 @@ const ResourcesHeader = () => {
 	</div>
 			<div className='title-div'>
 				<div>
-				<p className="phase-pin"><Image src={RESOURCES_FOLDER} alt="" /><span className='resources-phase-title'>Career Connections</span></p>
+				<p className="phase-pin"><Image src={RESOURCES_FOLDER} alt="" /><span className='resources-phase-title'>Cultivating Connections</span></p>
 					<span className="resources-title">
 						Resources
 					</span>

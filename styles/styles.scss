@@ -21,7 +21,8 @@
 @import "./resources/_resources.scss";
 
 @import "./_copiedPopup.scss";
-@import "./stickyNote";
+@import "./stickyNote.scss";
+@import "./mobileMenu.scss";
 
 * {
     scroll-behavior: smooth;

@@ -120,7 +120,7 @@ export const PHASE_INFO = {
 		),
 		phaseHeaderImg: PHASE3_TITLE_IMG,
 		phaseContent: PHASE3_CONTENT,
-		nextPage: 'Career Connections: Resources',
+		nextPage: 'Cultivating Connections: Resources',
 		nextPageAnchorLink: '/resources',
 	},
 };

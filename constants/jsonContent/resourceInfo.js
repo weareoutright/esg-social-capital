@@ -61,7 +61,7 @@ export const RESOURCE_INFO = [
 					},
 					{
 						key: 'facilitation',
-						href: 'https://docs.google.com/document/d/1nUqaS6gghaT2MZ21Ui_dR6AWUwZW2s5oP-Y5d1I9dsA/edit?usp=sharing',
+						href: 'https://drive.google.com/file/d/14lIx76Kq2Y93wxOTYa2WoEm_Tzapwm90/view',
 						title: 'SoCap 101 Professional Development - Faciliation Guide',
 					},
 					{
