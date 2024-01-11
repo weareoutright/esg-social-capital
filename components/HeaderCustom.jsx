@@ -19,11 +19,7 @@ const HeaderCustom = ({homePageHeader}) => {
         </div>
 
         <div className={`pill ${homePageHeader === false ? "non-home-header" : ""}`}>
-            <Link className="pill navPill-whiteBg download" href="https://drive.google.com/file/d/1bpgVkP7BTtr4PAXRMoeRBQCYRPxGa2qJ/view?usp=drive_link" target='_blank' rel="noreferrer">DOWNLOAD FRAMEWORK RESOURCES</Link>
-            {/* <CopyToClipboard text={SHARE_LINK}
-              onCopy={() => setCopied(true)}>
-              <button className="pill">Share</button>
-            </CopyToClipboard> */}
+            <Link className="pill navPill-whiteBg download" href="https://drive.google.com/file/d/1bpgVkP7BTtr4PAXRMoeRBQCYRPxGa2qJ/view?usp=drive_link" target='_blank' rel="noreferrer">DOWNLOAD FRAMEWORK OVERVIEW</Link>
         </div>
     </div>
         {showMenu && <MobileMenu />}
