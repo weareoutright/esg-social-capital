@@ -100,7 +100,15 @@
             margin: 0 !important;
         }
 
+        .title-div {
+            margin-top: .5em;
+        }
+
         .sidebar, .sidebar-filter, .sidebar-blur {
+            display: none;
+        }
+
+        .phase-title-img {
             display: none;
         }
     }

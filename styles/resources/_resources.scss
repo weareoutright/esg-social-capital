@@ -188,3 +188,14 @@
     width: 90% !important;
     text-align: left;
 }
+
+@media  (min-width: $smMin) and (max-width: $smMax) {
+    .Resources {
+        margin-top: 2em;
+        .ResourcesContent {
+            width: 100svw;
+            margin: 0;
+            padding: 0em 2em 2em 2em;
+        }
+    }
+}
