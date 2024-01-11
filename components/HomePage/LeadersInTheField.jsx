@@ -16,8 +16,7 @@ const LeadersInTheField = () => {
 
         <Carousel />
         
-        <div className="content-justify">
-			<p>
+			<p className="content-justify">
 				Expanding and mobilizing social capital is most imperative for students
 				of backgrounds that have been{' '}
 				<Red>
@@ -38,8 +37,8 @@ const LeadersInTheField = () => {
 				, as the diversity and breadth of one&#39;s network increases access to
 				different information, resources, and support.
 			</p>
-			<br />
-			<p>
+
+			<p className="content-justify">
 				Without direct, even if loose, connections to people in industries that
 				provide a family-sustaining wage, the likelihood of a person finding
 				their way to these jobs diminishes. Yet, research by the{' '}
@@ -61,7 +60,6 @@ const LeadersInTheField = () => {
 				fields of interest can leave some students a step behind as they begin
 				their careers.
 			</p>
-		</div>
         <div className="info-and-stats">
             <Link className="info-and-stats-img-link" href="https://www.linkedin.com/pulse/new-survey-reveals-85-all-jobs-filled-via-networking-lou-adler/" target='_blank' rel='noreferrer'>
                 <Image src={INFO_AND_STATS} alt="Infographic on Social Capital Stats"/>
@@ -72,11 +70,17 @@ const LeadersInTheField = () => {
             <p>Addressing inequities in economic opportunity requires addressing network inequities — and <Red>that work must start long before a student enters the workforce</Red>. Few education systems identify social capital development as a critical component in their college and career preparation priorities despite the fact that expanding students&#39; networks and giving students the tools, confidence, and know-how to leverage their relationships can increase their access to new information, resources, and opportunities. Regrettably, this is too often left to chance. As they work to prepare students for college and career, education systems can more intentionally work to help students build and leverage their connections. 
             </p>
             <br />
-            <ReactPlayer style={{
-				margin: "1em auto",
-				border: "1px solid #000",
-			}}
-			url="https://youtu.be/kTar7wB45gw" />
+			<div className="player-wrapper">
+				<ReactPlayer 
+				style={{
+					margin: "1em auto",
+					border: "1px solid #000",
+				}}
+				className="react-player"
+				width='100%'
+				height='100%'
+				url="https://youtu.be/kTar7wB45gw" />
+			</div>
             <br />
             <p>How can communities more intentionally bring social capital to the forefront in their work to prepare students for college and career? On this website, you&#39;ll find a framework for how to <Red>more purposefully integrate social capital development into pathways and help students develop the skills, confidence, and agency</Red> to leverage existing relationships and build new connections in pursuit of their educational and professional aspirations.</p>
             <br />

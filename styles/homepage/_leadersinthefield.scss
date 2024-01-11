@@ -1,28 +1,28 @@
-.LeadersInTheField h3 {
+.LeadersInTheField {
+    h3 {
     width: 50%;
     text-wrap: wrap;
     text-overflow: balance;
-}
+    }
 
-.LeadersInTheField .video-carousel {
-    margin-bottom: 0;
-}
+    .video-carousel {
+        margin-bottom: 0;
+    }
 
-.LeadersInTheField .info-and-stats .info-and-stats-img-link {
-    border: none;
-}
+    .info-and-stats .info-and-stats-img-link {
+        border: none;
+    }
 
-.LeadersInTheField .info-and-stats .info-and-stats-img-link:hover {
-    background-color: transparent;
-}
+    .info-and-stats .info-and-stats-img-link:hover {
+        background-color: transparent;
+    }
 
-.LeadersInTheField small {
-    margin: 0;
-    margin-top: .5em;
-    margin-bottom: .25em !important;
-}
+    small {
+        margin: 0;
+        margin-top: .5em;
+        margin-bottom: .25em !important;
+    }
 
-.LeadersInTheField {
     .content-justify {
         margin-top: 2em;
     }
@@ -54,7 +54,61 @@
     .source-link {
         text-decoration: underline;
     }
+
+    .player-wrapper {
+        position: relative;
+        padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+        margin-bottom: 2em;
+    }
+        
+    .react-player {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
+
+@media  (min-width: 350px) and (max-width: 480px) {
+    .LeadersInTheField.container-custom {
+        width: 100svw;
+        h3 {
+            width: 90%;
+        }
+        .content-justify {
+            width: 80%;
+            margin-top: 0;
+        }
+
+        .main-wrapper {
+            width: 100svw !important;
+            .wrapper {
+                scale: 45%;
+                margin: 0;
+                margin-top: -2em;
+                margin-bottom: -.5em;
+            }
+        }
+
+        .info-and-stats {
+            padding: 1em 2em;
+        }
+
+        .player-wrapper {
+            position: relative;
+            padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+            margin-bottom: 2em;
+        }
+            
+        .react-player {
+        position: absolute;
+        top: 0;
+        left: 0;
+        }
+    }
+}
+
+
+
 
 // Carousel
 .card {
