@@ -48,8 +48,8 @@ export const PHASE1_CONTENT = [
 			},
 			{
 				key: 'facilitation',
-				href: 'https://docs.google.com/document/d/1nUqaS6gghaT2MZ21Ui_dR6AWUwZW2s5oP-Y5d1I9dsA/view#heading=h.y27ktevzmrvl',
-				title: 'SoCap 101 Professional Development - Faciliation Guide',
+				href: 'https://drive.google.com/file/d/14lIx76Kq2Y93wxOTYa2WoEm_Tzapwm90/view?usp=drive_link',
+				title: 'SoCap 101 Professional Development - Facilitation Guide',
 			},
 			{
 				key: 'talking-guide',
@@ -117,7 +117,7 @@ export const PHASE1_CONTENT = [
 			},
 			{
 				key: 'community-resources',
-				href: 'www.google.com',
+				href: 'https://drive.google.com/file/d/120ByuLK5d2bZT4TZjvymauSbEXHvIvnd/view?usp=sharing',
 				title: 'Mapping Your Community Resources',
 			},
 		],
@@ -143,7 +143,7 @@ export const PHASE2_CONTENT = [
 		toolsArr: [
 			{
 				key: 'framework-template',
-				href: 'https://docs.google.com/document/d/1jH6EsEVxDRpXLrzIe-6A18hqTBuMlTArli4Dt9BOZUA/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/1qlgJ844LM_4SAKVP_mWwW71YJbUW6kjG/view?usp=drive_link',
 				title: 'Framework Template',
 			},
 		],
@@ -157,7 +157,7 @@ export const PHASE2_CONTENT = [
 		toolsArr: [
 			{
 				key: 'scope-and-sequence',
-				href: 'https://docs.google.com/document/d/1mo_Oi95zIUUVWPr6GaqdhauKAoMeIDbLpcJkjQGQLiM/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/1KrMDeoORv88cnZXHtEWnHxIUQcr6DG4S/view?usp=drive_link',
 				title: 'Scope and Sequence Template',
 			},
 		],
@@ -180,7 +180,7 @@ export const PHASE2_CONTENT = [
 		toolsArr: [
 			{
 				key: 'socap-opp-areas',
-				href: 'https://docs.google.com/document/d/1FmCzcocQILLwUKYsAb7UFhPxgjOw4UpjP1C8BdKel9Y/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/1hebhE0KFQf2hnK7PfR0yJFGuCKPOJxB2/view?usp=drive_link',
 				title: 'Social Capital Opportunity Areas',
 			},
 			{
@@ -209,7 +209,7 @@ export const PHASE2_CONTENT = [
 		toolsArr: [
 			{
 				key: 'socap-implementation-strats',
-				href: 'https://docs.google.com/document/d/1LRfAX9CM3cDy7nYE2ADhJf9z7tHq7T60zZhrfehvRR4/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/1IDZ9THXpgHLni4M9hl7DPcKZZbcMpltH/view?usp=drive_link',
 				title: 'Social Capital Implementation Strategies',
 			},
 			{
@@ -239,13 +239,13 @@ export const PHASE2_CONTENT = [
 		toolsArr: [
 			{
 				key: 'students-disabilites',
-				href: 'https://docs.google.com/document/d/10aKRaSTNERlUPYdn3AZkT3l3BDFfXg5w0aJKFK5_OoQ/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/14ILVqCWgapPIzul30jA1noLCd69PpWBh/view?usp=drive_link',
 				title:
 					'Learning Memo: Supporting Students with Disabilities in Building their Social Capital',
 			},
 			{
 				key: 'students-esl',
-				href: 'https://docs.google.com/document/d/1ZlT9HB4TqNBXGgc6mhDFsD-8Bq1q1Yvo2NhhLv55RFw/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/19rguQIR2uLdE6vwOhPwX5lC7oMS9HtJF/view?usp=drive_link',
 				title:
 					'Learning Memo: Supporting English Language Learners in Building their Social Capital',
 			},
@@ -279,7 +279,7 @@ export const PHASE2_CONTENT = [
 		toolsArr: [
 			{
 				key: 'pd-modules',
-				href: 'https://docs.google.com/presentation/d/1U_YwFAVatI_ZNP0ZvZ1K5BZ1xb1sR27kjbdXSXMfUNM/edit?usp=sharing',
+				href: 'https://docs.google.com/presentation/d/1qHvVrx5W8WB920IrzotM6M9FAbh28MXWGR3s8No28pY/edit?usp=sharing',
 				title: 'Professional Development Modules',
 			},
 		],
@@ -303,7 +303,7 @@ export const PHASE2_CONTENT = [
 		toolsArr: [
 			{
 				key: 'employer-capacity',
-				href: 'https://docs.google.com/document/d/1cJJqQewwfRrh7egzBDihe5orFNBeAo_xZJt_IFtGH38/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/16IWgLlwMr1Ysf-_ghurv5iRnsuk1AZ5T/view?usp=drive_link',
 				title:
 					'Learning Memo: Building Employer Capacity to Facilitate Student Social Capital Development',
 			},
@@ -530,17 +530,17 @@ export const PHASE3_CONTENT = [
 		toolsArr: [
 			{
 				key: 'framework-template-1',
-				href: 'https://docs.google.com/presentation/u/0/d/1q4zLw66ooOl0hPG_yG4IoITfYqGPc6WzpQaLDb3Fn60/edit',
+				href: 'https://drive.google.com/file/d/1qlgJ844LM_4SAKVP_mWwW71YJbUW6kjG/view?usp=drive_link',
 				title: 'Framework Template',
 			},
 			{
 				key: 'scope-seq-template',
-				href: 'https://docs.google.com/presentation/d/1-sL9z9k_FUZFJ0IZrvygAA8-oohPOLah730Egv1X2Us/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/1KrMDeoORv88cnZXHtEWnHxIUQcr6DG4S/view?usp=drive_link',
 				title: 'Scope and Sequence template',
 			},
 			{
 				key: 'implement-so-cap',
-				href: 'https://docs.google.com/document/d/1LRfAX9CM3cDy7nYE2ADhJf9z7tHq7T60zZhrfehvRR4/edit?usp=sharing',
+				href: 'https://drive.google.com/file/d/1IDZ9THXpgHLni4M9hl7DPcKZZbcMpltH/view?usp=drive_link',
 				title: 'Social Capital Implementation Strategies',
 			},
 		],
