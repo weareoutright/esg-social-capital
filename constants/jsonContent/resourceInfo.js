@@ -181,7 +181,7 @@ export const RESOURCE_INFO = [
 			},
 			{
 				key: 'dts-6',
-				actionStep: 'Train Your District Team',
+				actionStep: 'Train Your Team',
 				actionStepLinksArr: [
 					{
 						key: 'pd-modules',
