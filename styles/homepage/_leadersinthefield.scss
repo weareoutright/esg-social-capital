@@ -67,12 +67,16 @@
         left: 0;
     }
 
-    .phase-overview-graphic-link {
+    .row-phase-overview-graphic-link {
         border: none;
         margin: 3em 0em;
         &:hover {
             background-color: transparent;
         }
+    }
+
+    .col-phase-overview-graphic-link {
+        display: none;
     }
 }
 
@@ -111,6 +115,19 @@
         position: absolute;
         top: 0;
         left: 0;
+        }
+
+        .col-phase-overview-graphic-link {
+            display: block;
+            border: none;
+            margin: 3em 0em;
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    
+        .row-phase-overview-graphic-link {
+            display: none;
         }
     }
 }

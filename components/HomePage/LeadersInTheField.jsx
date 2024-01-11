@@ -2,7 +2,8 @@ import React from 'react'
 import Red from '../../helperFuncs/Red'
 import Image from 'next/image'
 import INFO_AND_STATS from "../../constants/info_and_stats.svg"
-import PHASE_OVERVIEW_GRAPHIC from "../../constants/phase-graphic-overview.svg"
+import ROW_PHASE_OVERVIEW_GRAPHIC from "../../constants/phase-graphic-overview.svg"
+import COL_PHASE_OVERVIEW_GRAPHIC from "../../constants/col-phase-graphic-overview.svg"
 import Link from 'next/link'
 import Carousel from './Carousel'
 import ReactPlayer from "react-player"
@@ -85,7 +86,9 @@ const LeadersInTheField = () => {
             <br />
             <p>How can communities more intentionally bring social capital to the forefront in their work to prepare students for college and career? On this website, you&#39;ll find a framework for how to <Red>more purposefully integrate social capital development into pathways and help students develop the skills, confidence, and agency</Red> to leverage existing relationships and build new connections in pursuit of their educational and professional aspirations. The framework contains three main phases; this website offers action steps, tools and resources, and examples from the field within each phase.</p>
             
-			<Link className="phase-overview-graphic-link" href="https://drive.google.com/file/d/1bpgVkP7BTtr4PAXRMoeRBQCYRPxGa2qJ/view?usp=drive_link" target="_blank" rel="noreferrer"><Image src={PHASE_OVERVIEW_GRAPHIC} alt="" /></Link>
+			<Link className="row-phase-overview-graphic-link" href="https://drive.google.com/file/d/1bpgVkP7BTtr4PAXRMoeRBQCYRPxGa2qJ/view?usp=drive_link" target="_blank" rel="noreferrer"><Image src={ROW_PHASE_OVERVIEW_GRAPHIC} alt="" /></Link>
+
+			<Link className="col-phase-overview-graphic-link" href="https://drive.google.com/file/d/1bpgVkP7BTtr4PAXRMoeRBQCYRPxGa2qJ/view?usp=drive_link" target="_blank" rel="noreferrer"><Image src={COL_PHASE_OVERVIEW_GRAPHIC} alt="" /></Link>
 
             <p>Through generous philanthropic support, Education Strategy Group has worked with communities across the U.S. as they&#39;ve incorporated social capital development strategies into their college and career pathways, in areas like work-based learning, college and career advising, and classroom learning. These include: </p>
         </div>
