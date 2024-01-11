@@ -66,8 +66,9 @@ export const RESOURCE_INFO = [
 					},
 					{
 						key: 'talking-guide',
-						href: 'www.google.com',
-						title: 'A Guide For Talking About Social Capital',
+						href: 'https://www.equitablefutures.org/toolkit/a-guide-for-talking-about-social-capital/',
+						title:
+							'A Guide For Talking About Social Capital (Equitable Futures)',
 					},
 				],
 			},
@@ -80,12 +81,6 @@ export const RESOURCE_INFO = [
 						href: 'https://drive.google.com/file/d/1c0YyKP4A2Ba16KLxdsucfqK95-dOsNIS/view?usp=drive_link',
 						title: 'Social Capital Mapping Exercise',
 					},
-					{
-						key: 'socap-playbook',
-						href: 'https://docs.google.com/document/u/1/d/1rURUHGdtuwCrLjouLV3hcTfz7o3T158RPxt2QX3cwRs/copy?ts=607dd322',
-						title:
-							'Christensen Institute’s Social Capital Playbook Worksheet - Activity 2',
-					},
 				],
 			},
 			{
@@ -96,11 +91,11 @@ export const RESOURCE_INFO = [
 						key: 'clayton-playbook',
 						href: 'https://docs.google.com/document/u/1/d/1rURUHGdtuwCrLjouLV3hcTfz7o3T158RPxt2QX3cwRs/copy?ts=607dd322',
 						title:
-							'Clayton Christensen Institute Social Capital Playbook Worksheet',
+							'Social Capital Playbook Worksheet (Clayton Christensen Institute)',
 					},
 					{
 						key: 'community-resources',
-						href: 'www.google.com',
+						href: 'https://drive.google.com/file/d/120ByuLK5d2bZT4TZjvymauSbEXHvIvnd/view?usp=sharing',
 						title: 'Mapping Your Community Resources',
 					},
 				],
