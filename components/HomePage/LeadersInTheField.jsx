@@ -84,7 +84,7 @@ const LeadersInTheField = () => {
 				url="https://youtu.be/kTar7wB45gw" />
 			</div>
             <br />
-            <p>How can communities more intentionally bring social capital to the forefront in their work to prepare students for college and career? On this website, you&#39;ll find a framework for how to <Red>more purposefully integrate social capital development into pathways and help students develop the skills, confidence, and agency</Red> to leverage existing relationships and build new connections in pursuit of their educational and professional aspirations. The framework contains three main phases; this website offers action steps, tools and resources, and examples from the field within each phase.</p>
+            <p>How can communities more intentionally bring social capital to the forefront in their work to prepare students for college and career? On this website, you&#39;ll find a framework for how to <Red>more purposefully integrate social capital development into pathways and help students develop the skills, confidence, and agency</Red> to leverage existing relationships and build new connections in pursuit of their educational and professional aspirations. [The framework contains three main phases; this website offers action steps, tools and resources, and examples from the field within each phase.]</p>
             
 			<Link className="row-phase-overview-graphic-link" href="https://drive.google.com/file/d/1bpgVkP7BTtr4PAXRMoeRBQCYRPxGa2qJ/view?usp=drive_link" target="_blank" rel="noreferrer"><Image src={ROW_PHASE_OVERVIEW_GRAPHIC} alt="" /></Link>
 

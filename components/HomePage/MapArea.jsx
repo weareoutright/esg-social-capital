@@ -2,14 +2,29 @@ import React, {useState} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import RED_LINE_END from "../../constants/red_line_end.svg"
-import MAP from "../../constants/map.svg"
+import MAP_LARGE from "../../constants/map.svg"
+import MAP_SMALL from "../../constants/map-small.svg"
 import RED_ARROW from "../../constants/redArrow.svg"
+import { MAP_LOCATIONS_1, MAP_LOCATIONS_2 } from '../../constants/jsonContent/mapLocations'
 
 const MapArea = () => {
   return (
     <div className="MapArea container-custom">
         <div className="map">
-            <Image src={MAP} alt="Map of USA" priority={true}/>
+            <Image className="map-large" src={MAP_LARGE} alt="Map of USA" priority={true}/>
+            <Image className="map-small" src={MAP_SMALL} alt="Map of USA" priority={true}/>
+        </div>
+        <div className="map-small-locations">
+          <ul>
+            {MAP_LOCATIONS_1.map((location) => {
+              return <li key={`${location}-list-item`} className="small-location">{location}</li>
+            })}
+          </ul>
+          <ul>
+            {MAP_LOCATIONS_2.map((location) => {
+              return <li key={`${location}-list-item`} className="small-location">{location}</li>
+            })}
+          </ul>
         </div>
         <Image className="red-line-end" src={RED_LINE_END} alt="" />
         <p className="content-justify">

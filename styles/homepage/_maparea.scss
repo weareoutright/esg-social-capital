@@ -42,6 +42,14 @@
     transition: all 50ms ease-in;
   }
 
+  .map-large {
+    display: block;
+  }
+
+  .map-small, .map-small-locations {
+    display: none;
+  }
+
   @media  (min-width: 350px) and (max-width: 480px) {
     .content-justify {
       width: 80%;
@@ -50,6 +58,37 @@
     .map {
       padding: 1em;
     }
+
+    .map-large {
+      display: none;
+    }
+
+    .map-small {
+      display: block;
+    }
+
+    .map-small-locations {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      ul {
+        margin-bottom: 1.25em;
+        li {
+          font-family: $secondaryFontface;
+          color: $red;
+          font-weight: 600;
+          text-transform: uppercase;
+          font-size: .5em;
+          text-align: left;
+          margin: .25em .45em;
+          text-wrap: balance;
+          padding: 0em .5em;
+        }
+      }
+    }
+
 
     .red-line-end {
       scale: 76%;
