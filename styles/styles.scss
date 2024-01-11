@@ -35,6 +35,12 @@ body {
     font-size: 1em;
 }
 
+@media  (min-width: 350px) and (max-width: 480px) {
+    body {
+        margin-bottom: 2em !important;
+    }
+}
+
 h1, h2, h3, h4 {
     font-family: $secondaryFontface;
     color: $mainFont;

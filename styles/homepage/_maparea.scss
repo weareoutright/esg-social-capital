@@ -41,4 +41,19 @@
     font-weight: 800;
     transition: all 50ms ease-in;
   }
+
+  @media  (min-width: 350px) and (max-width: 480px) {
+    .content-justify {
+      width: 80%;
+    }
+
+    .map {
+      padding: 1em;
+    }
+
+    .red-line-end {
+      scale: 76%;
+      margin-top: -.5em;
+    }
+  }
 }
