@@ -8,33 +8,71 @@
         display: flex;
         align-items: center;
     }
-}
 
-.HeaderCustom .logo a {
-    border: none;
-    margin: .5em;
-}
+    .logo a {
+        border: none;
+        margin: .5em;
+    }
 
-.HeaderCustom .logo a:hover {
-    background-color: transparent;
-}
+    .logo a:hover {
+        background-color: transparent;
+    }
 
-.HeaderCustom button, .download {
-    font-size: .75em !important;
-    position: relative;
-    z-index: 6;
-}
+    button, .download {
+        font-size: .75em !important;
+        position: relative;
+        z-index: 6;
+    }
 
-.HeaderCustom .pill button {
-    padding: .5em 1em;
-    border: 2px solid #D90F03;
-    text-transform: uppercase;
-    margin: .5em .5em .5em .5em;
-    transition: all 120ms ease-in-out;
-}
+    .pill button {
+        padding: .5em 1em;
+        border: 2px solid #D90F03;
+        text-transform: uppercase;
+        margin: .5em .5em .5em .5em;
+        transition: all 120ms ease-in-out;
+    }
 
-.HeaderCustom .pill button:hover {
-    background-color: #FCE5E5;
-    font-weight: 900;
-    transition: all 120ms ease-in-out;
+    .pill button:hover {
+        background-color: #FCE5E5;
+        font-weight: 900;
+        transition: all 120ms ease-in-out;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    @media  (min-width: 350px) and (max-width: 480px) {
+        width: 100svw;
+        padding: 1em;
+
+        .logo {
+            scale: 90%;
+        }
+
+        .download {
+            font-size: .5em !important;
+            margin: 0;
+            width: fit-content;
+            padding: .5em .75em;
+            text-align: center;
+            display: none;
+        }
+
+        .hamburger-menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: .5em 1.75em;
+            margin-left: -.75em;
+            font-family: $secondaryFontface;
+            text-transform: uppercase;
+            border: 2px solid $blue !important;
+            font-weight: 600;
+        }
+
+        .non-home-header {
+            padding: 0;
+        }
+    }
 }
