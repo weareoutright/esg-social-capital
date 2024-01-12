@@ -1,3 +1,5 @@
+"use client"
+
 import React, {useState} from 'react'
 import ESG_LOGO from "../constants/esg_logo.svg"
 import CULTIVATING_CONNECTIONS from "../constants/cultivating-connections-header.svg"
@@ -14,7 +16,9 @@ const HeaderCustom = ({homePageHeader}) => {
     <div className="HeaderCustom">
         <div className="logo">
             <Link href="/" className="logo-link"><Image src={CULTIVATING_CONNECTIONS} alt="ESG LOGO"/></Link>
-            <button onClick={() => setShowMenu(!showMenu)} className="hamburger-menu">Menu <Image src={HAMBURGER_MENU} alt="" className="hamburger-menu-icon"/></button>
+            <button onClick={() => setShowMenu(!showMenu)} className="hamburger-menu">Menu 
+            <Image src={HAMBURGER_MENU} alt="" className="hamburger-menu-icon"/>
+            </button>
             <Link href="https://edstrategy.org/" target="_blank" rel="noreferrer" className="logo-link"><Image src={ESG_LOGO} alt="ESG LOGO"/></Link>
         </div>
 
@@ -22,7 +26,7 @@ const HeaderCustom = ({homePageHeader}) => {
             <Link className="pill navPill-whiteBg download" href="https://drive.google.com/file/d/1bpgVkP7BTtr4PAXRMoeRBQCYRPxGa2qJ/view?usp=drive_link" target='_blank' rel="noreferrer">DOWNLOAD FRAMEWORK OVERVIEW</Link>
         </div>
     </div>
-        {showMenu && <MobileMenu />}
+        {showMenu === true ? <MobileMenu /> : null}
     </>
   )
 }

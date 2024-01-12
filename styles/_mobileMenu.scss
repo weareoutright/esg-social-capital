@@ -4,4 +4,49 @@
     z-index: 10;
     position: fixed;
     background-color: #FFF;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .mobile-nav-links {
+        margin-top: 1em;
+
+        .pill {
+            padding: .5em 1.5em;
+            margin: 1em 0em 1em 2em;
+        }
+    
+        span {
+            margin: 0em .5em;
+        }
+    
+        .image-btn {
+            height: 1em;
+            padding: 1em 1.5em;
+        }
+    
+        .mobile-menu-vector {
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            margin-left: 4em;
+            height: 27em;
+        }
+    }
+
+    .download {
+        font-size: 1em;
+        padding: .65em 1.75em;
+        margin: 4em 0em 1em 2em;
+    }
+
+    .mobile-nav-footer {
+        width: 100svw;
+        height: 100%;
+        background-color: $blue;
+        background-image: url("../constants/mobile-network-graphic.svg");
+        background-repeat: no-repeat;
+        background-size: 150%;
+        background-position: center top;
+    }
 }
