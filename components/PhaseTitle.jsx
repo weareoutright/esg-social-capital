@@ -2,23 +2,20 @@ import React from 'react'
 import Image from 'next/image';
 
 const PhaseTitle = ({headerSvg, phaseNum, phaseTitle, phaseHeaderContent, phaseHeaderImg}) => {
-	console.log(phaseTitle)
-
-
 	const layTheFoundationNetworkStyles = {
         height: "46vh",
-        top: "22%",
+        top: "16%",
         right: "0",
 		borderRadius: "50%",
-		boxShadow: "0 0 .5em 1em #3870B5 inset",
+		boxShadow: "0 .7em .5em 1em #3870B5 inset",
 	}
 
 	const designTheSupportsNetworkStyles = {
         height: "46vh",
-        top: "22%",
+        top: "16%",
         right: "0",
 		borderRadius: "50%",
-		boxShadow: "0 0 .5em .15em #3870B5 inset",
+		boxShadow: "0 0 .9em .2em #3870B5 inset",
 	}
 
 	const execAndEvalNetworkStyles = {
