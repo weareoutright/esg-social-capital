@@ -25,8 +25,18 @@
     }
 
     .WhySCMatters {
+        font-size: 2.35em;
+
+        h2 {
+            font-size: .75em;
+        }
+
         p.content-justify {
             width: 80% !important;
+        }
+
+        .content-justify {
+            font-size: 2em;
         }
 
         .container-custom {

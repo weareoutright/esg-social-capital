@@ -83,9 +83,15 @@
 @media  (min-width: 350px) and (max-width: 480px) {
     .LeadersInTheField.container-custom {
         width: 100svw;
+        font-size: 2.5em;
+
         h3 {
             width: 90%;
+            font-size: .65em !important;
+            text-wrap: balance;
+            margin-top: -1em;
         }
+
         .content-justify {
             width: 80%;
             margin-top: 0;
@@ -93,11 +99,26 @@
 
         .main-wrapper {
             width: 100svw !important;
+            margin: 1em 0em 1em 0em;
+
             .wrapper {
                 scale: 45%;
                 margin: 0;
                 margin-top: -2em;
                 margin-bottom: -.5em;
+
+                .current-item {
+                    margin-top: 1.75em;
+                }
+
+                .first-last {
+                    font-size: .75em !important;
+                }
+
+                .first-last-org {
+                    font-size: .65em !important;
+                    text-wrap: balance;
+                }
             }
         }
 
