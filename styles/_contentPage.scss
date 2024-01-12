@@ -95,13 +95,14 @@
     }
 
     @media  (min-width: $smMin) and (max-width: $smMax) {
-        .content-page {
-            width: fit-content;
-            margin: 0 !important;
-        }
+        font-size: 2.25em !important;
+        width: fit-content;
 
         .title-div {
-            margin-top: .5em;
+            margin: .25em 0em 0em 1em;
+            h3 {
+                font-size: 1em !important;
+            }
         }
 
         .sidebar, .sidebar-filter, .sidebar-blur {
