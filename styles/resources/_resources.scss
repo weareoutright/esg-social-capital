@@ -199,6 +199,11 @@
     .Resources {
         margin-top: 2em;
         height: 100svh;
+
+        .content-justify {
+            font-size: .5em !important;
+        }
+
         .ResourcesContent {
             width: 100svw;
             margin: 0;

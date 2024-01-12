@@ -45,10 +45,15 @@
 
     @media  (min-width: 350px) and (max-width: 480px) {
         width: 100svw;
-        padding: 1em;
+        padding: .15em;
+        justify-content: space-evenly;
 
         .logo {
-            scale: 90%;
+            padding: .25em 0em;
+        }
+
+        .logo-link {
+            width: 8em;
         }
 
         .download {

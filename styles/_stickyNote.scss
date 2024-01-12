@@ -60,6 +60,12 @@
         font-family: $secondaryFontface;
     }
 
+    @media  (min-width: 350px) and (max-width: 480px) {
+        .pill {
+            font-size: .4em;
+        }
+    }
+
 }
 .folded_corner{
     color: $mainFont;
