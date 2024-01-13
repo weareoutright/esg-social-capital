@@ -47,6 +47,9 @@
         width: 100svw;
         padding: .15em;
         justify-content: space-evenly;
+        position: fixed;
+        background-color: #FFF;
+        z-index: 20;
 
         .logo {
             padding: .25em 0em;

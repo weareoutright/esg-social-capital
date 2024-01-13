@@ -29,7 +29,7 @@ const HeaderCustom = ({homePageHeader}) => {
             <Link className="pill navPill-whiteBg download" href="https://drive.google.com/file/d/1bpgVkP7BTtr4PAXRMoeRBQCYRPxGa2qJ/view?usp=drive_link" target='_blank' rel="noreferrer">DOWNLOAD FRAMEWORK OVERVIEW</Link>
         </div>
     </div>
-        {showMenu === true ? <MobileMenu /> : null}
+        {showMenu === true ? <MobileMenu setShowMenu={setShowMenu} /> : null}
     </>
   )
 }

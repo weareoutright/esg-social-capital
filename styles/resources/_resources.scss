@@ -32,6 +32,7 @@
                 padding-left: 0;
                 padding-bottom: 0em;
                 border-bottom: 2px solid $blue;
+                
             }
 
             .accordion-header-custom {
@@ -198,7 +199,7 @@
 @media  (min-width: $smMin) and (max-width: $smMax) {
     .Resources {
         margin-top: 2em;
-        height: 100svh;
+        height: fit-content;
 
         .content-justify {
             font-size: .5em !important;
@@ -207,7 +208,53 @@
         .ResourcesContent {
             width: 100svw;
             margin: 0;
-            padding: 0em 2em 2em 2em;
+            padding: 0em 1em 2em 1em;
+
+            h4 {
+                font-size: .6em;
+            }
+
+            .resources-accordions {
+
+                .accordion-header-custom {
+                    font-size: .5em;
+
+                    hr {
+                        display: none;
+                    }
+                    button {
+                        color: $mainFont;
+                        font-style: italic;
+                        font-size: 1.25em;
+                        padding: .5em .35em .5em 0em;
+                        background-color: transparent;
+                        font-weight: 700;
+                    }
+    
+                    button:hover {
+                        background-color: transparent;
+                        font-weight: 700;
+                        color: $red !important;
+                    }
+    
+                    button.collapsed {
+                        background-color: transparent;
+                        border: none;
+                        color: $mainFont !important;
+                    }
+    
+                    button:not(.collapsed) {
+                        font-weight: 700;
+                        color: $mainFont !important;
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            .Tool {
+                font-size: 1.25em !important;
+                padding: .15em 0em;
+            }
         }
     }
 }

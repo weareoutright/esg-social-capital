@@ -97,9 +97,10 @@
     @media  (min-width: $smMin) and (max-width: $smMax) {
         font-size: 2.25em !important;
         width: fit-content;
+        margin-top: 2em !important;
 
         .title-div {
-            margin: .25em 0em 0em 1em;
+            margin: 2.5em 0em 0em 1em;
             h3 {
                 font-size: 1.25em !important;
             }

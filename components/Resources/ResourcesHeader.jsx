@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-import RESOURCES_FOLDER from "../../constants/resources-folder.svg"
+import RESOURCES_FOLDER from "../../constants/resources-folder-blue.svg"
 
 const resourcesNetworkStyles = {
 	height: "100vh",
