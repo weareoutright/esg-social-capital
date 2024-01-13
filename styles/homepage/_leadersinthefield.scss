@@ -9,13 +9,22 @@
         margin-bottom: 0;
     }
 
-    .info-and-stats .info-and-stats-img-link {
+    .info-and-stats .info-and-stats-img-link-row {
         border: none;
     }
 
-    .info-and-stats .info-and-stats-img-link:hover {
+    .info-and-stats .info-and-stats-img-link-row:hover {
         background-color: transparent;
     }
+
+    .info-and-stats-img-link-row {
+        display: inline-block;
+    }
+
+    .info-and-stats-img-link-col {
+        display: none;
+    }
+
 
     small {
         margin: 0;
@@ -123,7 +132,27 @@
         }
 
         .info-and-stats {
-            padding: 1em 2em;
+            padding: .5em;
+            margin-top: -.5em;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .info-and-stats-img-link-row {
+                border: none;
+                display: none;
+            }
+
+            .info-and-stats-img-link-col {
+                border: none;
+                display: inline-block;
+                margin-bottom: .75em;
+            }
+
+            small {
+                margin: .5em 0em;
+            }
         }
 
         .player-wrapper {

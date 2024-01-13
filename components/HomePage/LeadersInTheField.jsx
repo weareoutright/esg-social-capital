@@ -2,6 +2,8 @@ import React from 'react'
 import Red from '../../helperFuncs/Red'
 import Image from 'next/image'
 import INFO_AND_STATS from "../../constants/info_and_stats.svg"
+import INFO_AND_STATS_TOP from "../../constants/info-and-stats-top.svg"
+import INFO_AND_STATS_BOTTOM from "../../constants/info-and-stats-bottom.svg"
 import ROW_PHASE_OVERVIEW_GRAPHIC from "../../constants/phase-graphic-overview.svg"
 import COL_PHASE_OVERVIEW_GRAPHIC from "../../constants/col-phase-graphic-overview.svg"
 import Link from 'next/link'
@@ -63,9 +65,18 @@ const LeadersInTheField = () => {
 				their careers.
 			</p>
         <div className="info-and-stats">
-            <Link className="info-and-stats-img-link" href="https://www.linkedin.com/pulse/new-survey-reveals-85-all-jobs-filled-via-networking-lou-adler/" target='_blank' rel='noreferrer'>
+            <Link className="info-and-stats-img-link-row" href="https://www.linkedin.com/pulse/new-survey-reveals-85-all-jobs-filled-via-networking-lou-adler/" target='_blank' rel='noreferrer'>
                 <Image src={INFO_AND_STATS} alt="Infographic on Social Capital Stats"/>
             </Link>
+
+			<Link className="info-and-stats-img-link-col" href="https://www.linkedin.com/pulse/new-survey-reveals-85-all-jobs-filled-via-networking-lou-adler/" target='_blank' rel='noreferrer'>
+                <Image src={INFO_AND_STATS_TOP} alt="Infographic on Social Capital Stats"/>
+            </Link>
+
+			<Link className="info-and-stats-img-link-col" href="https://www.linkedin.com/pulse/new-survey-reveals-85-all-jobs-filled-via-networking-lou-adler/" target='_blank' rel='noreferrer'>
+                <Image src={INFO_AND_STATS_BOTTOM} alt="Infographic on Social Capital Stats"/>
+            </Link>
+
             <small>(Source: <Link className="source-link" href="https://www.cnbc.com/2019/12/27/how-to-get-a-job-often-comes-down-to-one-elite-personal-asset.html" target='_blank' rel="noreferrer" alt="">CNBC WORK</Link>; <Link className="source-link" href="https://www.linkedin.com/pulse/new-survey-reveals-85-all-jobs-filled-via-networking-lou-adler/" target='_blank' rel="noreferrer" alt="">LinkedIn</Link>)</small>
         </div>
         <div className="content-justify">
