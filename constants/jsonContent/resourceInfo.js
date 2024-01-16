@@ -62,7 +62,7 @@ export const RESOURCE_INFO = [
 					{
 						key: 'facilitation',
 						href: 'https://drive.google.com/file/d/14lIx76Kq2Y93wxOTYa2WoEm_Tzapwm90/view',
-						title: 'SoCap 101 Professional Development - Faciliation Guide',
+						title: 'SoCap 101 Professional Development - Facilitation Guide',
 					},
 					{
 						key: 'talking-guide',
@@ -346,7 +346,7 @@ export const RESOURCE_INFO = [
 					},
 					{
 						key: 'implement-so-cap',
-						href: 'https://docs.google.com/document/d/1LRfAX9CM3cDy7nYE2ADhJf9z7tHq7T60zZhrfehvRR4/edit?usp=sharing',
+						href: 'https://drive.google.com/file/d/1IDZ9THXpgHLni4M9hl7DPcKZZbcMpltH/view?usp=drive_link',
 						title: 'Social Capital Implementation Strategies',
 					},
 				],
