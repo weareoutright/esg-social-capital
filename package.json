@@ -28,6 +28,7 @@
 		"decoupled-kit-health-check": "npx --prefer-offline @pantheon-systems/decoupled-kit-health-check wordpress"
 	},
 	"dependencies": {
+		"@next/third-parties": "^14.0.4",
 		"@pantheon-systems/nextjs-kit": "1.7.6",
 		"@pantheon-systems/wordpress-kit": "3.1.2",
 		"@ramonak/react-progress-bar": "^5.1.1",
@@ -39,7 +40,7 @@
 		"gulp": "^4.0.2",
 		"gulp-cli": "^2.3.0",
 		"lorem-ipsum": "^2.0.8",
-		"next": "13.4.7",
+		"next": "^14.0.4",
 		"next-seo": "^6.1.0",
 		"react": "18.2.0",
 		"react-bootstrap": "^2.9.1",
