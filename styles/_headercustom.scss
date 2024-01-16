@@ -53,10 +53,14 @@
 
         .logo {
             padding: .25em 0em;
+            width: 100svw;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
         .logo-link {
-            width: 8em;
+            width: 7em;
         }
 
         .download {
