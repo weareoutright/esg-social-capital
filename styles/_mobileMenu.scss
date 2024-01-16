@@ -33,6 +33,12 @@
             margin-left: 4em;
             height: 27em;
         }
+
+        .current {
+            border: 4px solid $red;
+            font-weight: 900;
+            background-color: $lightRed;
+        }
     }
 
     .download {
