@@ -8,7 +8,7 @@ import Red from "../../helperFuncs/Red"
 const Hero = () => {
   return (
     <div className="Hero" id="hero">
-        <Image src={HERO_BG} alt="/" className="hero-bg" />
+        {/* <Image src={HERO_BG} alt="/" className="hero-bg" /> */}
         <h1>
             Cultivating<br />Connections
         </h1>

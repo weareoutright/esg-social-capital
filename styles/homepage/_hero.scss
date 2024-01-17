@@ -3,18 +3,19 @@
     flex-direction: column;
     align-items: center;
     margin-top: .5em;
+    padding-top: 0em;
     padding-bottom: 0em;
-    // background-image: url("../../constants/hero_bubbles_1.svg");
-    // background-position: max(0em) max(1.75em);
-    // background-repeat: no-repeat;
-    // background-size: contain;
+    background-image: url("../../constants/hero_bubbles_1.svg");
+    background-position: max(0em) max(4em);
+    background-repeat: no-repeat;
+    background-size: contain;
 
-    .hero-bg {
-        position: absolute;
-        z-index: -5;
-        bottom: 0;
-        margin-bottom: -4em;
-    }
+    // .hero-bg {
+    //     position: absolute;
+    //     z-index: -5;
+    //     bottom: 0;
+    //     margin-bottom: -4em;
+    // }
 
     h1 {
         font-size: 1em;
