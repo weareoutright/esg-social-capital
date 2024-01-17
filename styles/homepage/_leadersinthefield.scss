@@ -236,6 +236,7 @@
         font-style: italic;
         color: $mainFont;
         display: block;
+        text-wrap: nowrap;
     }
     .first-last-org {
         font-family: "Raleway" !important;
@@ -247,6 +248,7 @@
         font-style: italic;
         color: $mainFont;
         display: block;
+        text-wrap: nowrap;
     }
   }
   .main-wrapper {
