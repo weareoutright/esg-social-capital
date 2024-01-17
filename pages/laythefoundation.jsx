@@ -19,7 +19,7 @@ export default function LayTheFoundationPage() {
 		<>
 		<Layout currentPage="lay-the-foundation">
 			<NextSeo
-				title="ESG Social Capital"
+				title="Cultivating Connections | Lay The Foundation"
 				description="Achieving Greater Impact"
 			/>
 			<LayTheFoundation />

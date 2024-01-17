@@ -25,7 +25,7 @@ export default function ResourcesPage() {
 		<>
 		<Layout currentPage='resources'>
 			<NextSeo
-				title="ESG Social Capital"
+				title="Cultivating Connections | Resources"
 				description="Achieving Greater Impact"
 			/>
 			<Resources />

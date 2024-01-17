@@ -18,7 +18,7 @@ export default function DesignTheSupportsPage() {
 		<>
 		<Layout currentPage='design-the-supports'>
 			<NextSeo
-				title="ESG Social Capital"
+				title="Cultivating Connections | Design The Supports"
 				description="Achieving Greater Impact"
 			/>
 			<DesignTheSupports />

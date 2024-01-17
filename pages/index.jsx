@@ -28,7 +28,7 @@ export default function Home({ menuItems, posts}) {
 		<>
 		<Layout currentPage="home">
 			<NextSeo
-				title="ESG Social Capital"
+				title="Cultivating Connections | Home"
 				description="Achieving Greater Impact"
 			/>
 			<HomepageHeader />

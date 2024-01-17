@@ -18,7 +18,7 @@ export default function ExecuteAndEvaluatePage() {
 		<>
 		<Layout currentPage='execute-and-evaluate'>
 			<NextSeo
-				title="ESG Social Capital"
+				title="Cultivating Connections | Execute & Evaluate"
 				description="Achieving Greater Impact"
 			/>
 			<ExecuteAndEvaluate />
