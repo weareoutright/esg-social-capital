@@ -71,11 +71,15 @@
             height: .65em;
             background-color: transparent;
         }
+
+        progress::-webkit-progress-bar {
+            background-color: $red;
+        }
         
-        // progress::-webkit-progress-value {
-        //     background-color: $red;
-        //     box-shadow: none;
-        // }
+        progress::-webkit-progress-value {
+            background-color: $red;
+            box-shadow: none;
+        }
 
         .progress-value-home {
             animation: load_speed_default 2s normal forwards;
