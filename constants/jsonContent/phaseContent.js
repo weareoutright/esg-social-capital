@@ -79,7 +79,7 @@ export const PHASE1_CONTENT = [
 			{
 				key: 'mapping-exercise',
 				href: 'https://drive.google.com/file/d/1c0YyKP4A2Ba16KLxdsucfqK95-dOsNIS/view?usp=drive_link',
-				title: 'Social Capital Mapping Exercise',
+				title: 'Social Capital Mapping Exercise (Search Institute)',
 			},
 		],
 		stickyNotesArr: [

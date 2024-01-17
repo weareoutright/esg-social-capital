@@ -5,7 +5,7 @@ export const RESOURCE_INFO = [
 		actionStepsArr: [
 			{
 				key: 'wscm-1',
-				actionStep: 'Helpful Articles',
+				actionStep: 'Helpful Articles & Resources',
 				actionStepLinksArr: [
 					{
 						key: 'find-job',
@@ -30,6 +30,12 @@ export const RESOURCE_INFO = [
 						href: 'https://www.linkedin.com/pulse/new-survey-reveals-85-all-jobs-filled-via-networking-lou-adler/',
 						title:
 							'Survey Reveals 85% of All Jobs are Filled Via Networking (LinkedIn)',
+					},
+					{
+						key: 'who-you-know-matters',
+						href: 'https://whoyouknow.org/Playbook/',
+						title:
+							"Who You Know Matters: 5 Steps for Building & Strengthening Students' Networks (Clayton Christensen Institute)",
 					},
 				],
 			},
@@ -79,7 +85,7 @@ export const RESOURCE_INFO = [
 					{
 						key: 'mapping-exercise',
 						href: 'https://drive.google.com/file/d/1c0YyKP4A2Ba16KLxdsucfqK95-dOsNIS/view?usp=drive_link',
-						title: 'Social Capital Mapping Exercise',
+						title: 'Social Capital Mapping Exercise (Search Institute)',
 					},
 				],
 			},
