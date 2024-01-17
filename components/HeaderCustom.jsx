@@ -16,7 +16,7 @@ const HeaderCustom = ({homePageHeader}) => {
     <>
     <div className="HeaderCustom">
         <div className="logo">
-            <Link href="/" className="logo-link"><Image src={CULTIVATING_CONNECTIONS} alt="ESG LOGO" unoptimized/></Link>
+            <Link href="/" className="logo-link"><Image src={CULTIVATING_CONNECTIONS} alt="ESG LOGO" /></Link>
             <button onClick={() => setShowMenu(!showMenu)} className="hamburger-menu">{showMenu === false ? "Menu" : "Close"} 
 
             {showMenu === false ? <Image src={HAMBURGER_MENU} alt="" className="hamburger-menu-icon"/> : <Image src={CLOSE_MENU} alt="" className="hamburger-menu-icon"/>}

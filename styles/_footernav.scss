@@ -49,6 +49,8 @@
         box-shadow: 0px -.5px 0px 1px $red;
     }
 
+
+
     @media  (min-width: 350px) and (max-width: 480px) {
         background-image: none;
         height: .65em;
@@ -60,7 +62,7 @@
         }
 
         progress {
-            width: 100%;
+            width: 10%;
             position: absolute;
             left: 0;
             bottom: 0;
@@ -69,14 +71,90 @@
             height: .65em;
             background-color: transparent;
         }
-
-        progress::-webkit-progress-bar {
-            background-color: transparent;
-        }
         
-        progress::-webkit-progress-value {
-            background-color: $red;
-            box-shadow: none;
-        }
+        // progress::-webkit-progress-value {
+        //     background-color: $red;
+        //     box-shadow: none;
+        // }
+
+        .progress-value-home {
+            animation: load_speed_default 2s normal forwards;
+            box-shadow: 0 10px 40px -10px #fff;
+            border-radius: 100px;
+            height: 30px;
+            width: 10;
+          }
+          @keyframes load_speed_default {
+            0%{width:10%;}
+            100%{width:20%;}
+          }
+          
+          
+          
+          
+          .progress-value-ltf {
+            animation: load_speed_1a 1s normal forwards;
+            box-shadow: 0 10px 40px -10px #fff;
+            border-radius: 100px;
+            height: 30px;
+            width: 0;
+          }
+          @keyframes load_speed_1a {
+            0%{
+              width:20%;
+              }
+            100%{
+              width:40%;
+            }
+          }
+          
+          .progress-value-dts {
+            animation: load_speed_2a 1s normal forwards;
+            box-shadow: 0 10px 40px -10px #fff;
+            border-radius: 100px;
+            height: 30px;
+            width: 0;
+          }
+          @keyframes load_speed_2a {
+            0%{
+              width:40%;
+              }
+            100%{
+              width:60%;
+            }
+          }
+          
+          
+          .progress-value-ee {
+            animation: load_speed_1b 1s normal forwards;
+            box-shadow: 0 10px 40px -10px #fff;
+            border-radius: 100px;
+            height: 30px;
+            width: 0;
+          }
+          @keyframes load_speed_1b {
+            0%{
+              width:60%;
+              }
+            100%{
+              width:80%;
+            }
+          }
+          
+          .progress-value-resources {
+            animation: load_speed_2b 1s normal forwards;
+            box-shadow: 0 10px 40px -10px #fff;
+            border-radius: 100px;
+            height: 30px;
+            width: 0;
+          }
+          @keyframes load_speed_2b {
+            0%{
+              width:80%;
+              }
+            100%{
+              width:100%;
+            }
+          }
     }
 }

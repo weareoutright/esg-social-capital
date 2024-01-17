@@ -13,8 +13,8 @@ const FooterNav = () => {
     const router = useRouter();
     const {route} = router;
 
-    const [navProgress, setNavProgress] = useState(0)
-    const [currentPageProgress, setCurrentPageProgress] = useState(0)
+    const [currentPageProgress, setCurrentPageProgress] = useState('')
+    const [desktopPageProgress, setDesktopPageProgress] = useState(0)
     const [ltfProgress, setLtfProgress] = useState(0)
     const [dtsProgress, setDtsProgress] = useState(0)
     const [eeProgress, setEeProgress] = useState(0)
@@ -33,11 +33,19 @@ const FooterNav = () => {
       }, []);
 
     useEffect(() => {
-      if (route === 'home' || route === '/') setCurrentPageProgress(12)
-      if (route === '/laythefoundation') setCurrentPageProgress(30)
-      if (route === '/designthesupports') setCurrentPageProgress(50)
-      if (route === '/executeandevaluate') setCurrentPageProgress(80)
-      if (route === '/resources') setCurrentPageProgress(100)
+      if (route === 'home' || route === '/') setDesktopPageProgress(10)
+      if (route === '/laythefoundation') setDesktopPageProgress(30)
+      if (route === '/designthesupports') setDesktopPageProgress(50)
+      if (route === '/executeandevaluate') setDesktopPageProgress(80)
+      if (route === '/resources') setDesktopPageProgress(100)
+    }, [route])
+
+    useEffect(() => {
+      if (route === 'home' || route === '/') setCurrentPageProgress('.progress-value-home')
+      if (route === '/laythefoundation') setCurrentPageProgress("progress-value-ltf")
+      if (route === '/designthesupports') setCurrentPageProgress("progress-value-dts")
+      if (route === '/executeandevaluate') setCurrentPageProgress("progress-value-ee")
+      if (route === '/resources') setCurrentPageProgress("progress-value-resources")
     }, [route])
 
     useEffect(() => {
@@ -75,7 +83,9 @@ const FooterNav = () => {
 
   return (
     <div className="FooterNav">
-        <progress className="footer-nav-progress" value={currentPageProgress} max={100}></progress>
+        <progress className={`footer-nav-progress ${currentPageProgress}`} 
+        value={desktopPageProgress} 
+        max={100}></progress>
         <Link href="/" className={`pill navPill-whiteBg image-btn home-nav-btn`} ><Image src={HOME_BTN} alt="Home" /></Link>
 
         <Link href="laythefoundation"><MeterBtn phaseTitle={"Lay The Foundation"} scroll={ltfProgress} /></Link>
