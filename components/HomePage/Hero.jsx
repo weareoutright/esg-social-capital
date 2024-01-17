@@ -2,11 +2,13 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import VERT_LINE from "../../constants/vert_line.svg"
+import HERO_BG from "../../constants/hero_bubbles_1.svg"
 import Red from "../../helperFuncs/Red"
 
 const Hero = () => {
   return (
     <div className="Hero" id="hero">
+        <Image src={HERO_BG} alt="/" className="hero-bg" />
         <h1>
             Cultivating<br />Connections
         </h1>
