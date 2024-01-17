@@ -17,7 +17,7 @@ const PhaseTitle = ({headerSvg, phaseNum, phaseTitle, phaseHeaderContent, phaseH
         top: "16%",
         right: "0",
 		borderRadius: "50%",
-		boxShadow: "0 .5em .5em .45em #3870B5 inset",
+		boxShadow: "0 .5em .5em .5em #3870B5 inset",
 	}
 
 	const execAndEvalNetworkStyles = {
