@@ -76,7 +76,7 @@ const FooterNav = () => {
   return (
     <div className="FooterNav">
         <progress className="footer-nav-progress" value={currentPageProgress} max={100}></progress>
-        <Link href="/" className={`pill navPill-whiteBg image-btn home-nav-btn`} ><Image src={HOME_BTN} alt="Home"/></Link>
+        <Link href="/" className={`pill navPill-whiteBg image-btn home-nav-btn`} ><Image src={HOME_BTN} alt="Home" /></Link>
 
         <Link href="laythefoundation"><MeterBtn phaseTitle={"Lay The Foundation"} scroll={ltfProgress} /></Link>
 

@@ -16,11 +16,14 @@
     background-size: 100%;
 
     .image-btn {
-        height: 2.5em;
+        height: 2.25em;
     }
 
     .home-nav-btn {
         background-color: $lightRed;
+        img {
+            height: 1em;
+        }
     }
 
     .resources-nav-btn {
