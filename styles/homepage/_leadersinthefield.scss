@@ -117,7 +117,7 @@
                 margin-bottom: -.5em;
 
                 .current-item {
-                    margin-top: 3.25em;
+                    margin-top: 3.5em;
 
                     .leader {
                         margin: 0 auto;
@@ -127,11 +127,13 @@
                 .first-last {
                     font-size: 1em !important;
                     text-wrap: nowrap !important;
+                    width: 100%;
                 }
 
                 .first-last-org {
                     font-size: .75em !important;
                     text-wrap: nowrap !important;
+                    width: 100%;
                 }
             }
         }
