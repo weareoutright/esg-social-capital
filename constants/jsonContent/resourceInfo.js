@@ -1,7 +1,7 @@
 export const RESOURCE_INFO = [
 	{
 		key: 'wscm',
-		parentPhase: 'Why Social Captial Matters',
+		parentPhase: 'Why Social Capital Matters',
 		actionStepsArr: [
 			{
 				key: 'wscm-1',
