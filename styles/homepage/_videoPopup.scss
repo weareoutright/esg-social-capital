@@ -27,7 +27,11 @@
         flex-direction: column;
         width: fit-content;
         align-items: center;
-        
+
+        .react-player {
+            position: relative;
+            aspect-ratio: 16 / 9;
+        }
 
         button.pill {
             background-color: #FFF;
@@ -45,6 +49,19 @@
             &:hover {
                 background-color: $lightRed;
                 font-weight: inherit;
+            }
+        }
+    }
+
+    @media  (min-width: 350px) and (max-width: 480px) {
+        .video-player {
+            position: fixed;
+            .react-player {
+              position: relative;
+              top: 40%;
+              margin: 0 auto;
+              width: 100% !important;
+              height: 50% !important;
             }
         }
     }
