@@ -10,8 +10,6 @@ const VideoPopup = ({url, setShowVideoPopup}) => {
         <div className="video-player">
             <button onClick={() => setShowVideoPopup(false)} className="pill ">CLOSE <Image className="close-btn-x" src={CLOSE_BTN_X} alt=""></Image></button>
             <ReactPlayer 
-            				width='125%'
-                    height='125%'
                     controls={true}
             url={url} />
         </div>
