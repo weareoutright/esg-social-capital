@@ -16,6 +16,7 @@
     }
 
     .sidebar {
+        animation: ee_to_resources 1s normal forwards;
         background-color: $blue;
         position: fixed;
         width: 25vw;
@@ -28,6 +29,24 @@
         background-repeat: no-repeat;
         background-position: center 30%;
         transition: all 100ms ease-in-out;
+    }
+    @keyframes ee_to_resources {
+        0% {
+            height: 100vh;
+            top: 0;
+            right: 0;
+            border-radius: 0%;
+            box-shadow: 0 0 0 0 #3870B5 inset;
+            background-size: 10.5em;
+        }
+
+        100% {
+            height: 100vh;
+            top: 0;
+            right: 0;
+            border-radius: 0%;
+            background-size: 11.5em;
+        }
     }
 
     .sidebar-filter {

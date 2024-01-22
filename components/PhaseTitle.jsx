@@ -2,30 +2,6 @@ import React from 'react'
 import Image from 'next/image';
 
 const PhaseTitle = ({headerSvg, phaseNum, phaseTitle, phaseHeaderContent, phaseHeaderImg}) => {
-	const layTheFoundationNetworkStyles = {
-        height: "46vh",
-		width: "46vh",
-        top: "16%",
-        right: "0",
-		borderRadius: "50%",
-		boxShadow: "0 .7em .5em 1em #3870B5 inset",
-	}
-
-	const designTheSupportsNetworkStyles = {
-        height: "46vh",
-		width: "46vh",
-        top: "16%",
-        right: "0",
-		borderRadius: "50%",
-		boxShadow: "0 .5em .5em .5em #3870B5 inset",
-	}
-
-	const execAndEvalNetworkStyles = {
-		height: "100vh",
-		top: "0",
-		right: "0",
-		borderRadius: "0%",
-	}
 
   return (
     <>
