@@ -29,8 +29,7 @@ const PhaseTitle = ({headerSvg, phaseNum, phaseTitle, phaseHeaderContent, phaseH
 
   return (
     <>
-    <div className="sidebar" 
-			style={phaseTitle === "Lay The Foundation" ? layTheFoundationNetworkStyles : phaseTitle === "Design The Supports" ? designTheSupportsNetworkStyles : phaseTitle === "Execute & Evaluate" ? execAndEvalNetworkStyles : {}}
+    <div className={`sidebar ${phaseTitle === "Lay The Foundation" ? 'laythefoundation-network' : phaseTitle === "Design The Supports" ? 'designthesupports-network' : phaseTitle === "Execute & Evaluate" ? 'execandeval-network' : {}}`} 
 	>
 				<span></span>
 	</div>
