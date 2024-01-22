@@ -168,12 +168,23 @@ a:hover, button:hover {
 .accordion-button.collapsed::after {
     background-image: url('../constants/close-accordion-arrow.svg') !important;
     background-repeat: no-repeat;
+    // transform: rotate(180deg);
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(360deg);
 }
 
 .accordion-button::after {
     background-image: url('../constants/open-accordion-arrow.svg') !important;
+    // transform: rotate(180deg);
+}
+
+.accordion-button::before {
+    background-image: url('../constants/open-accordion-arrow.svg') !important;
     transform: rotate(180deg);
 }
+
 
 @media  (min-width: 350px) and (max-width: 480px) {
     body {
