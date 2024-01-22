@@ -41,12 +41,28 @@
     }
 
     .laythefoundation-network {
+        animation: none_to_lts 1s normal forwards;
         height: 46vh;
 		width: 46vh;
         top: 16%;
         right: 0;
 		border-radius: 50%;
 		box-shadow: 0 .7em .5em 1em #3870B5 inset,
+    }
+    @keyframes none_to_lts {
+        0% {
+            border-radius: 50%;
+            box-shadow: 0 7em 7em 7em #3870B5 inset,
+        }
+
+        100% {
+            height: 46vh;
+            width: 46vh;
+            top: 16%;
+            right: 0;
+            border-radius: 50%;
+            box-shadow: 0 .7em .5em 1em #3870B5 inset,
+        }
     }
 
     .designthesupports-network {
@@ -70,7 +86,7 @@
       
 
     .execandeval-network {
-        animation: dts_to_ee 1s normal forwards;
+        animation: dts_to_ee 2s normal forwards;
         height: 100vh;
 		top: 0;
 		right: 0;
@@ -78,11 +94,20 @@
     }
     @keyframes dts_to_ee {
         0% {
+            height: 46vh;
+            width: 46vh;
+            top: 16%;
+            right: 0;
+            border-radius: 50%;
             box-shadow: 0 .5em .5em .5em #3870B5 inset;
         }
       
         100% {
-            box-shadow: none;
+            height: 100vh;
+            top: 0;
+            right: 0;
+            border-radius: 0%;
+            box-shadow: 0 0 0 0 #3870B5 inset;
         }
     }
 
