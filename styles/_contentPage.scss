@@ -161,13 +161,16 @@
         }
         
         .phase-title-img {
-            width: 175%;
+            width: 185%;
             object-fit: cover;
             margin-right: 2.25em;
             margin-left: 0em !important;
             margin-top: 1em;
             height: auto;
             padding-bottom: 6em;
+            position: relative;
+            right: 1.5em;
+            z-index: 1;
 
             img {
                 width: auto;
