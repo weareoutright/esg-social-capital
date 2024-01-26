@@ -43,12 +43,12 @@ export const PHASE1_CONTENT = [
 		toolsArr: [
 			{
 				key: 'module',
-				href: 'https://docs.google.com/presentation/d/1qHvVrx5W8WB920IrzotM6M9FAbh28MXWGR3s8No28pY/view#slide=id.g2a681975fa2_0_128',
+				href: 'https://docs.google.com/presentation/d/1qHvVrx5W8WB920IrzotM6M9FAbh28MXWGR3s8No28pY/edit?usp=sharing',
 				title: 'SoCap 101 Professional Development - Module',
 			},
 			{
 				key: 'facilitation',
-				href: 'https://drive.google.com/file/d/14lIx76Kq2Y93wxOTYa2WoEm_Tzapwm90/view?usp=drive_link',
+				href: 'https://drive.google.com/file/d/14lIx76Kq2Y93wxOTYa2WoEm_Tzapwm90/view?usp=sharing',
 				title: 'SoCap 101 Professional Development - Facilitation Guide',
 			},
 			{
@@ -280,7 +280,12 @@ export const PHASE2_CONTENT = [
 			{
 				key: 'pd-modules',
 				href: 'https://docs.google.com/presentation/d/1qHvVrx5W8WB920IrzotM6M9FAbh28MXWGR3s8No28pY/edit?usp=sharing',
-				title: 'Professional Development Modules',
+				title: 'SoCap 101 Professional Development - Modules',
+			},
+			{
+				key: 'pd-facilitation-guide',
+				href: 'https://drive.google.com/file/d/14lIx76Kq2Y93wxOTYa2WoEm_Tzapwm90/view?usp=sharing',
+				title: 'SoCap 101 Professional Development - Facilitation Guide',
 			},
 		],
 		stickyNotesArr: [
