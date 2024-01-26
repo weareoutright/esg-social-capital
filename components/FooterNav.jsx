@@ -48,6 +48,14 @@ const FooterNav = () => {
       if (route === '/resources') setCurrentPageProgress("progress-value-resources")
     }, [route])
 
+    // useEffect(() => {
+    //   setCurrentPageProgress(0);
+    // }, [route])
+
+    // useEffect(() => {
+    //   setDesktopPageProgress((offset / (height/2)) * 60)
+    // }, [offset])
+
     useEffect(() => {
       if (route === '/') {
         setLtfProgress(-12)
@@ -83,7 +91,8 @@ const FooterNav = () => {
 
   return (
     <div className="FooterNav">
-        <progress className={`footer-nav-progress ${currentPageProgress}`} 
+        <progress 
+        className={`footer-nav-progress ${currentPageProgress}`} 
         value={desktopPageProgress} 
         max={100}></progress>
         <Link href="/" className={`pill navPill-whiteBg image-btn home-nav-btn`} ><Image src={HOME_BTN} alt="Home" /></Link>

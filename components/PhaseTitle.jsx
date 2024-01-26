@@ -9,10 +9,6 @@ const PhaseTitle = ({headerSvg, phaseNum, phaseTitle, phaseHeaderContent, phaseH
 	>
 				<span></span>
 	</div>
-	{/* <div className="sidebar-blur"
-	>
-				<span></span>
-	</div> */}
 	<div className="sidebar-filter">
 				<span></span>
 	</div>

@@ -5,20 +5,11 @@
     margin-right: 0em !important;
     margin-bottom: 0em !important;
 
-    .sidebar-blur {
-        width: 25vw;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: -1;
-        background-color: transparent;
-    }
-
     .sidebar {
         animation: ee_to_resources 1s normal forwards;
         background-color: $blue;
         position: fixed;
+        margin-top: 3.5em;
         width: 25vw;
         height: 100vh;
         top: 0;
@@ -29,24 +20,6 @@
         background-repeat: no-repeat;
         background-position: center 30%;
         transition: all 100ms ease-in-out;
-    }
-    @keyframes ee_to_resources {
-        0% {
-            height: 100vh;
-            top: 0;
-            right: 0;
-            border-radius: 0%;
-            box-shadow: 0 0 0 0 #3870B5 inset;
-            background-size: 10.5em;
-        }
-
-        100% {
-            height: 100vh;
-            top: 0;
-            right: 0;
-            border-radius: 0%;
-            background-size: 11.5em;
-        }
     }
 
     .sidebar-filter {
@@ -80,7 +53,7 @@
             top: 16%;
             right: 0;
             border-radius: 50%;
-            box-shadow: 0 .7em .5em 1em #3870B5 inset,
+            box-shadow: 0 .7em .5em 2em #3870B5 inset,
         }
     }
 
@@ -91,11 +64,12 @@
         top: 16%;
         right: 0;
 		border-radius: 50%;
+        background-position: center 37%;
 		box-shadow: 0 .5em .5em .5em #3870B5 inset,
     }
     @keyframes ltf_to_dts {
         0% {
-            box-shadow: 0 .7em .5em 1em #3870B5 inset;
+            box-shadow: 0 .7em .5em 2em #3870B5 inset;
         }
       
         100% {
@@ -109,7 +83,9 @@
         height: 100vh;
 		top: 0;
 		right: 0;
+        background-position: center 23%;
 		border-radius: 0%;
+        margin-top: 2em;
     }
     @keyframes dts_to_ee {
         0% {
@@ -130,8 +106,28 @@
         }
     }
 
+    @keyframes ee_to_resources {
+        0% {
+            height: 100vh;
+            top: 0;
+            right: 0;
+            border-radius: 0%;
+            box-shadow: 0 0 0 0 #3870B5 inset;
+            background-size: 10.5em;
+        }
+
+        100% {
+            height: 100vh;
+            top: 0;
+            right: 0;
+            border-radius: 0%;
+            background-size: 11.5em;
+            margin-top: 0em;
+        }
+    }
+
     .title-div {
-        margin: -.75em 0em 0em 2em;
+        margin: -.95em 0em 0em 2em;
         height: fit-content;
         display: flex;
         flex-direction: row;
@@ -165,13 +161,13 @@
         }
         
         .phase-title-img {
-            width: 250%;
+            width: 175%;
             object-fit: cover;
-            margin-right: 1em;
+            margin-right: 2.25em;
             margin-left: 0em !important;
             margin-top: 1em;
             height: auto;
-            padding-bottom: 4em;
+            padding-bottom: 6em;
 
             img {
                 width: auto;
