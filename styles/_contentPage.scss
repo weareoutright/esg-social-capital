@@ -4,6 +4,9 @@
     margin: 1em 1.25em !important;
     margin-right: 0em !important;
     margin-bottom: 0em !important;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
 
     // will need to update animations
 
@@ -37,11 +40,10 @@
     .laythefoundation-network {
         animation: none_to_lts 1s normal forwards;
         height: 46vh;
-		width: 46vh;
         top: 16%;
         right: 0;
 		border-radius: 50%;
-		box-shadow: 0 .7em .5em 1em #3870B5 inset,
+		box-shadow: 0 .7em .5em 1em #3870B5 inset;
     }
     @keyframes none_to_lts {
         0% {
@@ -51,7 +53,6 @@
 
         100% {
             height: 46vh;
-            width: 46vh;
             top: 16%;
             right: 0;
             border-radius: 50%;
@@ -62,7 +63,6 @@
     .designthesupports-network {
         animation: ltf_to_dts 1s normal forwards;
         height: 46vh;
-		width: 46vh;
         top: 16%;
         right: 0;
 		border-radius: 50%;
@@ -92,7 +92,6 @@
     @keyframes dts_to_ee {
         0% {
             height: 46vh;
-            width: 46vh;
             top: 16%;
             right: 0;
             border-radius: 50%;
