@@ -33,15 +33,15 @@ export default function SSGISRExampleTemplate({ menuItems, posts }) {
 	);
 }
 
-export async function getStaticProps() {
-	const { menuItems } = await getFooterMenu();
-	const { posts } = await getLatestPosts(100);
+// export async function getStaticProps() {
+// 	const { menuItems } = await getFooterMenu();
+// 	const { posts } = await getLatestPosts(100);
 
-	return {
-		props: {
-			menuItems,
-			posts,
-		},
-		revalidate: 60,
-	};
-}
+// 	return {
+// 		props: {
+// 			menuItems,
+// 			posts,
+// 		},
+// 		revalidate: 60,
+// 	};
+// }
