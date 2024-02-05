@@ -42,7 +42,7 @@ const Carousel = () => {
           className="carousel-btn"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="33" viewBox="0 0 18 33" fill="none">
-          <path d="M16.5 1L1 16.5L16.5 32" stroke="#D90F03" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16.5 1L1 16.5L16.5 32" stroke="#D90F03" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </motion.button>
         <AnimatePresence mode="popLayout" initial={false}>

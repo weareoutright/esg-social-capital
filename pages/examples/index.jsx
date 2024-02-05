@@ -52,14 +52,14 @@ export default function ExamplesPageTemplate({ menuItems }) {
 	);
 }
 
-export async function getServerSideProps({ res }) {
-	const { menuItems, menuItemHeaders } = await getFooterMenu();
+// export async function getServerSideProps({ res }) {
+// 	const { menuItems, menuItemHeaders } = await getFooterMenu();
 
-	setOutgoingHeaders({ headers: [menuItemHeaders], res });
+// 	setOutgoingHeaders({ headers: [menuItemHeaders], res });
 
-	return {
-		props: {
-			menuItems,
-		},
-	};
-}
+// 	return {
+// 		props: {
+// 			menuItems,
+// 		},
+// 	};
+// }
