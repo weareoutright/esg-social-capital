@@ -6,7 +6,7 @@
     margin-bottom: 0em !important;
 
     .sidebar {
-        animation: ee_to_resources 1s normal forwards;
+        animation: ee_to_resources 1.5s normal forwards;
         background-color: $blue;
         position: fixed;
         margin-top: 3.5em;
@@ -15,10 +15,10 @@
         top: 0;
         right: 0;
         z-index: -2;
-        background-image: url("../constants/radial.svg") ;
+        background-image: url("../constants/network-begin.svg") ;
         background-size: 10.5em;
         background-repeat: no-repeat;
-        background-position: center 30%;
+        background-position: center;
         transition: all 100ms ease-in-out;
     }
 
@@ -33,96 +33,67 @@
     }
 
     .laythefoundation-network {
-        animation: none_to_lts 1s normal forwards;
+        animation: none_to_lts 2s normal forwards;
         height: 46vh;
 		width: 46vh;
         top: 16%;
         right: 0;
-		border-radius: 50%;
-		box-shadow: 0 .7em .5em 1em #3870B5 inset,
     }
     @keyframes none_to_lts {
         0% {
-            border-radius: 50%;
-            box-shadow: 0 7em 7em 7em #3870B5 inset,
+            background-size: 0em;
         }
 
         100% {
-            height: 46vh;
-            width: 46vh;
-            top: 16%;
-            right: 0;
-            border-radius: 50%;
-            box-shadow: 0 .7em .5em 2em #3870B5 inset,
+            background-size: 10.5em;
         }
     }
 
     .designthesupports-network {
-        animation: ltf_to_dts 1s normal forwards;
-        height: 46vh;
+        animation: ltf_to_dts 1.5s normal forwards;
+        height: 50vh;
 		width: 46vh;
-        top: 16%;
+        top: 14%;
         right: 0;
-		border-radius: 50%;
-        background-position: center 37%;
-		box-shadow: 0 .5em .5em .5em #3870B5 inset,
     }
     @keyframes ltf_to_dts {
         0% {
-            box-shadow: 0 .7em .5em 2em #3870B5 inset;
+            background-size: 10.5em;
         }
       
         100% {
-            box-shadow: 0 .5em .5em .5em #3870B5 inset;
+            background-image: url("../constants/network-middle.svg");
         }
       }
       
 
     .execandeval-network {
-        animation: dts_to_ee 2s normal forwards;
+        animation: dts_to_ee 1.5s normal forwards;
         height: 100vh;
-		top: 0;
+		top: -1%;
 		right: 0;
-        background-position: center 23%;
-		border-radius: 0%;
+        background-position: center;
         margin-top: 2em;
     }
     @keyframes dts_to_ee {
         0% {
-            height: 46vh;
-            width: 46vh;
-            top: 16%;
-            right: 0;
-            border-radius: 50%;
-            box-shadow: 0 .5em .5em .5em #3870B5 inset;
+            background-image: url("../constants/network-middle.svg");
         }
       
         100% {
-            height: 100vh;
-            top: 0;
-            right: 0;
-            border-radius: 0%;
-            box-shadow: 0 0 0 0 #3870B5 inset;
+            background-image: url("../constants/network-final.svg");
         }
     }
 
     @keyframes ee_to_resources {
         0% {
-            height: 100vh;
-            top: 0;
-            right: 0;
-            border-radius: 0%;
-            box-shadow: 0 0 0 0 #3870B5 inset;
-            background-size: 10.5em;
+            background-image: url("../constants/network-final.svg");
         }
 
         100% {
-            height: 100vh;
-            top: 0;
-            right: 0;
-            border-radius: 0%;
-            background-size: 11.5em;
-            margin-top: 0em;
+            background-image: url("../constants/network-final.svg");
+            background-size: 200%;
+            margin-top: 0;
         }
     }
 
