@@ -13,8 +13,8 @@
 	},
 	"scripts": {
 		"dev": "echo 'Preview will be available at the URL specified in the proxy section of the .lando.yml file.' && next dev",
-		"build": "npm run decoupled-kit-health-check && next build && cp -r .next/static .next/standalone/.next && cp -r public .next/standalone",
-		"build-atlas": "npm run decoupled-kit-health-check && next build && cp -r .next/static .next/standalone/.next && cp -r public .next/standalone",
+		"build": "next build && cp -r .next/static .next/standalone/.next && cp -r public .next/standalone",
+		"build-pantheon": "npm run decoupled-kit-health-check && next build && cp -r .next/static .next/standalone/.next && cp -r public .next/standalone",
 		"start": "node .next/standalone/server.js",
 		"build:mono": "next build",
 		"start:mono": "next start",
