@@ -65,7 +65,7 @@
     .designthesupports-network {
         animation: ltf_to_dts 1.5s normal forwards;
         height: 50vh;
-		    width: 46vh;
+		width: 46vh;
         top: 14%;
         right: 0;
     }
@@ -83,10 +83,9 @@
     .execandeval-network {
         animation: dts_to_ee 1.5s normal forwards;
         height: 100vh;
-		top: -1%;
+		top: -11%;
 		right: 0;
         background-position: center;
-        margin-top: 2em;
     }
     @keyframes dts_to_ee {
         0% {
@@ -105,7 +104,6 @@
 
         100% {
             background-image: url("../constants/network-final.svg");
-            background-size: 200%;
             margin-top: 0;
         }
     }
