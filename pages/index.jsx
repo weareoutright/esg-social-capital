@@ -1,11 +1,12 @@
 import { setOutgoingHeaders } from '@pantheon-systems/wordpress-kit';
 import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
-import { getFooterMenu } from '../lib/Menus';
+// import { getFooterMenu } from '../lib/Menus';
 import { getLatestPosts } from '../lib/Posts';
 import HeaderCustom from '../components/HeaderCustom';
 
 import styles from './index.module.css';
+
 import Hero from '../components/HomePage/Hero';
 import WhySCMatters from '../components/HomePage/WhySCMatters';
 import LeadersInTheField from '../components/HomePage/LeadersInTheField';
