@@ -2,10 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import VERT_LINE from "../../constants/vert_line.svg"
-import HERO_BG from "../../constants/hero_bubbles_1.svg"
+// import HERO_BG from "../../constants/hero_bubbles_1.svg"
 import Red from "../../helperFuncs/Red"
 
-const Hero = () => {
+const Hero = ({posts}) => {
+  console.log('POSTS', posts.nodes[0].content)
   return (
     <div className="Hero" id="hero">
         {/* <Image src={HERO_BG} alt="/" className="hero-bg" /> */}
@@ -15,6 +16,8 @@ const Hero = () => {
         <h4>
         A Framework for Building, Strengthening, and<br /> Mobilizing Students’ Social Capital
         </h4>
+
+
         <div className="hero-content">
             <p>Who helped you get to where you are now? How have you helped others get to where they are?</p>
             <br />
