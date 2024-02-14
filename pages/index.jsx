@@ -3,6 +3,7 @@ import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
 // import { getFooterMenu } from '../lib/Menus';
 import { getLatestPosts } from '../lib/Posts';
+import { getHomePagePosts } from '../lib/wp_content/HomePage';
 import HeaderCustom from '../components/HeaderCustom';
 
 import styles from './index.module.css';
@@ -13,12 +14,11 @@ import LeadersInTheField from '../components/HomePage/LeadersInTheField';
 import MapArea from '../components/HomePage/MapArea';
 
 export default function Home({ menuItems, posts}) {
-	console.log(posts)
 	const HomepageHeader = () => (
 		<>
 		<HeaderCustom />
 		<div className={`${styles.header} font-extrabold text-center w-fit`}>
-			<Hero />
+			<Hero posts={posts}/>
 			<WhySCMatters />
 			<LeadersInTheField />
 			<MapArea />
@@ -41,7 +41,7 @@ export default function Home({ menuItems, posts}) {
 
 export async function getServerSideProps({ res }) {
 	// const { menuItems, menuItemHeaders } = await getFooterMenu();
-	const { posts, headers: postHeaders } = await getLatestPosts(12);
+	const { posts, headers: postHeaders } = await getHomePagePosts("Home");
 
 	const headers = [
 		// menuItemHeaders, 
