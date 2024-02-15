@@ -6,7 +6,6 @@ import VERT_LINE from "../../constants/vert_line.svg"
 import Red from "../../helperFuncs/Red"
 
 const Hero = ({posts}) => {
-  console.log('POSTS', posts.nodes[0].content)
   return (
     <div className="Hero" id="hero">
         {/* <Image src={HERO_BG} alt="/" className="hero-bg" /> */}
