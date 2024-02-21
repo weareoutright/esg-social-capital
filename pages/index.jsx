@@ -3,7 +3,7 @@ import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
 // import { getFooterMenu } from '../lib/Menus';
 import { getLatestPosts } from '../lib/Posts';
-import { getHomePagePosts } from '../lib/wp_content/HomePage';
+import { getHomeBlocks } from '../lib/wp_content/HomePage';
 import HeaderCustom from '../components/HeaderCustom';
 
 import styles from './index.module.css';
@@ -13,12 +13,13 @@ import WhySCMatters from '../components/HomePage/WhySCMatters';
 import LeadersInTheField from '../components/HomePage/LeadersInTheField';
 import MapArea from '../components/HomePage/MapArea';
 
-export default function Home({ menuItems, posts}) {
+export default function Home({ pageBy} ) {
+	console.log(pageBy)
 	const HomepageHeader = () => (
 		<>
 		<HeaderCustom />
 		<div className={`${styles.header} font-extrabold text-center w-fit`}>
-			<Hero posts={posts}/>
+			<Hero />
 			<WhySCMatters />
 			<LeadersInTheField />
 			<MapArea />
@@ -39,19 +40,16 @@ export default function Home({ menuItems, posts}) {
 	);
 }
 
-// export async function getServerSideProps({ res }) {
-// 	// const { menuItems, menuItemHeaders } = await getFooterMenu();
-// 	const { posts, headers: postHeaders } = await getHomePagePosts("Home");
+export async function getServerSideProps({ res }) {
+	const { pageBy, headers: postHeaders } = await getHomeBlocks();
 
-// 	const headers = [
-// 		// menuItemHeaders, 
-// 		postHeaders];
-// 	setOutgoingHeaders({ headers, res });
+	const headers = [
+		postHeaders];
+	setOutgoingHeaders({ headers, res });
 
-// 	return {
-// 		props: {
-// 			// menuItems,
-// 			posts,
-// 		},
-// 	};
-// }
+	return {
+		props: {
+			pageBy,
+		},
+	};
+}

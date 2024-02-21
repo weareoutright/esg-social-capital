@@ -96,7 +96,7 @@ const Carousel = () => {
         </AnimatePresence>
         <motion.button className="carousel-btn" whileTap={{ scale: 0.8 }} onClick={(e) => {e.preventDefault(); handleClick(1);}}>
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="33" viewBox="0 0 18 33" fill="none">
-          <path d="M1 1L16.5 16.5L1 32" stroke="#D90F03" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M1 1L16.5 16.5L1 32" stroke="#D90F03" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </motion.button>
       </div>
