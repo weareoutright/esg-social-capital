@@ -1,26 +1,31 @@
 import React from 'react'
-import Red from '../../helperFuncs/Red'
-import Image from 'next/image'
-import INFO_AND_STATS from "../../constants/info_and_stats.svg"
-import INFO_AND_STATS_TOP from "../../constants/info-and-stats-top.svg"
-import INFO_AND_STATS_BOTTOM from "../../constants/info-and-stats-bottom.svg"
-import ROW_PHASE_OVERVIEW_GRAPHIC from "../../constants/phase-graphic-overview.svg"
-import COL_PHASE_OVERVIEW_GRAPHIC from "../../constants/col-phase-graphic-overview.svg"
-import Link from 'next/link'
+// import Red from '../../helperFuncs/Red'
+// import Image from 'next/image'
+// import INFO_AND_STATS from "../../constants/info_and_stats.svg"
+// import INFO_AND_STATS_TOP from "../../constants/info-and-stats-top.svg"
+// import INFO_AND_STATS_BOTTOM from "../../constants/info-and-stats-bottom.svg"
+// import ROW_PHASE_OVERVIEW_GRAPHIC from "../../constants/phase-graphic-overview.svg"
+// import COL_PHASE_OVERVIEW_GRAPHIC from "../../constants/col-phase-graphic-overview.svg"
+// import Link from 'next/link'
 import Carousel from './Carousel'
-import ReactPlayer from "react-player"
+// import ReactPlayer from "react-player"
 
-const LeadersInTheField = () => {
+const LeadersInTheField = ({WPLeadersInTheField}) => {
   return (
     <div className="LeadersInTheField container-custom">
         <h3>
-            Hear what social capital <br />means to leaders in the field
+			{WPLeadersInTheField.title ? WPLeadersInTheField.title : <>Hear what social capital <br />means to leaders in the field</>}
         </h3>
         <small>Click to play video</small>
 
-        <Carousel />
+		{/*
+			// TODO: Adjust carousell component to use gallery from WP
+  		*/}
+        <Carousel gallery={WPLeadersInTheField.gallery}/>
+
+		{WPLeadersInTheField.content}
         
-			<p className="content-justify">
+			{/* <p className="content-justify">
 				Expanding and mobilizing social capital is most imperative for students
 				of backgrounds that have been{' '}
 				<Red>
@@ -102,7 +107,7 @@ const LeadersInTheField = () => {
 			<Link className="col-phase-overview-graphic-link" href="https://drive.google.com/file/d/1bpgVkP7BTtr4PAXRMoeRBQCYRPxGa2qJ/view?usp=drive_link" target="_blank" rel="noreferrer"><Image src={COL_PHASE_OVERVIEW_GRAPHIC} alt="" /></Link>
 
             <p>Through generous philanthropic support, Education Strategy Group has worked with communities across the U.S. as they&#39;ve incorporated social capital development strategies into their college and career pathways, in areas like work-based learning, college and career advising, and classroom learning. These include: </p>
-        </div>
+        </div> */}
     </div>
   )
 }

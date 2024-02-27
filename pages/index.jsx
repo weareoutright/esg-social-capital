@@ -17,8 +17,8 @@ export default function Home({ pageBy} ) {
 
 	const {homepageHero} = editorBlocks.filter((block) => block.name === 'acf/homepage-hero')[0];
 	const {whySocialCapitalMatters} = editorBlocks.filter((block) => block.name === 'acf/why-socap')[0];
-	// const {leadersInTheField} = editorBlocks.filter((block) => block.name === 'acf/leaders-in-the-field')[0];
-	// const {homepageMap} = editorBlocks.filter((block) => block.name === 'acf/homepage-map')[0];
+	const {leadersInTheField} = editorBlocks.filter((block) => block.name === 'acf/leaders-in-field')[0];
+	const {homepageMap} = editorBlocks.filter((block) => block.name === 'acf/homepage-map')[0];
 
 	const WPHero = {
 		title: homepageHero.title,
@@ -33,18 +33,18 @@ export default function Home({ pageBy} ) {
 		content: parse(whySocialCapitalMatters.content),
 	}
 
-	// const WPLeadersInThField = {
-	// 	title: leadersInTheField.title,
-	// 	content: parse(leadersInTheField.content),
-	// 	gallery: leadersInTheField.gallery,
-	// }
+	const WPLeadersInTheField = {
+		title: leadersInTheField.title,
+		content: parse(leadersInTheField.content),
+		gallery: leadersInTheField.gallery,
+	}
 
-	// const WPHomePageMap = {
-	// 	content: parse(homepageMap.content),
-	// 	locations: homepageMap.locations,
-	// 	mapImage: homepageMap.mapImage,
-	// 	responsiveImage: homepageMap.responsiveImage,
-	// }
+	const WPHomePageMap = {
+		content: parse(homepageMap.content),
+		locations: homepageMap.locations,
+		mapImage: homepageMap.mapImage,
+		responsiveImage: homepageMap.responsiveImage,
+	}
 
 	const HomepageHeader = () => (
 		<>
@@ -52,11 +52,8 @@ export default function Home({ pageBy} ) {
 		<div className={`${styles.header} font-extrabold text-center w-fit`}>
 			<Hero WPHero={WPHero} />
 			<WhySCMatters WPWhySCMatters={WPWhySCMatters} />
-			<LeadersInTheField 
-			// WPLeadersInThField={WPLeadersInThField} 
-			/>
-			<MapArea 
-			// WPHomePageMap={WPHomePageMap} 
+			<LeadersInTheField WPLeadersInTheField={WPLeadersInTheField} />
+			<MapArea WPHomePageMap={WPHomePageMap} 
 			/>
 		</div>
 		</>

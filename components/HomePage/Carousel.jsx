@@ -7,7 +7,7 @@ import { CAROUSEL_CONTENT } from '../../constants/jsonContent/carouselContent';
 
 import VideoPopup from '../VideoPopup';
 
-const Carousel = () => {
+const Carousel = ({gallery}) => {
   const [showVideoPopup, setShowVideoPopup] = useState(false)
   const [[activeIndex, direction], setActiveIndex] = useState([0, 0]);
 
