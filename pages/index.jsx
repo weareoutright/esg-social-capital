@@ -2,6 +2,7 @@ import { setOutgoingHeaders } from '@pantheon-systems/wordpress-kit';
 import { NextSeo } from 'next-seo';
 import Layout from '../components/layout';
 import { getHomeBlocks } from '../lib/wp_content/HomePage';
+import { getMenus } from '../lib/wp_content/Menus';
 import HeaderCustom from '../components/HeaderCustom';
 
 import styles from './index.module.css';
@@ -12,7 +13,7 @@ import LeadersInTheField from '../components/HomePage/LeadersInTheField';
 import MapArea from '../components/HomePage/MapArea';
 import parse from 'html-react-parser';
 
-export default function Home({ pageBy} ) {
+export default function Home({pageBy, menus}) {
 	const {editorBlocks} = pageBy;
 
 	const {homepageHero} = editorBlocks.filter((block) => block.name === 'acf/homepage-hero')[0];
@@ -61,7 +62,7 @@ export default function Home({ pageBy} ) {
 
 	return (
 		<>
-		<Layout currentPage="home">
+		<Layout currentPage="home" menus={menus}>
 			<NextSeo
 				title="Cultivating Connections | Home"
 				description="Achieving Greater Impact"
@@ -74,14 +75,16 @@ export default function Home({ pageBy} ) {
 
 export async function getServerSideProps({ res }) {
 	const { pageBy, headers: postHeaders } = await getHomeBlocks();
+	const { menus, headers: menuHeaders } = await getMenus();
 
 	const headers = [
-		postHeaders];
+		postHeaders, menuHeaders];
 	setOutgoingHeaders({ headers, res });
 
 	return {
 		props: {
 			pageBy,
+			menus
 		},
 	};
 }

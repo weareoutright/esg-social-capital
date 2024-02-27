@@ -4,9 +4,11 @@ import Layout from '../components/layout';
 
 import { PHASE_INFO } from '../constants/jsonContent/phaseInfo';
 import PhaseLayout from '../components/PhaseLayout';
+import { getMenus } from '../lib/wp_content/Menus';
+import { setOutgoingHeaders } from '@pantheon-systems/wordpress-kit';
 
 
-export default function LayTheFoundationPage() {
+export default function LayTheFoundationPage({menus}) {
 	const phaseInfo = PHASE_INFO.phaseOne;
 
 	const LayTheFoundation = () => (
@@ -17,7 +19,7 @@ export default function LayTheFoundationPage() {
 
 	return (
 		<>
-		<Layout currentPage="lay-the-foundation">
+		<Layout currentPage="lay-the-foundation" menus={menus}>
 			<NextSeo
 				title="Cultivating Connections | Lay The Foundation"
 				description="Achieving Greater Impact"
@@ -28,17 +30,16 @@ export default function LayTheFoundationPage() {
 	);
 }
 
-// export async function getServerSideProps({ res }) {
-// 	const { menuItems, menuItemHeaders } = await getFooterMenu();
-// 	const { posts, headers: postHeaders } = await getLatestPosts(12);
+export async function getServerSideProps({ res }) {
+	const { menus, headers: menuHeaders } = await getMenus();
 
-// 	const headers = [menuItemHeaders, postHeaders];
-// 	setOutgoingHeaders({ headers, res });
+	const headers = [
+		menuHeaders];
+	setOutgoingHeaders({ headers, res });
 
-// 	return {
-// 		props: {
-// 			menuItems,
-// 			posts,
-// 		},
-// 	};
-// }
+	return {
+		props: {
+			menus
+		},
+	};
+}

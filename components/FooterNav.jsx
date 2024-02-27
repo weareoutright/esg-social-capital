@@ -9,7 +9,7 @@ import RESOURCES_BTN from "../constants/folder.svg"
 import Link from 'next/link'
 import MeterBtn from './MeterBtn';
 
-const FooterNav = () => {
+const FooterNav = ({waypoints}) => {
     const router = useRouter();
     const {route} = router;
 

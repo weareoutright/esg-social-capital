@@ -4,8 +4,10 @@ import Layout from '../components/layout';
 
 import { PHASE_INFO } from '../constants/jsonContent/phaseInfo';
 import PhaseLayout from '../components/PhaseLayout';
+import { getMenus } from '../lib/wp_content/Menus';
+import { setOutgoingHeaders } from '@pantheon-systems/wordpress-kit';
 
-export default function DesignTheSupportsPage() {
+export default function DesignTheSupportsPage({menus}) {
 	const phaseInfo = PHASE_INFO.phaseTwo;
 
 	const DesignTheSupports = () => (
@@ -16,7 +18,7 @@ export default function DesignTheSupportsPage() {
 
 	return (
 		<>
-		<Layout currentPage='design-the-supports'>
+		<Layout currentPage='design-the-supports' menus={menus}>
 			<NextSeo
 				title="Cultivating Connections | Design The Supports"
 				description="Achieving Greater Impact"
@@ -25,4 +27,18 @@ export default function DesignTheSupportsPage() {
 		</Layout>
 		</>
 	);
+}
+
+export async function getServerSideProps({ res }) {
+	const { menus, headers: menuHeaders } = await getMenus();
+
+	const headers = [
+		menuHeaders];
+	setOutgoingHeaders({ headers, res });
+
+	return {
+		props: {
+			menus
+		},
+	};
 }

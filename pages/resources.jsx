@@ -8,8 +8,10 @@ import ResourcesHeader from '../components/Resources/ResourcesHeader';
 import PhaseHeader from '../components/PhaseHeader';
 import NextPage from '../components/NextPage';
 import ResourcesContent from '../components/Resources/ResourcesContent';
+import { getMenus } from '../lib/wp_content/Menus';
+import { setOutgoingHeaders } from '@pantheon-systems/wordpress-kit';
 
-export default function ResourcesPage() {
+export default function ResourcesPage({menus}) {
 	const Resources = () => (
 		<>
 		<PhaseHeader />
@@ -23,7 +25,7 @@ export default function ResourcesPage() {
 
 	return (
 		<>
-		<Layout currentPage='resources'>
+		<Layout currentPage='resources' menus={menus}>
 			<NextSeo
 				title="Cultivating Connections | Resources"
 				description="Achieving Greater Impact"
@@ -32,4 +34,18 @@ export default function ResourcesPage() {
 		</Layout>
 		</>
 	);
+}
+
+export async function getServerSideProps({ res }) {
+	const { menus, headers: menuHeaders } = await getMenus();
+
+	const headers = [
+		menuHeaders];
+	setOutgoingHeaders({ headers, res });
+
+	return {
+		props: {
+			menus
+		},
+	};
 }
