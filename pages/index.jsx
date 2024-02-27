@@ -14,7 +14,11 @@ import parse from 'html-react-parser';
 
 export default function Home({ pageBy} ) {
 	const {editorBlocks} = pageBy;
+
 	const {homepageHero} = editorBlocks.filter((block) => block.name === 'acf/homepage-hero')[0];
+	const {whySocialCapitalMatters} = editorBlocks.filter((block) => block.name === 'acf/why-socap')[0];
+	const {leadersInTheField} = editorBlocks.filter((block) => block.name === 'acf/leaders-in-the-field')[0];
+	const {homepageMap} = editorBlocks.filter((block) => block.name === 'acf/homepage-map')[0];
 
 	const WPHero = {
 		title: homepageHero.title,
@@ -24,14 +28,32 @@ export default function Home({ pageBy} ) {
 		backgroundImage: homepageHero.backgroundImage.node.uri,
 	}
 
+	const WPWhySCMatters = {
+		title: whySocialCapitalMatters.title,
+		content: parse(whySocialCapitalMatters.content),
+	}
+
+	const WPLeadersInThField = {
+		title: leadersInTheField.title,
+		content: parse(leadersInTheField.content),
+		gallery: leadersInTheField.gallery,
+	}
+
+	const WPHomePageMap = {
+		content: parse(homepageMap.content),
+		locations: homepageMap.locations,
+		mapImage: homepageMap.mapImage,
+		responsiveImage: homepageMap.responsiveImage,
+	}
+
 	const HomepageHeader = () => (
 		<>
 		<HeaderCustom />
 		<div className={`${styles.header} font-extrabold text-center w-fit`}>
-			<Hero WPHero={WPHero}/>
-			<WhySCMatters />
-			<LeadersInTheField />
-			<MapArea />
+			<Hero WPHero={WPHero} />
+			<WhySCMatters WPWhySCMatters={WPWhySCMatters} />
+			<LeadersInTheField WPLeadersInThField={WPLeadersInThField} />
+			<MapArea WPHomePageMap={WPHomePageMap} />
 		</div>
 		</>
 	);

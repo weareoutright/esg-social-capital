@@ -3,7 +3,7 @@ import Red from '../../helperFuncs/Red';
 import Image from 'next/image';
 import SMALL_RED_LINE from "../../constants/small_red_line.svg"
 
-const WhySCMatters = () => {
+const WhySCMatters = ({WPWhySCMatters}) => {
   return (
     <div className="WhySCMatters container-custom" id="whyscmatters">
         <h2>Why Social
