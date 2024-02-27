@@ -14,13 +14,21 @@ import parse from 'html-react-parser';
 
 export default function Home({ pageBy} ) {
 	const {editorBlocks} = pageBy;
-	const heroContent = parse(editorBlocks[0].homepageHero.content);
+	const {homepageHero} = editorBlocks.filter((block) => block.name === 'acf/homepage-hero')[0];
+
+	const WPHero = {
+		title: homepageHero.title,
+		subtitle: homepageHero.subtitle,
+		content: parse(homepageHero.content),
+		callToAction: homepageHero.callToAction,
+		backgroundImage: homepageHero.backgroundImage.node.uri,
+	}
 
 	const HomepageHeader = () => (
 		<>
 		<HeaderCustom />
 		<div className={`${styles.header} font-extrabold text-center w-fit`}>
-			<Hero heroContent={heroContent}/>
+			<Hero WPHero={WPHero}/>
 			<WhySCMatters />
 			<LeadersInTheField />
 			<MapArea />
