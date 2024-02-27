@@ -3,8 +3,6 @@ import Image from "next/image";
 import { useState, useEffect } from 'react';
 import PLAY from "../../constants/carousel/PlayButton.svg";
 
-import { CAROUSEL_CONTENT } from '../../constants/jsonContent/carouselContent';
-
 import VideoPopup from '../VideoPopup';
 
 const Carousel = ({gallery}) => {
@@ -12,9 +10,9 @@ const Carousel = ({gallery}) => {
   const [[activeIndex, direction], setActiveIndex] = useState([0, 0]);
 
   const indexInArrayScope =
-  ((activeIndex % CAROUSEL_CONTENT.length) + CAROUSEL_CONTENT.length) % CAROUSEL_CONTENT.length;
+  ((activeIndex % gallery.length) + gallery.length) % gallery.length;
 
-  const visibleItems = [...CAROUSEL_CONTENT, ...CAROUSEL_CONTENT].slice(
+  const visibleItems = [...gallery, ...gallery].slice(
     indexInArrayScope,
     indexInArrayScope + 3
   );
@@ -47,10 +45,12 @@ const Carousel = ({gallery}) => {
         </motion.button>
         <AnimatePresence mode="popLayout" initial={false}>
           {visibleItems.map((item) => {
+            const key = item.name
+            console.log(item.headshot.node)
             return (
               <motion.div
                 className="card"
-                key={item.key}
+                key={key}
                 layout
                 custom={{
                   direction,
@@ -72,23 +72,23 @@ const Carousel = ({gallery}) => {
               > 
                 {item === visibleItems[1] ? <div onClick={(e) =>{
                   e.preventDefault();
-                  setVideoUrl(item.url);
+                  setVideoUrl(item.videoUrl);
                   setShowVideoPopup(!showVideoPopup);
                   
                 }} className="current-item">
-                  {item.img}<Image className="play-btn" src={PLAY} alt=""/>
+                  <img src={item.headshot.node.sourceUrl} alt=""/><Image className="play-btn" src={PLAY} alt=""/>
                   <small className="first-last">{item.name}</small>
-                  <small className="first-last-org">{item.org}</small>
+                  <small className="first-last-org">{item.affiliation}</small>
                 </div> : 
                 item === visibleItems[0] ? <div 
                 onClick={(e) => {e.preventDefault; handleClick(-1);}}
                 className="prev-and-next-item">
-                  {item.img}
+                  <img src={item.headshot.node.sourceUrl} alt="" />
                   </div> : 
                 <div 
                 onClick={(e) => {e.preventDefault; handleClick(1);}}
                 className="prev-and-next-item">
-                  {item.img}
+                  <img src={item.headshot.node.sourceUrl} alt=""/>
                   </div>}
               </motion.div>
             );

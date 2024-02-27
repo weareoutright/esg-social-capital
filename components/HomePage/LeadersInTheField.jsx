@@ -14,12 +14,12 @@ const LeadersInTheField = ({WPLeadersInTheField}) => {
   return (
     <div className="LeadersInTheField container-custom">
         <h3>
-			{WPLeadersInTheField.title ? WPLeadersInTheField.title : <>Hear what social capital <br />means to leaders in the field</>}
+			{WPLeadersInTheField.title}
         </h3>
         <small>Click to play video</small>
 
 		{/*
-			// TODO: Adjust carousell component to use gallery from WP
+			// TODO: Adjust carousel component to use gallery from WP
   		*/}
         <Carousel gallery={WPLeadersInTheField.gallery}/>
 
