@@ -62,7 +62,7 @@ export const RESOURCE_INFO = [
 				actionStepLinksArr: [
 					{
 						key: 'module',
-						href: 'https://docs.google.com/presentation/d/1qHvVrx5W8WB920IrzotM6M9FAbh28MXWGR3s8No28pY/edit?usp=sharing',
+						href: 'https://docs.google.com/presentation/d/1qHvVrx5W8WB920IrzotM6M9FAbh28MXWGR3s8No28pY/view#slide=id.g2a681975fa2_0_128',
 						title: 'SoCap 101 Professional Development - Module',
 					},
 					{
