@@ -12,8 +12,28 @@
         width: 50%;
     }
 
+    .content-justify {
+        margin-bottom: 0;
+        width: 60%;
+        p {
+            margin-bottom: .75em;
+        }
+
+        h4 {
+            font-size: 2em;
+            font-family: $secondaryFontface;
+            font-style: italic;
+            font-weight: 600;
+            text-transform: none;
+
+            em {
+                color: $red;
+            }
+        }
+    }
+
     .whyscmatters-vert-line {
-        margin-top: .85em;
+        margin-top: .55em;
         margin-bottom: .1em;
     }
 }
