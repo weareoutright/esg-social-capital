@@ -1,11 +1,11 @@
 import React from 'react'
 import ResourceAccordion from './ResourceAccordion'
 
-const ResourcesContent = () => {
+const ResourcesContent = ({resourcesList}) => {
   return (
     <div className="ResourcesContent">
         <div className="resources-accordions">
-            <ResourceAccordion />
+            <ResourceAccordion resourcesList={resourcesList}/>
           </div>
         <div className="resources-acknowledgement">
             <h4>Acknowledgements</h4>

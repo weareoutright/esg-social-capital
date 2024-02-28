@@ -1,9 +1,10 @@
 import React from 'react'
 import Accordion from "react-bootstrap/Accordion"
 import ResourceAccordionItem from './ResourceAccordionItem';
-import { RESOURCE_INFO } from '../../constants/jsonContent/resourceInfo';
 
-const ResourceAccordion = ({}) => {
+const ResourceAccordion = ({resourcesList}) => {
+    const {section} = resourcesList;
+
     const handleClick = (e) => {
         e.preventDefault();
         e.target.blur();
@@ -11,13 +12,18 @@ const ResourceAccordion = ({}) => {
 
   return (
     <>
-    {RESOURCE_INFO.map((stage) => {
-      return (    <Accordion key={stage.key}>
-        <Accordion.Item eventKey={stage.key} bsPrefix='accordion-item-custom'>
-          <Accordion.Header as={'h4'} bsPrefix='accordion-header-custom' onClick={(e) => handleClick(e)}>{stage.parentPhase}</Accordion.Header>
+    {section.map((section) => {
+      return (    <Accordion key={section.sectionLabel.split(" ").join("-")}>
+        <Accordion.Item eventKey={section.sectionLabel.split(" ").join("-")} bsPrefix='accordion-item-custom'>
+          <Accordion.Header as={'h4'} bsPrefix='accordion-header-custom' onClick={(e) => handleClick(e)}>{section.sectionLabel}</Accordion.Header>
           <Accordion.Body bsPrefix='accordion-body-custom'>
-              {stage.actionStepsArr.map((resource) => {
-                  return <ResourceAccordionItem key={resource.key} actionStepLinksArr={resource.actionStepLinksArr} keyText={resource.key} actionStep={resource.actionStep}/>
+              {section.subsection.map((resource) => {
+                  let key = resource.subsectionLabel.split(" ").join("-")
+                  return <ResourceAccordionItem 
+                  key={key} 
+                  actionStepLinksArr={resource.resourceLinks} 
+                  keyText={key} 
+                  actionStep={resource.subsectionLabel}/>
               })}
           </Accordion.Body>
         </Accordion.Item>
