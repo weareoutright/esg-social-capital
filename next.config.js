@@ -50,6 +50,7 @@ const nextConfig = {
 	env: {
 		backendUrl: backendUrl,
 		imageUrl: `https://${imageDomain}`,
+		WPENGINE_URL: `https://esgsocialcapit.wpenginepowered.com/`,
 	},
 	images: {
 		domains: [imageDomain],

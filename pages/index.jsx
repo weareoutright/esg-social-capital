@@ -30,7 +30,7 @@ export default function Home({pageBy, menus}) {
 	// const regex = new RegExp('src="\\\/wp-content\\\/uploads\\\/', 'gm')
 
 	const startingStr = leadersInTheField.content;
-	const subst = `src="https://esgsocialcapit.wpenginepowered.com/wp-content/uploads/`;
+	const subst = `src="${process.env.WPENGINE_URL}/wp-content/uploads/`;
 
 	// The substituted value will be contained in the result variable
 	const result1 = startingStr.replace(regex1, subst);
