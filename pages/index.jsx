@@ -13,6 +13,7 @@ import LeadersInTheField from '../components/HomePage/LeadersInTheField';
 import MapArea from '../components/HomePage/MapArea';
 import parse from 'html-react-parser';
 
+
 export default function Home({pageBy, menus}) {
 	const {editorBlocks} = pageBy;
 
@@ -20,6 +21,21 @@ export default function Home({pageBy, menus}) {
 	const {whySocialCapitalMatters} = editorBlocks.filter((block) => block.name === 'acf/why-socap')[0];
 	const {leadersInTheField} = editorBlocks.filter((block) => block.name === 'acf/leaders-in-field')[0];
 	const {homepageMap} = editorBlocks.filter((block) => block.name === 'acf/homepage-map')[0];
+
+	const regex1 = /src="\/wp-content\/uploads\//gm;
+	const regex2 = /src="\/\/wp-content\/uploads\//gm;
+	const regex3 = /srcset=".+"/gm;
+
+	// Alternative syntax using RegExp constructor
+	// const regex = new RegExp('src="\\\/wp-content\\\/uploads\\\/', 'gm')
+
+	const startingStr = leadersInTheField.content;
+	const subst = `src="https://esgsocialcapit.wpenginepowered.com/wp-content/uploads/`;
+
+	// The substituted value will be contained in the result variable
+	const result1 = startingStr.replace(regex1, subst);
+	const result2 = result1.replace(regex2, subst)
+	const result3 = result2.replace(regex3, "")
 
 	const WPHero = {
 		title: homepageHero.title,
@@ -36,7 +52,7 @@ export default function Home({pageBy, menus}) {
 
 	const WPLeadersInTheField = {
 		title: leadersInTheField.title,
-		content: parse(leadersInTheField.content),
+		content: parse(result3),
 		gallery: leadersInTheField.gallery,
 	}
 
