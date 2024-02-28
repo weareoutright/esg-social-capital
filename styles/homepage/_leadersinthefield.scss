@@ -34,6 +34,9 @@
 
     .content-justify {
         margin-top: 2em;
+        em {
+            font-style: normal;
+        }
     }
     .info-and-stats {
         color: $gray;
