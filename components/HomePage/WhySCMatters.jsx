@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Image from 'next/image';
 import SMALL_RED_LINE from "../../constants/small_red_line.svg"
 

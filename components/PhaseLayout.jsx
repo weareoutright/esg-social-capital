@@ -7,18 +7,21 @@ import NextPage from './NextPage';
 
 import PhaseHeader from './PhaseHeader';
 
-const PhaseLayout = ({phaseInfo}) => {
+const PhaseLayout = ({phaseInfo, coreParagraphBlocks, actionStepBlocks, featuredImage, phasePostFields, title}) => {
+  // const {startImage, endImage} = phasePostFields
+  const actionSteps = actionStepBlocks.map((block) => block.actionStep)
+
   return (
     <>
     <PhaseHeader />
 		<div className={`${styles.header} font-extrabold text-center w-fit content-page`}>
 			<PhaseTitle 
         headerSvg={phaseInfo.headerSvg} 
-        phaseNum={phaseInfo.phaseNum} 
-        phaseTitle={phaseInfo.phaseTitle} 
-        phaseHeaderContent={phaseInfo.phaseHeaderContent} 
-        phaseHeaderImg={phaseInfo.phaseHeaderImg}/>
-			<PhaseContent phaseContent={phaseInfo.phaseContent}/>	
+        phaseNum={phasePostFields.phaseLabel.toUpperCase()} 
+        phaseTitle={title} 
+        phaseHeaderContent={coreParagraphBlocks} 
+        phaseHeaderImg={featuredImage.node.sourceUrl}/>
+			<PhaseContent phaseContent={actionSteps}/>	
 		</div>
 		<NextPage nextPage={phaseInfo.nextPage} nextPageAnchorLink={phaseInfo.nextPageAnchorLink}/>
     </>

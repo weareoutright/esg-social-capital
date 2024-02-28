@@ -7,11 +7,11 @@ const PhaseContent = ({phaseContent}) => {
         {phaseContent.map((step, index) => {
             return <ActionStep 
             key={index}
-            icon={step.icon}
+            icon={step.image.node.sourceUrl}
             title={step.title}
             description={step.description}
-            toolsArr={step.toolsArr}
-            stickyNotesArr={step.stickyNotesArr}
+            toolsArr={step.tools}
+            stickyNotesArr={step.notes}
             />
         })}
     </div>

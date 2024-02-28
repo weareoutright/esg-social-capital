@@ -46,7 +46,6 @@ const Carousel = ({gallery}) => {
         <AnimatePresence mode="popLayout" initial={false}>
           {visibleItems.map((item) => {
             const key = item.name
-            console.log(item.headshot.node)
             return (
               <motion.div
                 className="card"
