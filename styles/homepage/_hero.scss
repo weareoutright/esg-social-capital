@@ -23,6 +23,7 @@
         font-weight: 900;
         text-transform: uppercase;
         margin-bottom: .5em;
+        width: 50%;
     }
 
     h4 {
@@ -32,6 +33,7 @@
         line-height: 1em; /* 127.273% */
         text-transform: capitalize;
         line-height: 1.25em;
+        width: 30%;
     }
 
     h1, h2 {
@@ -47,6 +49,16 @@
         width: 55%;
         text-overflow: balance;
         text-align: center;
+
+        p:first-child {
+            margin-bottom: 2em;
+        }
+
+        em {
+            color: $red;
+            font-weight: 600;
+            font-style: normal;
+        }
     }
 
     .get-started a {

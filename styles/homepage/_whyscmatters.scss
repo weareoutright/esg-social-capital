@@ -1,6 +1,11 @@
 .WhySCMatters {
     margin-top: 3em;
 
+    h2 {
+        width: 50%;
+        text-wrap: balance;
+    }
+
     .container-custom {
         font-size: .45em;
         font-style: italic;
@@ -14,20 +19,21 @@
 
     .content-justify {
         margin-bottom: 0;
-        width: 60%;
+        width: 50%;
         p {
-            margin-bottom: .75em;
+            margin-bottom: 2em;
         }
 
         h4 {
-            font-size: 2em;
+            font-size: 1.65em;
             font-family: $secondaryFontface;
             font-style: italic;
-            font-weight: 600;
+            font-weight: 500;
             text-transform: none;
 
             em {
                 color: $red;
+                font-weight: 600;
             }
         }
     }
