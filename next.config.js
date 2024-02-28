@@ -51,6 +51,11 @@ const nextConfig = {
 		backendUrl: backendUrl,
 		imageUrl: `https://${imageDomain}`,
 		WPENGINE_URL: `https://esgsocialcapit.wpenginepowered.com/`,
+		WPGRAPHQL_URL: `https://esgsocialcapit.wpenginepowered.com/graphql`,
+		WORDPRESS_API_URL: `https://esgsocialcapit.wpenginepowered.com/graphql`,
+		PANTHEON_CMS_ENDPOINT: `esgsocialcapit.wpenginepowered.com`,
+		WP_HOME: `https://esgsocialcapit.wpenginepowered.com/`,
+		WP_SITEURL: `https://esgsocialcapit.wpenginepowered.com/`,
 	},
 	images: {
 		domains: [imageDomain],
