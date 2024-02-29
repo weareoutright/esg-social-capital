@@ -9,6 +9,9 @@ import { MAP_LOCATIONS_1, MAP_LOCATIONS_2 } from '../../constants/jsonContent/ma
 
 const MapArea = ({WPHomePageMap}) => {
   const mapLocations1 = WPHomePageMap.locations.slice(0, 5)
+  const mapLocations2 = WPHomePageMap.locations.slice(5)
+
+  console.log(mapLocations1, mapLocations2)
 
   return (
     <div className="MapArea container-custom">
@@ -18,12 +21,12 @@ const MapArea = ({WPHomePageMap}) => {
         </div>
         <div className="map-small-locations">
           <ul>
-            {MAP_LOCATIONS_1.map((location) => {
+            {mapLocations1.map((location) => {
               return <li key={`${location.location}-list-item`} className="small-location">{location.location}</li>
             })}
           </ul>
           <ul>
-            {MAP_LOCATIONS_2.map((location) => {
+            {mapLocations2.map((location) => {
               return <li key={`${location.location}-list-item`} className="small-location">{location.location}</li>
             })}
           </ul>
