@@ -109,8 +109,7 @@
     }
 
     .title-div {
-        margin: -.95em 0em 0em 2em;
-        height: fit-content;
+        margin: -.5em 0em 0em 2em;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -124,10 +123,6 @@
             font-size: .25em;
             width: fit-content;
             margin: .5em 0em;
-
-            img {
-                scale: 70%;
-            }
         }
 
         h3 {
@@ -140,6 +135,10 @@
             width: 90%;
             text-align: left;
             margin: 2em 0 !important;
+
+            p {
+                max-width: 95%;
+            }
         }
         
         .phase-title-img {
