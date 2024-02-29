@@ -134,7 +134,6 @@
             width: 90%;
             text-align: left;
             margin: 2em 0 !important;
-
             p {
                 max-width: 95%;
             }
@@ -190,6 +189,12 @@
 
         .phase-title-img {
             display: none;
+        }
+
+        .content-justify {
+            p {
+                font-size: 1em !important;
+            }
         }
     }
 }

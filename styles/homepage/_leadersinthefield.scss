@@ -95,7 +95,7 @@
 @media  (min-width: 350px) and (max-width: 480px) {
     .LeadersInTheField.container-custom {
         width: 100svw;
-        font-size: 2.5em;
+        font-size: 1em;
 
         h3 {
             width: 90%;
@@ -107,6 +107,9 @@
         .content-justify {
             width: 80%;
             margin-top: 0;
+            p {
+                font-size: 2em;
+            }
         }
 
         .main-wrapper {
