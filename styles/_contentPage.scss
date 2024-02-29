@@ -29,7 +29,7 @@
         top: 0;
         right: 0;
         z-index: -2;
-        background-image: url("../constants/network-begin.svg") ;
+        background-image: url("https://esgsocialcapit.wpenginepowered.com/wp-content/uploads/2024/02/network-begin.9c4263c6.svg") ;
         background-size: 10.5em;
         background-repeat: no-repeat;
         background-position: center;
@@ -75,11 +75,10 @@
         }
       
         100% {
-            background-image: url("../constants/network-middle.svg");
+            background-image: url("https://esgsocialcapit.wpenginepowered.com/wp-content/uploads/2024/02/network-middle.758196d8.svg");
         }
       }
       
-
     .execandeval-network {
         animation: dts_to_ee 1.5s normal forwards;
         height: 100vh;
@@ -89,21 +88,21 @@
     }
     @keyframes dts_to_ee {
         0% {
-            background-image: url("../constants/network-middle.svg");
+            background-image: url("https://esgsocialcapit.wpenginepowered.com/wp-content/uploads/2024/02/network-middle.758196d8.svg");
         }
       
         100% {
-            background-image: url("../constants/network-final.svg");
+            background-image: url("https://esgsocialcapit.wpenginepowered.com/wp-content/uploads/2024/02/network-final.bcd3d933.svg");
         }
     }
 
     @keyframes ee_to_resources {
         0% {
-            background-image: url("../constants/network-final.svg");
+            background-image: url("https://esgsocialcapit.wpenginepowered.com/wp-content/uploads/2024/02/network-final.bcd3d933.svg");
         }
 
         100% {
-            background-image: url("../constants/network-final.svg");
+            background-image: url("https://esgsocialcapit.wpenginepowered.com/wp-content/uploads/2024/02/network-final.bcd3d933.svg");
             margin-top: 0;
         }
     }

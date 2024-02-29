@@ -14,9 +14,7 @@ import { getPhasePosts } from '../lib/wp_content/PhasePostBlocks';
 
 export default function ResourcesPage({menus, ltfPosts, dtsPosts, eePosts, resourcesPosts}) {
 	// const ltfTools = ltfPosts.editorBlocks.filter((block) => block.name === "acf/action-step").map((step) => step.actionStep.tools)
-
 	// const dtsTools = dtsPosts.editorBlocks.filter((block) => block.name === "acf/action-step").map((step) => step.actionStep.tools)
-
 	// const eeTools = eePosts.editorBlocks.filter((block) => block.name === "acf/action-step").map((step) => step.actionStep.tools)
 
 	const {resourcesList} = resourcesPosts.editorBlocks.filter((block) => block.name === "acf/resources")[0]

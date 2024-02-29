@@ -1,12 +1,22 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image';
 import parse from "html-react-parser"
+import { useRouter } from 'next/router'
 
-const PhaseTitle = ({headerSvg, phaseNum, phaseTitle, phaseHeaderContent, phaseHeaderImg}) => {
+const PhaseTitle = ({headerSvg, phaseNum, phaseTitle, phaseHeaderContent, phaseHeaderImg, startImage, endImage}) => {
+	const {route: slug} = useRouter();
+
+	const ltfStr = slug === "/laythefoundation";
+	const dtsStr = slug === "/designthesupports";
+	const eeStr = slug === "/executeandevaluate";
+
+	console.log(slug, startImage, endImage)
 
   return (
     <>
-		<div className={`sidebar ${phaseTitle === "Lay The Foundation" ? 'laythefoundation-network' : phaseTitle === "Design The Supports" ? 'designthesupports-network' : phaseTitle === "Execute & Evaluate" ? 'execandeval-network' : {}}`} 
+		<div className={`sidebar ${ltfStr ? 'laythefoundation-network' : dtsStr ? 'designthesupports-network' : eeStr ? 'execandeval-network' : {}}`} 
 		>
 			<span></span>
 		</div>
