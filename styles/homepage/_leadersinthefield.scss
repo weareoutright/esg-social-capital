@@ -101,16 +101,19 @@
 
         h3 {
             width: 90%;
-            font-size: .65em !important;
+            font-size: 1em !important;
             text-wrap: balance;
             margin-top: -1em;
+            max-width: none;
         }
 
         .content-justify {
             width: 80%;
             margin-top: 0;
+            font-size: .65em !important;
             p {
-                font-size: 2em;
+                margin-bottom: 1em;
+                margin-top: .75em;
             }
         }
 
@@ -167,6 +170,11 @@
 
             small {
                 margin: .5em 0em;
+            }
+
+            img {
+                max-width: 85%;
+                margin: 0 auto;
             }
         }
 
