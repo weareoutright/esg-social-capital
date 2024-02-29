@@ -12,8 +12,6 @@ const PhaseTitle = ({headerSvg, phaseNum, phaseTitle, phaseHeaderContent, phaseH
 	const dtsStr = slug === "/designthesupports";
 	const eeStr = slug === "/executeandevaluate";
 
-	console.log(slug, startImage, endImage)
-
   return (
     <>
 		<div className={`sidebar ${ltfStr ? 'laythefoundation-network' : dtsStr ? 'designthesupports-network' : eeStr ? 'execandeval-network' : {}}`} 
