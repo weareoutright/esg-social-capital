@@ -153,12 +153,12 @@
             z-index: 1;
 
             img {
-                width: auto;
+                max-width: 80%;
             }
 
             &.wider-header-svg {
                 img {
-                    scale: 103%;
+                    scale: 102%;
                 }
             }
         }
