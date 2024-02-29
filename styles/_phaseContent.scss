@@ -18,9 +18,17 @@
             }
         }
 
+        p {
+            font-size: .25em;
+            font-weight: 400;
+        }
+
         .content-justify {
             text-align: left;
             width: 100%;
+            p {
+                font-size: 1em;
+            }
         }
 
         .tools, .stickyNotes {
@@ -69,7 +77,6 @@
             margin: .25em 0em 0em .5em;
 
             p {
-                font-size: .65em !important;
                 margin-bottom: -.5em;
             }
 

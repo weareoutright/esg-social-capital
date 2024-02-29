@@ -12,9 +12,8 @@ const ActionStep = ({icon, title, description, toolsArr, stickyNotesArr}) => {
             <Image src={icon} alt="" width={216} height={150}/>
             <h5 className='action-title'>{title}</h5>
         </div>
-        <p className="content-justify">
-            {descriptionContent}
-        </p>
+
+        {descriptionContent}
 
         <div className="tools">
         <span>Tools</span>
