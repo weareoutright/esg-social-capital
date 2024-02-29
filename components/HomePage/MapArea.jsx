@@ -11,8 +11,6 @@ const MapArea = ({WPHomePageMap}) => {
   const mapLocations1 = WPHomePageMap.locations.slice(0, 5)
   const mapLocations2 = WPHomePageMap.locations.slice(5)
 
-  console.log(mapLocations1, mapLocations2)
-
   return (
     <div className="MapArea container-custom">
         <div className="map">
