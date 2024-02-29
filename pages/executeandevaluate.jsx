@@ -17,7 +17,7 @@ export default function ExecuteAndEvaluatePage({menus, postBy}) {
 
 	const ExecuteAndEvaluate = () => (
 		<>
-			<PhaseLayout phaseInfo={phaseInfo} coreParagraphBlocks={coreParagraphBlocks} actionStepBlocks={actionStepBlocks} featuredImage={featuredImage} phasePostFields={phasePostFields} title={title} />
+			<PhaseLayout phaseInfo={phaseInfo} coreParagraphBlocks={coreParagraphBlocks} actionStepBlocks={actionStepBlocks} featuredImage={featuredImage} phasePostFields={phasePostFields} title={title} menus={menus}/>
 		</>
 	);
 

@@ -17,7 +17,7 @@ export default function DesignTheSupportsPage({menus, postBy}) {
 
 	const DesignTheSupports = () => (
 		<>
-			<PhaseLayout phaseInfo={phaseInfo} coreParagraphBlocks={coreParagraphBlocks} actionStepBlocks={actionStepBlocks} featuredImage={featuredImage} phasePostFields={phasePostFields} title={title} />
+			<PhaseLayout phaseInfo={phaseInfo} coreParagraphBlocks={coreParagraphBlocks} actionStepBlocks={actionStepBlocks} featuredImage={featuredImage} phasePostFields={phasePostFields} title={title} menus={menus}/>
 		</>
 	);
 

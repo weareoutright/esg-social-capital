@@ -23,7 +23,7 @@ export default function ResourcesPage({menus, ltfPosts, dtsPosts, eePosts, resou
 
 	const Resources = () => (
 		<>
-		<PhaseHeader />
+		<PhaseHeader menus={menus}/>
 		<div className={`${styles.header} font-extrabold text-center w-fit content-page Resources`}>
 			<ResourcesHeader />
 			<ResourcesContent resourcesList={resourcesList} />

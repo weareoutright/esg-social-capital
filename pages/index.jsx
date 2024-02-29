@@ -65,7 +65,7 @@ export default function Home({pageBy, menus}) {
 
 	const HomepageHeader = () => (
 		<>
-		<HeaderCustom />
+		<HeaderCustom menus={menus}/>
 		<div className={`${styles.header} font-extrabold text-center w-fit`}>
 			<Hero WPHero={WPHero} />
 			<WhySCMatters WPWhySCMatters={WPWhySCMatters} />

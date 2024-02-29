@@ -1,5 +1,3 @@
-"use client"
-
 import React, {useState} from 'react'
 import ESG_LOGO from "../constants/esg_logo.svg"
 import CULTIVATING_CONNECTIONS from "../constants/cultivating-connections-header.svg"
@@ -9,8 +7,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import MobileMenu from "./MobileMenu"
 
-const HeaderCustom = ({homePageHeader}) => {
+const HeaderCustom = ({homePageHeader, menus}) => {
   const [showMenu, setShowMenu] = useState(false)
+  const {nodes: headerLogoUrls} = menus.nodes[0].menuItems
+  const {label: downloadBtnText, url: frameworkOverviewDownload} = menus.nodes[1].menuItems.nodes[0]
 
   return (
     <>
@@ -22,11 +22,11 @@ const HeaderCustom = ({homePageHeader}) => {
             {showMenu === false ? <Image src={HAMBURGER_MENU} alt="" className="hamburger-menu-icon"/> : <Image src={CLOSE_MENU} alt="" className="hamburger-menu-icon"/>}
             
             </button>
-            <Link href="https://edstrategy.org/" target="_blank" rel="noreferrer" className="logo-link"><Image src={ESG_LOGO} alt="ESG LOGO"/></Link>
+            <Link href={headerLogoUrls[0].url} target="_blank" rel="noreferrer" className="logo-link"><Image src={ESG_LOGO} alt="ESG LOGO"/></Link>
         </div>
 
         <div className={`pill ${homePageHeader === false ? "non-home-header" : ""}`}>
-            <Link className="pill navPill-whiteBg download" href="https://drive.google.com/file/d/1bpgVkP7BTtr4PAXRMoeRBQCYRPxGa2qJ/view?usp=drive_link" target='_blank' rel="noreferrer">DOWNLOAD FRAMEWORK OVERVIEW</Link>
+            <Link className="pill navPill-whiteBg download" href={frameworkOverviewDownload}target='_blank' rel="noreferrer">{downloadBtnText}</Link>
         </div>
     </div>
         {showMenu === true ? <MobileMenu setShowMenu={setShowMenu} /> : null}
