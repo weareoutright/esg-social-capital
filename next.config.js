@@ -50,12 +50,12 @@ const nextConfig = {
 	env: {
 		backendUrl: backendUrl,
 		imageUrl: `https://${imageDomain}`,
-		WPENGINE_URL: `https://esgsocialcapit.wpenginepowered.com/`,
-		WPGRAPHQL_URL: `https://esgsocialcapit.wpenginepowered.com/graphql`,
-		WORDPRESS_API_URL: `https://esgsocialcapit.wpenginepowered.com/graphql`,
-		PANTHEON_CMS_ENDPOINT: `esgsocialcapit.wpenginepowered.com`,
-		WP_HOME: `https://esgsocialcapit.wpenginepowered.com/`,
-		WP_SITEURL: `https://esgsocialcapit.wpenginepowered.com/`,
+		WPENGINE_URL: `https://esgsocap.wpenginepowered.com/`,
+		WPGRAPHQL_URL: `https://esgsocap.wpenginepowered.com/graphql`,
+		WORDPRESS_API_URL: `https://esgsocap.wpenginepowered.com/graphql`,
+		PANTHEON_CMS_ENDPOINT: `esgsocap.wpenginepowered.com`,
+		WP_HOME: `https://esgsocap.wpenginepowered.com/`,
+		WP_SITEURL: `https://esgsocap.wpenginepowered.com/`,
 	},
 	images: {
 		domains: [imageDomain],
